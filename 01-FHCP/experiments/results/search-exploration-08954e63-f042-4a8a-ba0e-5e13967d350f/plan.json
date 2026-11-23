@@ -1,0 +1,160 @@
+{
+  "config": {
+    "purpose": "Exploratory comparison after guided and incremental search changes; reused instances, separate from M6",
+    "presets": "experiments/configs/search-enhanced-v3-presets.json",
+    "instances": [
+      "graph2",
+      "graph48",
+      "graph74"
+    ],
+    "seeds": [
+      1001,
+      1002,
+      1003,
+      1004,
+      1005,
+      1006,
+      1007,
+      1008,
+      1009,
+      1010
+    ],
+    "cpu": 2,
+    "max_evaluations": 1000000,
+    "max_elapsed_ns": 10000000000,
+    "process_timeout_seconds": 12,
+    "session_seconds": 2280
+  },
+  "presets": {
+    "schema_version": "fhcp-search-enhanced-presets/1",
+    "purpose": "Exploratory incremental SA/ABC, reheated SA and edge-only AS pheromone; separate from M6",
+    "base_freeze": "experiments/results/e390b61f-aae4-4248-ba71-4467920d7bac/freeze.json",
+    "instance": "graph2",
+    "seed": 1001,
+    "max_evaluations": 10000,
+    "max_elapsed_ns": 5000000000,
+    "solvers": [
+      {
+        "algorithm": "ga",
+        "parameters": {
+          "crossover_rate": 0.8,
+          "elite_count": 1,
+          "mutation_rate": 0.1,
+          "population_size": 20,
+          "tournament_size": 3,
+          "initialization": "greedy",
+          "guided_move_rate": 0.5
+        }
+      },
+      {
+        "algorithm": "sa",
+        "parameters": {
+          "cooling_factor": 0.95,
+          "initial_temperature": 2.0,
+          "minimum_temperature": 1e-06,
+          "moves_per_temperature": 50,
+          "initialization": "greedy",
+          "guided_move_rate": 0.5,
+          "cost_mode": "incremental",
+          "incremental_check_interval": 1000,
+          "reheat_after": 1000
+        }
+      },
+      {
+        "algorithm": "as",
+        "parameters": {
+          "alpha": 1.0,
+          "ant_count": 20,
+          "beta": 4.0,
+          "epsilon": 0.05,
+          "initial_pheromone": 1.0,
+          "pheromone_max": 10.0,
+          "pheromone_min": 0.1,
+          "q": 1.0,
+          "rho": 0.2,
+          "construction": "neighbor_guided",
+          "pheromone_storage": "edges"
+        }
+      },
+      {
+        "algorithm": "abc",
+        "parameters": {
+          "limit": 200,
+          "source_count": 20,
+          "initialization": "greedy",
+          "guided_move_rate": 0.5,
+          "cost_mode": "incremental",
+          "incremental_check_interval": 1000
+        }
+      },
+      {
+        "algorithm": "de",
+        "parameters": {
+          "crossover_rate": 0.8,
+          "differential_weight": 0.8,
+          "population_size": 20,
+          "initialization": "greedy"
+        }
+      },
+      {
+        "algorithm": "pso",
+        "parameters": {
+          "cognitive_coefficient": 1.0,
+          "inertia": 0.5,
+          "social_coefficient": 1.0,
+          "swarm_size": 20,
+          "velocity_limit": 0.5,
+          "initialization": "greedy"
+        }
+      }
+    ]
+  },
+  "source_sha256": {
+    "src/algorithms/__init__.py": "2eccbae325a1f27f50e0c7da4b4afef91df3579fb19359e87fb8cab78fcecba8",
+    "src/algorithms/abc.py": "4b596576ebdd417f7fc6882264d6e1b878ba104093b82e5dbe62eca25286f4b2",
+    "src/algorithms/annealing.py": "8ef8bff5a67a84492c8a5da7a53047c2b7b20bc991692e1032cdd633cba7326a",
+    "src/algorithms/ant_system.py": "4d0ba0ba9bf3d85eac3da2475c19bd5960deca6dca95c7ae56cb888bfc7117ca",
+    "src/algorithms/differential.py": "963ac62b4b799ac2097a433b7619ed11b42f483e22d8ab9c1b7231871a0eb391",
+    "src/algorithms/execution.py": "cd12c149b5d4f51b011754350f91c91beee94005d4cfca8502761b18fc0a21e4",
+    "src/algorithms/genetic.py": "93532d93bdf428e20e79f4068ccdf42a21eab17d9197302916a6dcb896368028",
+    "src/algorithms/graph_guidance.py": "e366bef9fc71e10adbfb8e54dd071b0efb3a74eb9e75b08c49125e2c8c5723b0",
+    "src/algorithms/local_moves.py": "f5b0af1288fdb9ba7d37a53635dde0f7754add00fe8f666f94fd6c98eb441efd",
+    "src/algorithms/particle_swarm.py": "d7af4da496fd89ce3f737cee50c407a157d430813478242c63bbd5a1cc1d3472",
+    "src/algorithms/permutation.py": "37b0b89817035d84d71a027ef0493e27b3bfc08b54c5aa98985265d2f8ceb597",
+    "src/algorithms/real_keys.py": "f3706f22e70813a31b87b12bad558ba50c9e631f319d02048148f3513af64292",
+    "src/algorithms/sparse_pheromone.py": "7cdccf40034e86e9a3f2920691eb6d8202ddf111be4c7ff37303d58af90fa094",
+    "src/cli/__init__.py": "4f528a18ceffa4fab02e7228cd75cea8f2cbb4c994ddd2aab5dd139dccf09c18",
+    "src/cli/__main__.py": "20a9c057560da07704a3245034736004e3d00ee913e12c4586a6111ab1528c4c",
+    "src/cli/batch.py": "448cd759430e40ee255e262090acebe9425e3597d55f495aad513ea6834cde3e",
+    "src/cli/benchmark_analysis.py": "bc02ba9b26f07d95a601db8652ee88047a77359f13f638f718a6aaa54ec1dc56",
+    "src/cli/benchmark_archive.py": "eb94df07c6a823c856dc7fccad92ee7599e55090f62866217152eb1494225031",
+    "src/cli/benchmark_campaign.py": "246bb42f9688c1ad97e91af89044379a54c80ec9d27060267d62db34176a70d9",
+    "src/cli/benchmark_plan.py": "5fb37aad00cba741956bb04efaf53f612407fa10dbad5426f4a1d4d8f2f2ca1a",
+    "src/cli/run_record.py": "c337c288c84ad69c767f9b8f13c2b03aa72a59c52e966da081002a9f14533465",
+    "src/cli/variants.py": "795058617cf8046f9ab3e01c7db3c6b0acd1247ff3abb6de47b6e7436ef448e6",
+    "src/evaluation/__init__.py": "aed91c7b71a5ae05e69754f227de999ee5a9bb3a924d0733b639304163b163d8",
+    "src/evaluation/benchmark.py": "a5a214aee467279839f1b56b79fb6ff612cd698f4ace56e554ecc1748cf8b12d",
+    "src/evaluation/cost.py": "ac1523e5e152c36e53c77e240b98fbb8a7865124d43cb0826fa0bd8e0a0b21d2",
+    "src/evaluation/cycle.py": "c756f98722b8893541e112f64877054619b91ba81d09f0119080a7458a843ee0",
+    "src/graphs/__init__.py": "9d385bb4aa899aa2132627615ade20e36f2781462557c72710b39b7aa5c23024",
+    "src/graphs/fhcp.py": "35a277556f73aa1a308ccabda7bb43e9bfcc9578b4934230cfaae06ea75a7a07",
+    "src/graphs/graph.py": "b939877634acae562d31957eb9de7bf994264a252db0cae5f0654da3e98e48ab",
+    "src/graphs/readers.py": "a97ecfc183de2b666a1ea168e1f91d2677a025c77872e135826a838a367a7b9f",
+    "src/graphs/routes.py": "076e364f151a8012a1336d2035f1056f9d98b52dfb9c10b6d560912442a020e9"
+  },
+  "commit": "b83b19ef628712e9e10b9d9d9f5eaedacaa5bcee",
+  "started_utc": "2026-11-13T18:15:31.104535+00:00",
+  "resources": {
+    "available_ram_bytes": 14444433408,
+    "swap_pages": {
+      "pswpin": 54,
+      "pswpout": 592
+    },
+    "ac_online": true,
+    "governor": "powersave",
+    "suspend_offset_ns": -900,
+    "load_1m": 0.5830078125,
+    "at_utc": "2026-11-13T18:15:31.096685+00:00"
+  },
+  "purpose": "Exploratory, reused instances; separate from M6; local modified source snapshot retained"
+}

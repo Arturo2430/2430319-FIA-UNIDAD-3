@@ -1,0 +1,83 @@
+{
+  "instance": "graph2",
+  "algorithm": "abc",
+  "seed": 1003,
+  "status": "success",
+  "best_cost": 0,
+  "certified_success": true,
+  "resources_before": {
+    "available_ram_bytes": 14568853504,
+    "swap_pages": {
+      "pswpin": 95,
+      "pswpout": 679
+    },
+    "ac_online": true,
+    "governor": "powersave",
+    "suspend_offset_ns": -475,
+    "load_1m": 1.10986328125,
+    "at_utc": "2026-11-13T18:21:30.754316+00:00"
+  },
+  "returncode": 0,
+  "process_seconds": 4.834625028000119,
+  "resources_after": {
+    "available_ram_bytes": 14593343488,
+    "swap_pages": {
+      "pswpin": 95,
+      "pswpout": 679
+    },
+    "ac_online": true,
+    "governor": "powersave",
+    "suspend_offset_ns": -883,
+    "load_1m": 1.1005859375,
+    "at_utc": "2026-11-13T18:21:35.591077+00:00"
+  },
+  "stop_reason": "validated_cycle",
+  "counters": {
+    "iteration_unit": "abc_cycle",
+    "evaluations_started": 55769,
+    "evaluations_completed": 55769,
+    "full_evaluations": 267,
+    "incremental_evaluations": 55502,
+    "cache_hits": 0,
+    "validations_started": 1,
+    "validations_completed": 1,
+    "iterations_completed": 1387,
+    "partial_iteration": {
+      "phase": "abc_cycle",
+      "completed_items": 22,
+      "planned_items": 41
+    },
+    "restarts": 247,
+    "algorithm_counters": {
+      "greedy_jumps": 453,
+      "greedy_routes_completed": 267,
+      "guided_inversions": 27610,
+      "employed_proposals": 27760,
+      "onlooker_proposals": 27742,
+      "scout_skips": 1140,
+      "onlooker_improvements": 23,
+      "incremental_full_checks": 56,
+      "employed_improvements": 33,
+      "scout_abandonments": 247,
+      "scout_renewals": 247
+    }
+  },
+  "timing": {
+    "solver_ns": 4686520262,
+    "validation_ns": 145394,
+    "overrun_ns": 0,
+    "first_success": {
+      "elapsed_ns": 4686520262,
+      "evaluations_started": 55769,
+      "evaluations_completed": 55769,
+      "iterations_completed": 1387
+    }
+  },
+  "independent_validation": {
+    "valid": true,
+    "reason": null,
+    "position": null,
+    "vertices": []
+  },
+  "recalculated_cost": 0
+}

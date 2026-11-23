@@ -1,0 +1,115 @@
+\begin{thebibliography}{13}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Beiranvand et~al.(2017)Beiranvand, Hare, and
+  Lucet]{beiranvand2017BestPractices}
+Vahid Beiranvand, Warren Hare, and Yves Lucet.
+\newblock Best practices for comparing optimization algorithms.
+\newblock \emph{Optimization and Engineering}, 18:\penalty0 815--848, 2017.
+\newblock \doi{10.1007/s11081-017-9366-1}.
+\newblock URL \url{https://arxiv.org/abs/1709.08242v1}.
+
+\bibitem[Cicirello(2023)]{cicirello2023PermutationOperators}
+Vincent~A. Cicirello.
+\newblock A survey and analysis of evolutionary operators for permutations.
+\newblock In \emph{Proceedings of the 15th International Joint Conference on
+  Computational Intelligence}, pages 288--299. SCITEPRESS, 2023.
+\newblock \doi{10.5220/0012204900003595}.
+\newblock URL \url{https://arxiv.org/abs/2311.14595v1}.
+
+\bibitem[Coudert and Cohen(2017)]{cohenCoudert2017Challenge}
+David Coudert and Nathann Cohen.
+\newblock Le d\'efi des 1001 graphes.
+\newblock Interstices, Inria, 2017.
+\newblock URL \url{https://interstices.info/le-defi-des-1001-graphes/}.
+
+\bibitem[Diestel(2025)]{diestel2025GraphTheory6}
+Reinhard Diestel.
+\newblock \emph{Graph Theory}, volume 173 of \emph{Graduate Texts in
+  Mathematics}.
+\newblock Springer, Berlin, Heidelberg, 6 edition, 2025.
+\newblock ISBN 978-3-662-70106-5.
+\newblock \doi{10.1007/978-3-662-70107-2}.
+\newblock URL \url{https://diestel-graph-theory.com/basic.html}.
+
+\bibitem[Dorigo and St{\"u}tzle(2003)]{dorigoStuetzle2003Aco}
+Marco Dorigo and Thomas St{\"u}tzle.
+\newblock The ant colony optimization metaheuristic: Algorithms, applications,
+  and advances.
+\newblock In Fred Glover and Gary~A. Kochenberger, editors, \emph{Handbook of
+  Metaheuristics}, volume~57 of \emph{International Series in Operations
+  Research \& Management Science}, pages 250--285. Kluwer Academic Publishers,
+  2003.
+\newblock \doi{10.1007/0-306-48056-5_9}.
+\newblock URL
+  \url{https://iridia.ulb.ac.be/~mdorigo/Published_papers/2002/DorStu2002MetaHandBook.pdf}.
+
+\bibitem[{Flinders Hamiltonian Cycle Project}(s.f.)]{flindersFhcpChallenge}
+{Flinders Hamiltonian Cycle Project}.
+\newblock {FHCP Challenge Set}, s.f.
+\newblock URL
+  \url{https://sites.flinders.edu.au/flinders-hamiltonian-cycle-project/fhcp-challenge-set/}.
+
+\bibitem[Gon{\c c}alves and Resende(2009)]{goncalvesResende2009RandomKeys}
+Jos{\'e}~Fernando Gon{\c c}alves and Mauricio G.~C. Resende.
+\newblock Biased random-key genetic algorithms for combinatorial optimization.
+\newblock Technical report, AT\&T Labs Research, Florham Park, NJ, 2009.
+\newblock URL
+  \url{https://optimization-online.org/wp-content/uploads/2009/10/2423.pdf}.
+
+\bibitem[Haythorpe(2018)]{haythorpe2018Fhcp}
+Michael Haythorpe.
+\newblock {FHCP Challenge Set}: The first set of structurally difficult
+  instances of the {Hamiltonian} cycle problem.
+\newblock \emph{Bulletin of the ICA}, 83:\penalty0 98--107, 2018.
+\newblock URL \url{https://arxiv.org/abs/1902.10352v1}.
+
+\bibitem[Karaboga(2005)]{karaboga2005Abc}
+Dervis Karaboga.
+\newblock An idea based on honey bee swarm for numerical optimization.
+\newblock Technical Report TR06, Erciyes University, Engineering Faculty,
+  Computer Engineering Department, Kayseri, T{\"u}rkiye, October 2005.
+\newblock URL \url{https://abc.erciyes.edu.tr/pub/tr06_2005.pdf}.
+
+\bibitem[Karp(1972)]{karp1972Reducibility}
+Richard~M. Karp.
+\newblock Reducibility among combinatorial problems.
+\newblock In Raymond~E. Miller, James~W. Thatcher, and Jean~D. Bohlinger,
+  editors, \emph{Complexity of Computer Computations}, The IBM Research
+  Symposia Series, pages 85--103. Plenum Press, New York, 1972.
+\newblock \doi{10.1007/978-1-4684-2001-2_9}.
+\newblock URL
+  \url{https://www2.seas.gwu.edu/~simhaweb/champalg/tsp/papers/KarpOriginal.pdf}.
+
+\bibitem[Seeja(2018)]{seeja2018HybridHam}
+K.~R. Seeja.
+\newblock {HybridHAM}: A novel hybrid heuristic for finding hamiltonian cycle.
+\newblock \emph{Journal of Optimization}, 2018:\penalty0 9328103, 2018.
+\newblock \doi{10.1155/2018/9328103}.
+\newblock URL \url{https://onlinelibrary.wiley.com/doi/10.1155/2018/9328103}.
+
+\bibitem[Sokolova and Lapalme(2009)]{sokolovaLapalme2009Classification}
+Marina Sokolova and Guy Lapalme.
+\newblock A systematic analysis of performance measures for classification
+  tasks.
+\newblock \emph{Information Processing \& Management}, 45\penalty0
+  (4):\penalty0 427--437, 2009.
+\newblock \doi{10.1016/j.ipm.2009.03.002}.
+\newblock URL
+  \url{https://rali.iro.umontreal.ca/rali/sites/default/files/publis/SokolovaLapalme-JIPM09.pdf}.
+
+\bibitem[Yuce et~al.(2013)Yuce, Packianather, Mastrocinque, Pham, and
+  Lambiase]{yuce2013Bees}
+Baris Yuce, Michael~S. Packianather, Ernesto Mastrocinque, Duc~Truong Pham, and
+  Alfredo Lambiase.
+\newblock Honey bees inspired optimization method: The bees algorithm.
+\newblock \emph{Insects}, 4\penalty0 (4):\penalty0 646--662, 2013.
+\newblock \doi{10.3390/insects4040646}.
+\newblock URL
+  \url{https://mdpi-res.com/d_attachment/insects/insects-04-00646/article_deploy/insects-04-00646.pdf}.
+
+\end{thebibliography}

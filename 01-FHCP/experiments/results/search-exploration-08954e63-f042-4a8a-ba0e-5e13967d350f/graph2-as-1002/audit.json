@@ -1,0 +1,79 @@
+{
+  "instance": "graph2",
+  "algorithm": "as",
+  "seed": 1002,
+  "status": "success",
+  "best_cost": 0,
+  "certified_success": true,
+  "resources_before": {
+    "available_ram_bytes": 14655946752,
+    "swap_pages": {
+      "pswpin": 92,
+      "pswpout": 679
+    },
+    "ac_online": true,
+    "governor": "powersave",
+    "suspend_offset_ns": -311,
+    "load_1m": 1.0244140625,
+    "at_utc": "2026-11-13T18:18:44.444997+00:00"
+  },
+  "returncode": 0,
+  "process_seconds": 2.725624786000026,
+  "resources_after": {
+    "available_ram_bytes": 14628548608,
+    "swap_pages": {
+      "pswpin": 92,
+      "pswpout": 679
+    },
+    "ac_online": true,
+    "governor": "powersave",
+    "suspend_offset_ns": -418,
+    "load_1m": 1.02197265625,
+    "at_utc": "2026-11-13T18:18:47.172127+00:00"
+  },
+  "stop_reason": "validated_cycle",
+  "counters": {
+    "iteration_unit": "round",
+    "evaluations_started": 1248,
+    "evaluations_completed": 1248,
+    "full_evaluations": 1248,
+    "incremental_evaluations": 0,
+    "cache_hits": 0,
+    "validations_started": 1,
+    "validations_completed": 1,
+    "iterations_completed": 62,
+    "partial_iteration": {
+      "phase": "round",
+      "completed_items": 8,
+      "planned_items": 21
+    },
+    "restarts": 0,
+    "algorithm_counters": {
+      "constructions_started": 1248,
+      "construction_steps": 86112,
+      "neighbor_guided_jumps": 5560,
+      "pheromone_updates_started": 62,
+      "pheromone_deposits": 80086,
+      "pheromone_missing_deposits_skipped": 6714,
+      "pheromone_updates_completed": 62
+    }
+  },
+  "timing": {
+    "solver_ns": 2561471384,
+    "validation_ns": 147712,
+    "overrun_ns": 0,
+    "first_success": {
+      "elapsed_ns": 2561471384,
+      "evaluations_started": 1248,
+      "evaluations_completed": 1248,
+      "iterations_completed": 62
+    }
+  },
+  "independent_validation": {
+    "valid": true,
+    "reason": null,
+    "position": null,
+    "vertices": []
+  },
+  "recalculated_cost": 0
+}

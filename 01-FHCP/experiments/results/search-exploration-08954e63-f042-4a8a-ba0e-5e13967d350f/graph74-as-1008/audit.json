@@ -1,0 +1,77 @@
+{
+  "instance": "graph74",
+  "algorithm": "as",
+  "seed": 1008,
+  "status": "exhausted",
+  "best_cost": 12,
+  "certified_success": false,
+  "resources_before": {
+    "available_ram_bytes": 14603894784,
+    "swap_pages": {
+      "pswpin": 105,
+      "pswpout": 679
+    },
+    "ac_online": true,
+    "governor": "powersave",
+    "suspend_offset_ns": -1119,
+    "load_1m": 1.26806640625,
+    "at_utc": "2026-11-13T18:36:59.946731+00:00"
+  },
+  "returncode": 0,
+  "process_seconds": 10.145405690000189,
+  "resources_after": {
+    "available_ram_bytes": 14544609280,
+    "swap_pages": {
+      "pswpin": 105,
+      "pswpout": 679
+    },
+    "ac_online": true,
+    "governor": "powersave",
+    "suspend_offset_ns": -428,
+    "load_1m": 1.2265625,
+    "at_utc": "2026-11-13T18:37:10.093634+00:00"
+  },
+  "stop_reason": "time_limit",
+  "counters": {
+    "iteration_unit": "round",
+    "evaluations_started": 700,
+    "evaluations_completed": 700,
+    "full_evaluations": 700,
+    "incremental_evaluations": 0,
+    "cache_hits": 0,
+    "validations_started": 0,
+    "validations_completed": 0,
+    "iterations_completed": 35,
+    "partial_iteration": {
+      "phase": "round",
+      "completed_items": 0,
+      "planned_items": 21
+    },
+    "restarts": 0,
+    "algorithm_counters": {
+      "constructions_started": 701,
+      "construction_steps": 323146,
+      "neighbor_guided_jumps": 15916,
+      "pheromone_updates_started": 35,
+      "pheromone_deposits": 306808,
+      "pheromone_missing_deposits_skipped": 16592,
+      "pheromone_updates_completed": 35
+    }
+  },
+  "timing": {
+    "solver_ns": 10000008445,
+    "validation_ns": 0,
+    "overrun_ns": 8445,
+    "first_success": null
+  },
+  "independent_validation": {
+    "valid": false,
+    "reason": "missing_edge",
+    "position": 152,
+    "vertices": [
+      89,
+      119
+    ]
+  },
+  "recalculated_cost": 12
+}

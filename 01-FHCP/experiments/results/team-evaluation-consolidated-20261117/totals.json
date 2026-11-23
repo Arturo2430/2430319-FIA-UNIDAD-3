@@ -1,0 +1,51 @@
+{
+  "plan_sha256": "348df5525871354ff25a60b22ccb8da8d6aba9884de9a3a9b4026feafc0db250",
+  "execution_revision": "19ac5eaa46fbacc5a034dae6d14befbf171928db",
+  "planned": 60060,
+  "pending": 51254,
+  "original_goal": 60,
+  "closing_expectation_approximate": 20,
+  "expectation_provenance": "Arturo's instruction at closing; not a preregistered target",
+  "scope_decision": "Close this partial delivery without further searches; retain pending combinations",
+  "coverage": {
+    "complete": 144,
+    "not_started": 852,
+    "partial": 5
+  },
+  "solved_graph_ids": [
+    "graph2",
+    "graph6",
+    "graph10",
+    "graph14",
+    "graph18",
+    "graph23",
+    "graph27",
+    "graph31",
+    "graph56",
+    "graph72",
+    "graph79",
+    "graph90",
+    "graph96",
+    "graph134",
+    "graph150"
+  ],
+  "attempted": 8806,
+  "successes": 345,
+  "success_rate_attempted": 0.03917783329548036,
+  "solved_graphs": 15,
+  "exhausted": 8449,
+  "errors": 12,
+  "external_timeouts": 0,
+  "process_seconds_available": 8804,
+  "process_seconds_sum": 510361.3343421082,
+  "mean_process_seconds": 57.96925651318812,
+  "costs_available": 8794,
+  "best_cost": 0,
+  "median_cost": 10.0,
+  "input_sha256": {
+    "plan.json": "ed54cbd4535607484375a6eaaa18f05b41de7573b4b5398cddbf7b7f2a9e8e87",
+    "inputs.json": "cb73b0fb4af9c5045a297ce6f9e5a014cd2ec2db61436cec818db988389456bd",
+    "attempts.jsonl": "5427189727907a172264484b8443089e36b6e39dec142aa22ddcde49923c023c",
+    "summary.json": "f6f1b943b4deebd5fccbf9b821d61bf64f82b38bdd344ea644bf3195bb9f6bf9"
+  }
+}

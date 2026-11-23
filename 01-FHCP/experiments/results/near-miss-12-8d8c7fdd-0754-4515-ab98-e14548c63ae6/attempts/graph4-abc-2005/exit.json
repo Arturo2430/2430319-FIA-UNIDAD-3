@@ -1,0 +1,15 @@
+{
+  "reason": "finished",
+  "returncode": 0,
+  "process_seconds": 30.220369767001102,
+  "after": {
+    "at_utc": "2026-11-17T20:50:29.332597+00:00",
+    "host": "victus",
+    "os": "Linux-7.2.9-2-cachyos-x86_64-with-glibc2.44",
+    "available_ram_bytes": 18982428672,
+    "ac_online": true,
+    "affinity": [
+      6
+    ]
+  }
+}

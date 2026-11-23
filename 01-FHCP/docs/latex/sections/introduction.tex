@@ -1,0 +1,20 @@
+\pagina{Introducción y objetivos}
+Encontrar una ruta que visite todos los vértices de un grafo y regrese al inicio exige satisfacer una restricción global de conectividad y orden. Una secuencia sin vértices repetidos no basta: todas sus transiciones, incluida la última hacia el primer vértice, deben existir como aristas. Esta diferencia entre una permutación legal y un ciclo válido determina tanto la representación como la evaluación de los algoritmos.
+
+El FHCP Challenge Set reúne 1001 grafos hamiltonianos diseñados para ser difíciles para métodos habituales; su dificultad depende también de la estructura, no solo del número de vértices \citep{haythorpe2018Fhcp}. Por ello, el objetivo de una evaluación no es únicamente producir secuencias, sino establecer qué métodos encuentran ciclos certificados, bajo qué presupuesto y con qué evidencia.
+
+\subsection{Objetivo general y alcance}
+Implementar y comparar GA, SA, AS, ABC, DE y PSO bajo una representación y validación comunes, conservando configuraciones, semillas, recursos y resultados para su reproducción. Los objetivos específicos fueron:
+\begin{enumerate}
+\item Formalizar la relación entre grafo, candidato, costo y certificado.
+\item Adaptar los operadores de cada familia al espacio de permutaciones.
+\item Medir éxito y tiempo bajo presupuestos explícitos, sin eliminar agotamientos o errores.
+\item Contrastar los hallazgos con resultados publicados y explicar las condiciones que impiden una comparación directa.
+\end{enumerate}
+
+El informe integra la investigación y contratos ya documentados en el repositorio con las evidencias experimentales aceptadas. Se distinguen la campaña inicial, la evaluación distribuida y las exploraciones cerradas, incluida la reparación v4. No se presentan las pruebas unitarias como rendimiento experimental ni se calcula una tasa conjunta entre protocolos distintos. La cobertura acumulada se obtiene mediante unión de IDs certificados, sin duplicar grafos.
+
+\subsection{Entregables y organización}
+El código fuente carga instancias HCP, ejecuta los seis algoritmos y devuelve el mejor candidato disponible junto con su costo, estado, tiempo y certificado. Los registros JSON conservan las rutas; el estado de éxito no se deduce del nombre de un archivo o de una captura de terminal.
+
+Las secciones siguientes explican fundamentos, implementación y protocolo; después presentan los resultados, el contraste bibliográfico y las conclusiones. Los anexos incluyen parámetros, trazabilidad y una fila por cada grafo iniciado. El código y la documentación reproducible están disponibles en \url{https://github.com/ZapataFrame/FHCP-Challenge}.

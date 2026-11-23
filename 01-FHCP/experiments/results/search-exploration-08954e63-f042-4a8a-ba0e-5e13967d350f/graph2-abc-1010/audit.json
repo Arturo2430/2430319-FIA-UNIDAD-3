@@ -1,0 +1,82 @@
+{
+  "instance": "graph2",
+  "algorithm": "abc",
+  "seed": 1010,
+  "status": "success",
+  "best_cost": 0,
+  "certified_success": true,
+  "resources_before": {
+    "available_ram_bytes": 14565752832,
+    "swap_pages": {
+      "pswpin": 105,
+      "pswpout": 679
+    },
+    "ac_online": true,
+    "governor": "powersave",
+    "suspend_offset_ns": -275,
+    "load_1m": 1.27783203125,
+    "at_utc": "2026-11-13T18:40:33.595893+00:00"
+  },
+  "returncode": 0,
+  "process_seconds": 0.5655507860001308,
+  "resources_after": {
+    "available_ram_bytes": 14553387008,
+    "swap_pages": {
+      "pswpin": 105,
+      "pswpout": 679
+    },
+    "ac_online": true,
+    "governor": "powersave",
+    "suspend_offset_ns": -701,
+    "load_1m": 1.27783203125,
+    "at_utc": "2026-11-13T18:40:34.162969+00:00"
+  },
+  "stop_reason": "validated_cycle",
+  "counters": {
+    "iteration_unit": "abc_cycle",
+    "evaluations_started": 4785,
+    "evaluations_completed": 4785,
+    "full_evaluations": 36,
+    "incremental_evaluations": 4749,
+    "cache_hits": 0,
+    "validations_started": 1,
+    "validations_completed": 1,
+    "iterations_completed": 118,
+    "partial_iteration": {
+      "phase": "abc_cycle",
+      "completed_items": 29,
+      "planned_items": 41
+    },
+    "restarts": 16,
+    "algorithm_counters": {
+      "greedy_jumps": 55,
+      "greedy_routes_completed": 36,
+      "employed_proposals": 2380,
+      "guided_inversions": 2367,
+      "onlooker_proposals": 2369,
+      "scout_skips": 102,
+      "onlooker_improvements": 4,
+      "incremental_full_checks": 5,
+      "scout_abandonments": 16,
+      "scout_renewals": 16
+    }
+  },
+  "timing": {
+    "solver_ns": 411172874,
+    "validation_ns": 145940,
+    "overrun_ns": 0,
+    "first_success": {
+      "elapsed_ns": 411172874,
+      "evaluations_started": 4785,
+      "evaluations_completed": 4785,
+      "iterations_completed": 118
+    }
+  },
+  "independent_validation": {
+    "valid": true,
+    "reason": null,
+    "position": null,
+    "vertices": []
+  },
+  "recalculated_cost": 0
+}

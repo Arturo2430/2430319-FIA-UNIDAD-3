@@ -1,0 +1,4 @@
+{
+  "runner_sha256": "c1c5bc84b7908cbf18ccd3ec517a9db2661515cc92a9c22c1e919fe4fd7ed5cb",
+  "reason": "Handle validation not_run on positive-cost candidates; retain and independently audit first completed attempt."
+}

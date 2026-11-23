@@ -1,0 +1,81 @@
+{
+  "instance": "graph48",
+  "algorithm": "abc",
+  "seed": 1002,
+  "status": "exhausted",
+  "best_cost": 7,
+  "certified_success": false,
+  "resources_before": {
+    "available_ram_bytes": 14646095872,
+    "swap_pages": {
+      "pswpin": 92,
+      "pswpout": 679
+    },
+    "ac_online": true,
+    "governor": "powersave",
+    "suspend_offset_ns": -341,
+    "load_1m": 1.07080078125,
+    "at_utc": "2026-11-13T18:19:38.277377+00:00"
+  },
+  "returncode": 0,
+  "process_seconds": 10.147943519999899,
+  "resources_after": {
+    "available_ram_bytes": 14682308608,
+    "swap_pages": {
+      "pswpin": 92,
+      "pswpout": 679
+    },
+    "ac_online": true,
+    "governor": "powersave",
+    "suspend_offset_ns": -785,
+    "load_1m": 1.0595703125,
+    "at_utc": "2026-11-13T18:19:48.427134+00:00"
+  },
+  "stop_reason": "time_limit",
+  "counters": {
+    "iteration_unit": "abc_cycle",
+    "evaluations_started": 38278,
+    "evaluations_completed": 38278,
+    "full_evaluations": 197,
+    "incremental_evaluations": 38081,
+    "cache_hits": 0,
+    "validations_started": 0,
+    "validations_completed": 0,
+    "iterations_completed": 952,
+    "partial_iteration": {
+      "phase": "abc_cycle",
+      "completed_items": 1,
+      "planned_items": 41
+    },
+    "restarts": 177,
+    "algorithm_counters": {
+      "greedy_jumps": 2113,
+      "greedy_routes_completed": 197,
+      "employed_proposals": 19041,
+      "guided_inversions": 18993,
+      "onlooker_proposals": 19040,
+      "scout_skips": 775,
+      "incremental_full_checks": 38,
+      "scout_abandonments": 177,
+      "scout_renewals": 177,
+      "employed_improvements": 3,
+      "onlooker_improvements": 3
+    }
+  },
+  "timing": {
+    "solver_ns": 10000100808,
+    "validation_ns": 0,
+    "overrun_ns": 100808,
+    "first_success": null
+  },
+  "independent_validation": {
+    "valid": false,
+    "reason": "missing_edge",
+    "position": 34,
+    "vertices": [
+      35,
+      226
+    ]
+  },
+  "recalculated_cost": 7
+}

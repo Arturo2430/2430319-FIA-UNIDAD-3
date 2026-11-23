@@ -1,0 +1,31 @@
+{
+  "provided_on": "2026-11-17",
+  "delivery_date": "2026-11-17",
+  "assignment": {
+    "path": "docs/sources/practice-20261117.pdf",
+    "sha256": "19c5af6b72e417ee0f83e287e02476e183865fe5097f78bee7eae1ed0636caf7"
+  },
+  "template": {
+    "path": "docs/latex/template/provided-template.tex",
+    "sha256": "50ab876fe2f1bb2595865a7345326edac47bae2cfb33a798fcd950ae9a2dd227",
+    "role": "Visual reference supplied by Arturo; original text retained without compiling unrelated project content"
+  },
+  "experiment_sources": [
+    "docs/research/benchmark-comparison.md",
+    "docs/experiments/distributed-evaluation-consolidated.md",
+    "experiments/results/team-evaluation-consolidated-20261117/",
+    "experiments/analysis/closed-explorations-20261117/"
+  ],
+  "new_solver_runs": 0,
+  "closed_exploratory_evaluation": {
+    "repair_v4_attempts": 2976,
+    "repair_v4_certified_attempts": 11,
+    "repair_v4_distinct_solved": 5,
+    "repair_v4_errors": 4,
+    "prior_guided_attempts": 118,
+    "prior_guided_distinct_solved": 2,
+    "distinct_graph_union": 22,
+    "status": "closed_at_delivered_cut",
+    "resume_planned": false
+  }
+}

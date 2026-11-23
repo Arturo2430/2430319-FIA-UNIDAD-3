@@ -1,0 +1,53 @@
+\pagina{Diseño e implementación de los algoritmos}
+\subsection{Contrato común y separación de responsabilidades}
+Los seis métodos reciben el mismo grafo, una configuración efectiva, una semilla y un presupuesto. El dominio de grafos y evaluación es independiente de la interfaz de comandos. Cada ejecución usa un generador privado PCG64 y devuelve estado, motivo de parada, mejor ruta, costo, contadores y tiempos. La instrumentación comprueba el presupuesto durante operaciones prolongadas y solicita certificación independiente ante un candidato de costo cero.
+
+La comparación exige distinguir la familia teórica de la variante implementada. Por ejemplo, AS es una realización concreta de ACO; ABC es colonia artificial de abejas y no el Bees Algorithm, que tiene mecanismos diferentes \citep{dorigoStuetzle2003Aco,karaboga2005Abc,yuce2013Bees}. Los operadores se eligieron para preservar permutaciones, un requisito destacado en estudios de operadores evolutivos discretos \citep{cicirello2023PermutationOperators}.
+
+\subsection{Algoritmo genético: GA}
+GA mantiene una población de rutas con costos almacenados. Selecciona padres mediante torneos, aplica cruza por orden (OX), mutación y reemplazo generacional con elitismo. OX conserva un segmento de un padre y completa el orden restante desde el otro sin duplicar vértices. La mutación base intercambia posiciones; en la variante final puede aplicar una inversión guiada.
+
+La guía se aplica dentro de la mutación admitida: con tasa de mutación 0.1 y guía 0.5 no se realiza una inversión en la mitad de todos los descendientes, sino en la mitad de las mutaciones seleccionadas. La población final usa 20 individuos, torneo de tres y un élite. El tamaño reducido limita el trabajo inicial, pero no demuestra ser óptimo para todas las instancias.
+
+\subsection{Recocido simulado: SA}
+SA mantiene una ruta y propone vecinos por intercambio o inversión guiada. Si $\Delta=c(\pi')-c(\pi)$, acepta mejoras y utiliza una probabilidad $\exp(-\Delta/T)$ para movimientos de mayor costo. La temperatura disminuye multiplicativamente; la evaluación final usa $T_0=2$, factor 0.95 y 50 propuestas por nivel.
+
+La variante final recalienta después de 1000 propuestas sin mejora histórica o al alcanzar su umbral de enfriamiento. Retoma la mejor ruta histórica y restaura $T_0$ sin reiniciar el reloj global. La evaluación incremental evita recorrer todo el ciclo en cada intercambio o inversión; las mejoras históricas y los controles periódicos se recalculan completamente para preservar consistencia.
+
+\subsection{Ant System: AS}
+Cada hormiga construye un orden de vértices. En la variante guiada, los candidatos son vecinos reales todavía no visitados; sus pesos dependen de feromona $\tau$ y grado residual:
+\[
+ p(v\mid u)\ \propto\ \frac{\tau(u,v)^{\alpha}}{(1+d_{\mathrm{res}}(v))^{\beta}}.
+\]
+Al bloquearse, el constructor salta uniformemente a un vértice restante, mantiene una permutación completa y deja que el costo penalice la transición ausente. La construcción no garantiza por sí sola el cierre del ciclo.
+
+La actualización conserva evaporación y depósitos acotados. Se ejecutan 20 hormigas, $\alpha=1$, $\beta=4$ y evaporación 0.2. El almacenamiento disperso conserva feromonas sobre aristas reales y una política para pares ausentes, reduciendo almacenamiento frente a todos los pares. Es una opción de implementación distinta de declarar una variante MAX--MIN nueva.
+
+\subsection{Colonia artificial de abejas: ABC}
+ABC representa fuentes mediante rutas. Las abejas empleadas proponen modificaciones; las observadoras seleccionan fuentes por calidad y explotan sus vecindades. La aceptación exige mejora estricta de costo. Una fuente que acumula el límite de intentos sin mejora se abandona y se regenera conforme a la política de inicialización.
+
+La variante final usa 20 fuentes, límite 200, guía por aristas con tasa 0.5 y costo incremental, con control completo cada 1000 evaluaciones incrementales. Cuando no se aplica la guía, se usa el intercambio definido por otra fuente. Se conserva siempre la mejor solución encontrada, sin convertir un empate en una mejora.
+
+\subsection{Evolución diferencial: DE}
+DE opera sobre vectores de claves. Genera una combinación diferencial de individuos distintos, por ejemplo $v=x_{r_1}+F(x_{r_2}-x_{r_3})$, y aplica cruza binomial con el objetivo. La decodificación produce una permutación válida; la selección conserva el ensayo solo si mejora su costo. Los valores finales son población 20, $F=0.8$ y cruza 0.8.
+
+La inicialización voraz se convierte en claves cuyo orden reproduce la ruta. Modificar magnitudes continuas puede cambiar varios puestos del orden a la vez; por ello no debe suponerse que una pequeña distancia euclidiana sea una pequeña modificación de aristas en el ciclo.
+
+\subsection{Enjambre de partículas: PSO}
+PSO mantiene posiciones de claves, velocidades, mejores posiciones individuales y una mejor posición global. La actualización combina inercia, atracción cognitiva y social:
+\[
+ v^{t+1}=w v^t+c_1 r_1(p-x^t)+c_2 r_2(g-x^t),\qquad x^{t+1}=x^t+v^{t+1}.
+\]
+La ruta se obtiene ordenando las claves. La evaluación final usa 20 partículas, inercia 0.5, coeficientes cognitivo y social iguales a uno y velocidad acotada por 0.5. La inicialización voraz cambia los estados iniciales, pero no agrega búsqueda local guiada en cada actualización.
+
+\subsection{Mejoras posteriores a la campaña inicial}
+La primera campaña motivó tres grupos de cambios: inicialización voraz en GA, SA, ABC, DE y PSO; propuestas/construcción guiadas por aristas en GA, SA, ABC y AS; y optimizaciones específicas de evaluación, recalentamiento y feromona dispersa. La ruta voraz prefiere vecinos libres de menor grado residual, con decisiones aleatorias controladas por la semilla; si se bloquea, completa la permutación con vértices restantes.
+
+Una inversión guiada hace adyacentes un vértice y un vecino real que no eran consecutivos. Puede destruir otras adyacencias, por lo que se evalúa el candidato completo o su delta comprobado. Ninguna guía sustituye al validador. Como se modificaron varias políticas y después el presupuesto, los resultados posteriores no son una ablación que identifique el efecto aislado de cada cambio.
+
+\subsection{Reparación dirigida y exploración v4}
+Las variantes v4 añaden reparación opcional a las seis familias, sin sustituir las configuraciones de la evaluación distribuida descritas arriba. Cuando el costo es como máximo tres, se exploran movimientos anclados en transiciones ausentes. Con costo uno se interpreta la ruta como un camino con un único cierre faltante y se buscan reordenamientos de tres segmentos o rotaciones de extremos que permitan cerrarlo. Se conserva la permutación y cada candidato debe satisfacer el costo y el validador independientes.
+
+La configuración exploratoria fija \code{repair_steps=64} y \code{repair_threshold=3}. Su trabajo consume el mismo presupuesto global de búsqueda; no dispone de tiempo adicional fuera del plazo. En DE y PSO se recodifica la ruta reparada como claves, preservando exactamente su orden; PSO reinicia la velocidad tras reparar la posición.
+
+ABC y DE admiten además hasta 20 reemplazos acotados de rutas distintas con igual costo, mediante \code{neutral_limit=20}. Es una política exploratoria diferente de la aceptación estricta de sus variantes distribuidas. Un empate no cuenta como mejora histórica y, en ABC, no reinicia el contador de abandono. La diversidad inducida puede ayudar a recorrer mesetas, pero la evaluación no aísla su efecto ni demuestra que esos valores sean óptimos.

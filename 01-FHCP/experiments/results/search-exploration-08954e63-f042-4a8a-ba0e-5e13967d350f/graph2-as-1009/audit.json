@@ -1,0 +1,79 @@
+{
+  "instance": "graph2",
+  "algorithm": "as",
+  "seed": 1009,
+  "status": "success",
+  "best_cost": 0,
+  "certified_success": true,
+  "resources_before": {
+    "available_ram_bytes": 14627581952,
+    "swap_pages": {
+      "pswpin": 105,
+      "pswpout": 679
+    },
+    "ac_online": true,
+    "governor": "powersave",
+    "suspend_offset_ns": -538,
+    "load_1m": 1.3251953125,
+    "at_utc": "2026-11-13T18:37:50.903575+00:00"
+  },
+  "returncode": 0,
+  "process_seconds": 6.944133872000748,
+  "resources_after": {
+    "available_ram_bytes": 14621487104,
+    "swap_pages": {
+      "pswpin": 105,
+      "pswpout": 679
+    },
+    "ac_online": true,
+    "governor": "powersave",
+    "suspend_offset_ns": -619,
+    "load_1m": 1.3486328125,
+    "at_utc": "2026-11-13T18:37:57.850308+00:00"
+  },
+  "stop_reason": "validated_cycle",
+  "counters": {
+    "iteration_unit": "round",
+    "evaluations_started": 3296,
+    "evaluations_completed": 3296,
+    "full_evaluations": 3296,
+    "incremental_evaluations": 0,
+    "cache_hits": 0,
+    "validations_started": 1,
+    "validations_completed": 1,
+    "iterations_completed": 164,
+    "partial_iteration": {
+      "phase": "round",
+      "completed_items": 16,
+      "planned_items": 21
+    },
+    "restarts": 0,
+    "algorithm_counters": {
+      "constructions_started": 3296,
+      "construction_steps": 227424,
+      "neighbor_guided_jumps": 14980,
+      "pheromone_updates_started": 164,
+      "pheromone_deposits": 211530,
+      "pheromone_missing_deposits_skipped": 18070,
+      "pheromone_updates_completed": 164
+    }
+  },
+  "timing": {
+    "solver_ns": 6786091913,
+    "validation_ns": 147446,
+    "overrun_ns": 0,
+    "first_success": {
+      "elapsed_ns": 6786091913,
+      "evaluations_started": 3296,
+      "evaluations_completed": 3296,
+      "iterations_completed": 164
+    }
+  },
+  "independent_validation": {
+    "valid": true,
+    "reason": null,
+    "position": null,
+    "vertices": []
+  },
+  "recalculated_cost": 0
+}

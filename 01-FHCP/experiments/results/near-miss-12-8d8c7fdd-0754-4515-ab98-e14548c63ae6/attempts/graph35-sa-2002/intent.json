@@ -1,0 +1,52 @@
+{
+  "plan_sha256": "7b67490fb9d8c4cb09cadcd728ba6e90c9943e8eb8f835accb569ea7a758ce45",
+  "key": [
+    "graph35",
+    "sa",
+    2002
+  ],
+  "started_utc": "2026-11-17T20:40:12.620742+00:00",
+  "command": [
+    "/home/arturo/projects/FHCP-Challenge/.venv/bin/python",
+    "-m",
+    "src.cli",
+    "--catalog",
+    "/home/arturo/projects/FHCP-Challenge/experiments/configs/near-miss-12-catalog.json",
+    "--instance",
+    "graph35",
+    "--algorithm",
+    "sa",
+    "--seed",
+    "2002",
+    "--max-elapsed-ns",
+    "30000000000",
+    "--cooling-factor",
+    "0.95",
+    "--cost-mode",
+    "incremental",
+    "--guided-move-rate",
+    "0.5",
+    "--incremental-check-interval",
+    "1000",
+    "--initial-temperature",
+    "2.0",
+    "--initialization",
+    "greedy",
+    "--minimum-temperature",
+    "1e-06",
+    "--moves-per-temperature",
+    "50",
+    "--reheat-after",
+    "1000"
+  ],
+  "before": {
+    "at_utc": "2026-11-17T20:40:12.622592+00:00",
+    "host": "victus",
+    "os": "Linux-7.2.9-2-cachyos-x86_64-with-glibc2.44",
+    "available_ram_bytes": 19584561152,
+    "ac_online": true,
+    "affinity": [
+      0
+    ]
+  }
+}

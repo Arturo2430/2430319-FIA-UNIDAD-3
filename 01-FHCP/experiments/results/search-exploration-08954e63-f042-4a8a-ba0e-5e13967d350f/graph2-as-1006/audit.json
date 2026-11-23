@@ -1,0 +1,79 @@
+{
+  "instance": "graph2",
+  "algorithm": "as",
+  "seed": 1006,
+  "status": "success",
+  "best_cost": 0,
+  "certified_success": true,
+  "resources_before": {
+    "available_ram_bytes": 14629552128,
+    "swap_pages": {
+      "pswpin": 101,
+      "pswpout": 679
+    },
+    "ac_online": true,
+    "governor": "powersave",
+    "suspend_offset_ns": -393,
+    "load_1m": 1.53955078125,
+    "at_utc": "2026-11-13T18:29:47.550433+00:00"
+  },
+  "returncode": 0,
+  "process_seconds": 0.8666192010005034,
+  "resources_after": {
+    "available_ram_bytes": 14644879360,
+    "swap_pages": {
+      "pswpin": 101,
+      "pswpout": 679
+    },
+    "ac_online": true,
+    "governor": "powersave",
+    "suspend_offset_ns": -1055,
+    "load_1m": 1.53955078125,
+    "at_utc": "2026-11-13T18:29:48.418993+00:00"
+  },
+  "stop_reason": "validated_cycle",
+  "counters": {
+    "iteration_unit": "round",
+    "evaluations_started": 353,
+    "evaluations_completed": 353,
+    "full_evaluations": 353,
+    "incremental_evaluations": 0,
+    "cache_hits": 0,
+    "validations_started": 1,
+    "validations_completed": 1,
+    "iterations_completed": 17,
+    "partial_iteration": {
+      "phase": "round",
+      "completed_items": 13,
+      "planned_items": 21
+    },
+    "restarts": 0,
+    "algorithm_counters": {
+      "constructions_started": 353,
+      "construction_steps": 24357,
+      "neighbor_guided_jumps": 1604,
+      "pheromone_updates_started": 17,
+      "pheromone_deposits": 21929,
+      "pheromone_missing_deposits_skipped": 1871,
+      "pheromone_updates_completed": 17
+    }
+  },
+  "timing": {
+    "solver_ns": 728847319,
+    "validation_ns": 165410,
+    "overrun_ns": 0,
+    "first_success": {
+      "elapsed_ns": 728847319,
+      "evaluations_started": 353,
+      "evaluations_completed": 353,
+      "iterations_completed": 17
+    }
+  },
+  "independent_validation": {
+    "valid": true,
+    "reason": null,
+    "position": null,
+    "vertices": []
+  },
+  "recalculated_cost": 0
+}

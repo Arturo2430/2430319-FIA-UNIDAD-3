@@ -1,0 +1,15 @@
+\pagina{Contraste con resultados publicados del FHCP}
+El contraste bibliográfico reutiliza el inventario y los localizadores verificados de M6. Las fuentes primarias no proporcionan condiciones equivalentes a nuestras ejecuciones: difieren métodos, instancias, presupuestos, equipos y repeticiones. Siguiendo buenas prácticas de comparación de optimización, esas diferencias se explicitan antes de interpretar cifras \citep{beiranvand2017BestPractices}.
+
+\subsection{Cobertura del concurso y dificultad estructural}
+El portal oficial informa que Cohen y Coudert presentaron ciclos para 985 de los 1001 grafos del concurso \citep{flindersFhcpChallenge}. Ese resultado es cobertura acumulada durante una ventana de concurso; no equivale a diez o treinta semillas con un plazo individual homogéneo. Comparar su porcentaje directamente con 15 de 149 grafos iniciados produciría una equivalencia que los datos no sostienen.
+
+La construcción del conjunto consideró dificultad para Concorde, LKH y SLH, seleccionando candidatos problemáticos para al menos dos de esos métodos \citep{haythorpe2018Fhcp}. Esta procedencia ayuda a interpretar por qué un constructor o movimiento local puede estancarse, pero no aporta por sí sola una matriz temporal reproducible para esos tres solvers. Los tours oficiales sirven como referencias de soluciones conocidas y no como mediciones propias de rendimiento.
+
+\subsection{Contraste por instancia y tipo de salida}
+Cohen y Coudert describen un oráculo de programación entera con SageMath y CPLEX y publican tiempos puntuales para algunos IDs; graph1 y graph2 aparecen con 0.76 y 0.01 segundos \citep{cohenCoudert2017Challenge}. No se precisan todas las condiciones necesarias para una comparación temporal equivalente. En nuestra campaña histórica, los IDs compartidos pertenecían a comprobación o verificación, no a evaluación final; el CSV trazable conserva esa distinción en 36 contrastes.
+
+HybridHAM combina construcción voraz, transformaciones por rotación y criterios de alcanzabilidad \citep{seeja2018HybridHam}. Su tabla diferencia HP y HC: graph1 aparece como camino con 0.0625 segundos y graph2 como ciclo con 0.0469. El artículo indica Core i5, 4 GB de RAM y MATLAB 13RA, sin especificar todas las condiciones de repetición y presupuesto requeridas para comparar con nuestro entorno.
+
+Además, su texto de la sección 4.3 declara seis ciclos entre 250 instancias y 75 caminos, mientras la tabla 4 etiqueta más de seis instancias como HC. Se conserva esa discrepancia interna y no se infiere un total corregido ni una tasa global. Los tiempos por ID se atribuyen a las filas correspondientes; no se convierte un HP en ciclo para aumentar el éxito publicado.
+

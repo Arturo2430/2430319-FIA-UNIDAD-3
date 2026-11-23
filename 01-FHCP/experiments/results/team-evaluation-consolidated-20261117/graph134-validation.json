@@ -1,0 +1,238 @@
+{
+  "instance": "graph134",
+  "vertices": 724,
+  "edges": 131045,
+  "independently_validated_cycles": 45,
+  "checks": [
+    "permutation",
+    "every_consecutive_edge",
+    "closing_edge"
+  ],
+  "valid_cycles": [
+    {
+      "algorithm": "GA",
+      "seed": "1003",
+      "run_id": "7fa7187d-7b9d-4c4d-8b26-5a098ff58d9f"
+    },
+    {
+      "algorithm": "GA",
+      "seed": "1010",
+      "run_id": "d19813ba-0ee1-4ef9-9575-7ef5475fa9b2"
+    },
+    {
+      "algorithm": "ABC",
+      "seed": "1001",
+      "run_id": "acf47021-ad98-4083-a60e-71a8a7b96c08"
+    },
+    {
+      "algorithm": "GA",
+      "seed": "1009",
+      "run_id": "3e3cb104-2338-4e7b-b3af-2b00bf1afd16"
+    },
+    {
+      "algorithm": "DE",
+      "seed": "1005",
+      "run_id": "dda3d97d-e728-4990-ad69-734d0ad16c8a"
+    },
+    {
+      "algorithm": "ABC",
+      "seed": "1010",
+      "run_id": "529912e2-277b-48b3-84e1-0aa9bb985b5c"
+    },
+    {
+      "algorithm": "SA",
+      "seed": "1005",
+      "run_id": "38be7bc6-95b2-411e-ae73-e6b68b3409f7"
+    },
+    {
+      "algorithm": "ABC",
+      "seed": "1007",
+      "run_id": "12d263cb-8b06-40da-8206-58209504892f"
+    },
+    {
+      "algorithm": "ABC",
+      "seed": "1008",
+      "run_id": "16cec52f-d90b-44ad-b91a-4e7fac44fc07"
+    },
+    {
+      "algorithm": "GA",
+      "seed": "1001",
+      "run_id": "cc357b73-038b-424f-a798-0477e6804f3a"
+    },
+    {
+      "algorithm": "SA",
+      "seed": "1008",
+      "run_id": "6e927787-3f84-46b7-9560-48ba178e1b54"
+    },
+    {
+      "algorithm": "GA",
+      "seed": "1005",
+      "run_id": "1b62c7ef-f622-493c-b53f-0dc059c7338d"
+    },
+    {
+      "algorithm": "GA",
+      "seed": "1007",
+      "run_id": "e8985d81-648f-42d6-8474-aee90ee8e2be"
+    },
+    {
+      "algorithm": "DE",
+      "seed": "1009",
+      "run_id": "3278fa60-5d90-4e2e-9030-8bb4c6b1facc"
+    },
+    {
+      "algorithm": "DE",
+      "seed": "1002",
+      "run_id": "0557a1a0-f474-46ad-b5aa-5e3861c0a8e3"
+    },
+    {
+      "algorithm": "GA",
+      "seed": "1002",
+      "run_id": "8c573bf7-ea90-4171-9878-4a7f83024688"
+    },
+    {
+      "algorithm": "DE",
+      "seed": "1008",
+      "run_id": "ce9f0617-c885-47b2-9717-b6537e981f86"
+    },
+    {
+      "algorithm": "GA",
+      "seed": "1004",
+      "run_id": "4ddc97d0-409e-4e33-adba-921bd4252f91"
+    },
+    {
+      "algorithm": "PSO",
+      "seed": "1006",
+      "run_id": "7fd0652b-ee0b-4f8a-84bd-b62a709cd38b"
+    },
+    {
+      "algorithm": "ABC",
+      "seed": "1004",
+      "run_id": "0b8c2fb1-de3b-49c7-a5cd-56b63c451c3d"
+    },
+    {
+      "algorithm": "GA",
+      "seed": "1006",
+      "run_id": "8acc3f93-c621-467d-94e3-24a0040a9813"
+    },
+    {
+      "algorithm": "DE",
+      "seed": "1007",
+      "run_id": "5798f622-5331-4fec-a987-d09da310f4a5"
+    },
+    {
+      "algorithm": "DE",
+      "seed": "1006",
+      "run_id": "ba61614a-1c48-47e5-8f75-5b2e0bce8c46"
+    },
+    {
+      "algorithm": "DE",
+      "seed": "1004",
+      "run_id": "70ba9e6f-e7d8-41ae-8e4e-0ece4ab6f7b4"
+    },
+    {
+      "algorithm": "PSO",
+      "seed": "1008",
+      "run_id": "23ec9c2a-4108-4903-b8fb-7746277e10b1"
+    },
+    {
+      "algorithm": "PSO",
+      "seed": "1002",
+      "run_id": "a6da7b32-d6be-4812-9cb6-9de1aebb818a"
+    },
+    {
+      "algorithm": "PSO",
+      "seed": "1010",
+      "run_id": "e159737c-5aa9-4c74-a1fa-5d627cfd03d1"
+    },
+    {
+      "algorithm": "PSO",
+      "seed": "1007",
+      "run_id": "fa6893b2-8619-4b40-b8d5-5ccc75ae87f1"
+    },
+    {
+      "algorithm": "DE",
+      "seed": "1001",
+      "run_id": "204df658-525c-426b-aa3b-7cd7dcb00977"
+    },
+    {
+      "algorithm": "PSO",
+      "seed": "1001",
+      "run_id": "f368be8a-e463-4c92-a01f-d8fb3357426e"
+    },
+    {
+      "algorithm": "ABC",
+      "seed": "1009",
+      "run_id": "b4a11dea-ecd1-4200-b155-8c857ee06f73"
+    },
+    {
+      "algorithm": "ABC",
+      "seed": "1002",
+      "run_id": "62476d85-9b4f-41fa-86af-cfb257cf7c94"
+    },
+    {
+      "algorithm": "PSO",
+      "seed": "1004",
+      "run_id": "a2392a3d-b43e-4c36-bae5-6d6298a682bc"
+    },
+    {
+      "algorithm": "PSO",
+      "seed": "1003",
+      "run_id": "a67804ac-3868-40ca-aba4-123167a4ec3d"
+    },
+    {
+      "algorithm": "ABC",
+      "seed": "1005",
+      "run_id": "ca0b9852-0d78-483a-a2af-fcf376c3ddc5"
+    },
+    {
+      "algorithm": "DE",
+      "seed": "1010",
+      "run_id": "e29634f1-6062-43b2-984c-89506cefe747"
+    },
+    {
+      "algorithm": "PSO",
+      "seed": "1009",
+      "run_id": "eeb3e3eb-374e-47fe-905e-7242cbc7c689"
+    },
+    {
+      "algorithm": "GA",
+      "seed": "1008",
+      "run_id": "077acc57-79f2-4395-b294-aa1b7e95a4cf"
+    },
+    {
+      "algorithm": "PSO",
+      "seed": "1005",
+      "run_id": "000097b3-2178-47b0-ab19-c72e96f3f6bd"
+    },
+    {
+      "algorithm": "DE",
+      "seed": "1003",
+      "run_id": "5de7b696-8092-4756-904f-c15083631c2a"
+    },
+    {
+      "algorithm": "SA",
+      "seed": "1002",
+      "run_id": "4dafe783-89c6-43b3-818d-b3e671de079e"
+    },
+    {
+      "algorithm": "ABC",
+      "seed": "1003",
+      "run_id": "50bf64cb-8153-4677-9aa1-71b71637800b"
+    },
+    {
+      "algorithm": "SA",
+      "seed": "1003",
+      "run_id": "f6978d4c-71c0-4b0a-8473-cffa24d90bac"
+    },
+    {
+      "algorithm": "ABC",
+      "seed": "1006",
+      "run_id": "3527e032-13f3-4355-9127-459487583d1c"
+    },
+    {
+      "algorithm": "SA",
+      "seed": "1004",
+      "run_id": "2b013506-1a74-48c7-a4ff-9b7449b527bb"
+    }
+  ]
+}

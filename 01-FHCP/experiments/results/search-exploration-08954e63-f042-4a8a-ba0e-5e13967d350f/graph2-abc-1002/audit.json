@@ -1,0 +1,81 @@
+{
+  "instance": "graph2",
+  "algorithm": "abc",
+  "seed": 1002,
+  "status": "success",
+  "best_cost": 0,
+  "certified_success": true,
+  "resources_before": {
+    "available_ram_bytes": 14628548608,
+    "swap_pages": {
+      "pswpin": 92,
+      "pswpout": 679
+    },
+    "ac_online": true,
+    "governor": "powersave",
+    "suspend_offset_ns": -340,
+    "load_1m": 1.02197265625,
+    "at_utc": "2026-11-13T18:18:47.173759+00:00"
+  },
+  "returncode": 0,
+  "process_seconds": 0.3144380489998184,
+  "resources_after": {
+    "available_ram_bytes": 14615584768,
+    "swap_pages": {
+      "pswpin": 92,
+      "pswpout": 679
+    },
+    "ac_online": true,
+    "governor": "powersave",
+    "suspend_offset_ns": -400,
+    "load_1m": 1.02197265625,
+    "at_utc": "2026-11-13T18:18:47.489569+00:00"
+  },
+  "stop_reason": "validated_cycle",
+  "counters": {
+    "iteration_unit": "abc_cycle",
+    "evaluations_started": 1931,
+    "evaluations_completed": 1931,
+    "full_evaluations": 20,
+    "incremental_evaluations": 1911,
+    "cache_hits": 0,
+    "validations_started": 1,
+    "validations_completed": 1,
+    "iterations_completed": 47,
+    "partial_iteration": {
+      "phase": "abc_cycle",
+      "completed_items": 31,
+      "planned_items": 41
+    },
+    "restarts": 0,
+    "algorithm_counters": {
+      "greedy_routes_completed": 20,
+      "greedy_jumps": 33,
+      "guided_inversions": 978,
+      "employed_proposals": 960,
+      "onlooker_proposals": 951,
+      "scout_skips": 47,
+      "incremental_full_checks": 2,
+      "employed_improvements": 1,
+      "onlooker_improvements": 1
+    }
+  },
+  "timing": {
+    "solver_ns": 171993253,
+    "validation_ns": 144979,
+    "overrun_ns": 0,
+    "first_success": {
+      "elapsed_ns": 171993253,
+      "evaluations_started": 1931,
+      "evaluations_completed": 1931,
+      "iterations_completed": 47
+    }
+  },
+  "independent_validation": {
+    "valid": true,
+    "reason": null,
+    "position": null,
+    "vertices": []
+  },
+  "recalculated_cost": 0
+}

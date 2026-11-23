@@ -1,0 +1,67 @@
+{
+  "date": "2026-11-17",
+  "base_commit": "19ac5eaa46fbacc5a034dae6d14befbf171928db",
+  "pdf": "fhcp-report.pdf",
+  "pdf_sha256": "72e3d2f348b43d0173737e92c54c3c1e6fca31deab1503863ce5bd8404fbb204",
+  "pages": 34,
+  "assets_deterministic_two_generations": true,
+  "input_and_output_hashes": "asset-manifest.json",
+  "compilation_exit_code": 0,
+  "latex_warnings": 0,
+  "unresolved_references": 0,
+  "out_of_bounds_words": 0,
+  "checked_words": 10340,
+  "cover_required_identifiers_present": true,
+  "unrelated_template_content_absent": true,
+  "visual_review": {
+    "status": "passed",
+    "all_pages": 34,
+    "render_dpi": 55,
+    "detail_pages": [
+      18
+    ],
+    "detail_dpi": 110,
+    "finding": "Matriz con 22 filas y denominadores explícitos, cobertura acumulada y costos revisados; sin recortes ni solapamientos."
+  },
+  "new_solver_runs": 0,
+  "tools": {
+    "pdflatex": "pdfTeX 3.141592653-2.6-1.40.29 (TeX Live 2026/Arch Linux)",
+    "latexmk": "Latexmk, John Collins, 15 June 2025. Version 4.87"
+  },
+  "boxplot_groups_independently_checked": 36,
+  "boxplot_quartile_check": "statistics.quantiles(method=inclusive) matches generated NumPy percentiles",
+  "source_zip_clean_extraction_compile_exit_code": 0,
+  "consolidated_attempts": 8806,
+  "distinct_certified_graphs": 15,
+  "graph134_independently_validated_cycles": 45,
+  "serial_attempts": 7563,
+  "parallel_attempts": 1243,
+  "aggregate_tables_byte_identical_on_regeneration": true,
+  "closed_exploratory_cut": {
+    "repair_attempts": 2976,
+    "repair_successes": 11,
+    "repair_errors": 4,
+    "prior_guided_attempts": 118,
+    "independently_reaudited_attempts": 3094,
+    "distinct_graph_union": 22,
+    "resume_planned": false
+  },
+  "exploratory_boxplot_groups_independently_checked": 12,
+  "source_zip_regenerates_identical_assets": true,
+  "figure_author_attribution_removed": true,
+  "current_pdf_export": "fhcp-report-22-graphs.pdf",
+  "cumulative_plots_independently_checked": {
+    "observed_graphs": 149,
+    "certified_graphs": 22,
+    "heatmap_cells": 132,
+    "coverage_by_family": {
+      "ga": 13,
+      "sa": 6,
+      "as": 3,
+      "abc": 21,
+      "de": 9,
+      "pso": 8
+    },
+    "cost_points": 149
+  }
+}

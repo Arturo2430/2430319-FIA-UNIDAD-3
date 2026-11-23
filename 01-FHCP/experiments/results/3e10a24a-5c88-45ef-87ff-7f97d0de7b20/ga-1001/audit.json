@@ -1,0 +1,25 @@
+{
+  "algorithm": "ga",
+  "seed": 1001,
+  "returncode": 0,
+  "external_timeout": false,
+  "wall_ns": null,
+  "resources_before": null,
+  "resources_after": null,
+  "status": "exhausted",
+  "best_cost": 33,
+  "stop_reason": "evaluation_limit",
+  "recalculated_cost": 33,
+  "validation": {
+    "valid": false,
+    "reason": "missing_edge",
+    "position": 1,
+    "vertices": [
+      58,
+      63
+    ]
+  },
+  "certified_success": false,
+  "stdout_sha256": "6fe9e087d74e7c6e7529eece6c72d0379a2e044cf044677b34afb429306ae74e",
+  "recovery_note": "Original completed RunRecord audited after correcting exploratory runner handling of validation not_run. No solver rerun. Supervisor resource samples were not saved before interruption."
+}

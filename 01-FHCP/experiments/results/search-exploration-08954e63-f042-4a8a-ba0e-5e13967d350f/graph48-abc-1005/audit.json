@@ -1,0 +1,81 @@
+{
+  "instance": "graph48",
+  "algorithm": "abc",
+  "seed": 1005,
+  "status": "exhausted",
+  "best_cost": 7,
+  "certified_success": false,
+  "resources_before": {
+    "available_ram_bytes": 14616641536,
+    "swap_pages": {
+      "pswpin": 99,
+      "pswpout": 679
+    },
+    "ac_online": true,
+    "governor": "powersave",
+    "suspend_offset_ns": -395,
+    "load_1m": 1.69580078125,
+    "at_utc": "2026-11-13T18:28:05.699429+00:00"
+  },
+  "returncode": 0,
+  "process_seconds": 10.147689460000038,
+  "resources_after": {
+    "available_ram_bytes": 14620073984,
+    "swap_pages": {
+      "pswpin": 99,
+      "pswpout": 679
+    },
+    "ac_online": true,
+    "governor": "powersave",
+    "suspend_offset_ns": -818,
+    "load_1m": 1.58837890625,
+    "at_utc": "2026-11-13T18:28:15.849140+00:00"
+  },
+  "stop_reason": "time_limit",
+  "counters": {
+    "iteration_unit": "abc_cycle",
+    "evaluations_started": 38223,
+    "evaluations_completed": 38223,
+    "full_evaluations": 194,
+    "incremental_evaluations": 38029,
+    "cache_hits": 0,
+    "validations_started": 0,
+    "validations_completed": 0,
+    "iterations_completed": 950,
+    "partial_iteration": {
+      "phase": "abc_cycle",
+      "completed_items": 29,
+      "planned_items": 41
+    },
+    "restarts": 174,
+    "algorithm_counters": {
+      "greedy_jumps": 2109,
+      "greedy_routes_completed": 194,
+      "guided_inversions": 19054,
+      "employed_proposals": 19020,
+      "onlooker_proposals": 19009,
+      "scout_skips": 776,
+      "incremental_full_checks": 38,
+      "scout_abandonments": 174,
+      "scout_renewals": 174,
+      "onlooker_improvements": 5,
+      "employed_improvements": 6
+    }
+  },
+  "timing": {
+    "solver_ns": 10000008724,
+    "validation_ns": 0,
+    "overrun_ns": 8724,
+    "first_success": null
+  },
+  "independent_validation": {
+    "valid": false,
+    "reason": "missing_edge",
+    "position": 133,
+    "vertices": [
+      218,
+      107
+    ]
+  },
+  "recalculated_cost": 7
+}

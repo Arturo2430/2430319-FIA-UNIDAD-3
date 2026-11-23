@@ -1,0 +1,66 @@
+{
+  "unique_observed_graphs": 149,
+  "unique_certified_graphs": 22,
+  "certified_graph_ids": [
+    "graph1",
+    "graph2",
+    "graph4",
+    "graph6",
+    "graph10",
+    "graph14",
+    "graph18",
+    "graph23",
+    "graph27",
+    "graph31",
+    "graph35",
+    "graph39",
+    "graph43",
+    "graph47",
+    "graph52",
+    "graph56",
+    "graph72",
+    "graph79",
+    "graph90",
+    "graph96",
+    "graph134",
+    "graph150"
+  ],
+  "new_graphs_by_family_by_protocol": [
+    {
+      "protocol": "Distribuida 60 s",
+      "ga": 10,
+      "sa": 6,
+      "as": 2,
+      "abc": 15,
+      "de": 9,
+      "pso": 8
+    },
+    {
+      "protocol": "Guiada 30 s",
+      "ga": 0,
+      "sa": 0,
+      "as": 0,
+      "abc": 2,
+      "de": 0,
+      "pso": 0
+    },
+    {
+      "protocol": "Reparaci\u00f3n v4 30 s",
+      "ga": 3,
+      "sa": 0,
+      "as": 1,
+      "abc": 4,
+      "de": 0,
+      "pso": 0
+    }
+  ],
+  "unique_certified_by_family": {
+    "ga": 13,
+    "sa": 6,
+    "as": 3,
+    "abc": 21,
+    "de": 9,
+    "pso": 8
+  },
+  "heatmap_rule": "First protocol with a certified success per graph; numerator and denominator within that protocol only"
+}

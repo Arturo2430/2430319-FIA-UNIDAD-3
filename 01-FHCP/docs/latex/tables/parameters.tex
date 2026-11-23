@@ -1,0 +1,10 @@
+\begin{tabularx}{\linewidth}{lY}
+\toprule
+Familia & Parámetros efectivos \\ \midrule
+GA & \ttfamily\footnotesize crossover\_rate=0.8; elite\_count=1; guided\_move\_rate=0.5; initialization=greedy; mutation\_rate=0.1; population\_size=20; tournament\_size=3 \\
+SA & \ttfamily\footnotesize cooling\_factor=0.95; cost\_mode=incremental; guided\_move\_rate=0.5; incremental\_check\_interval=1000; initial\_temperature=2.0; initialization=greedy; minimum\_temperature=1e-06; moves\_per\_temperature=50; reheat\_after=1000 \\
+AS & \ttfamily\footnotesize alpha=1.0; ant\_count=20; beta=4.0; construction=neighbor\_guided; epsilon=0.05; initial\_pheromone=1.0; pheromone\_max=10.0; pheromone\_min=0.1; pheromone\_storage=edges; q=1.0; rho=0.2 \\
+ABC & \ttfamily\footnotesize cost\_mode=incremental; guided\_move\_rate=0.5; incremental\_check\_interval=1000; initialization=greedy; limit=200; source\_count=20 \\
+DE & \ttfamily\footnotesize crossover\_rate=0.8; differential\_weight=0.8; initialization=greedy; population\_size=20 \\
+PSO & \ttfamily\footnotesize cognitive\_coefficient=1.0; inertia=0.5; initialization=greedy; social\_coefficient=1.0; swarm\_size=20; velocity\_limit=0.5 \\
+\bottomrule\end{tabularx}

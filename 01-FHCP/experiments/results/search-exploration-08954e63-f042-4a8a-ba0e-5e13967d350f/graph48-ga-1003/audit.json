@@ -1,0 +1,73 @@
+{
+  "instance": "graph48",
+  "algorithm": "ga",
+  "seed": 1003,
+  "status": "exhausted",
+  "best_cost": 10,
+  "certified_success": false,
+  "resources_before": {
+    "available_ram_bytes": 14664749056,
+    "swap_pages": {
+      "pswpin": 95,
+      "pswpout": 679
+    },
+    "ac_online": true,
+    "governor": "powersave",
+    "suspend_offset_ns": -406,
+    "load_1m": 1.45458984375,
+    "at_utc": "2026-11-13T18:21:55.903055+00:00"
+  },
+  "returncode": 0,
+  "process_seconds": 10.153331047999927,
+  "resources_after": {
+    "available_ram_bytes": 14538178560,
+    "swap_pages": {
+      "pswpin": 95,
+      "pswpout": 679
+    },
+    "ac_online": true,
+    "governor": "powersave",
+    "suspend_offset_ns": -671,
+    "load_1m": 1.28564453125,
+    "at_utc": "2026-11-13T18:22:06.058923+00:00"
+  },
+  "stop_reason": "time_limit",
+  "counters": {
+    "iteration_unit": "generation",
+    "evaluations_started": 8314,
+    "evaluations_completed": 8314,
+    "full_evaluations": 8314,
+    "incremental_evaluations": 0,
+    "cache_hits": 0,
+    "validations_started": 0,
+    "validations_completed": 0,
+    "iterations_completed": 436,
+    "partial_iteration": {
+      "phase": "generation",
+      "completed_items": 10,
+      "planned_items": 19
+    },
+    "restarts": 0,
+    "algorithm_counters": {
+      "greedy_jumps": 233,
+      "greedy_routes_completed": 20,
+      "guided_inversions": 416
+    }
+  },
+  "timing": {
+    "solver_ns": 10000561232,
+    "validation_ns": 0,
+    "overrun_ns": 561232,
+    "first_success": null
+  },
+  "independent_validation": {
+    "valid": false,
+    "reason": "missing_edge",
+    "position": 34,
+    "vertices": [
+      12,
+      322
+    ]
+  },
+  "recalculated_cost": 10
+}

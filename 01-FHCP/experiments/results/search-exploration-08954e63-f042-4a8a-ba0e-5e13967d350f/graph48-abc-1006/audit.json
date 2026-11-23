@@ -1,0 +1,81 @@
+{
+  "instance": "graph48",
+  "algorithm": "abc",
+  "seed": 1006,
+  "status": "exhausted",
+  "best_cost": 6,
+  "certified_success": false,
+  "resources_before": {
+    "available_ram_bytes": 14509506560,
+    "swap_pages": {
+      "pswpin": 101,
+      "pswpout": 679
+    },
+    "ac_online": true,
+    "governor": "powersave",
+    "suspend_offset_ns": -732,
+    "load_1m": 1.509765625,
+    "at_utc": "2026-11-13T18:30:29.492574+00:00"
+  },
+  "returncode": 0,
+  "process_seconds": 10.19476926399966,
+  "resources_after": {
+    "available_ram_bytes": 14494412800,
+    "swap_pages": {
+      "pswpin": 101,
+      "pswpout": 679
+    },
+    "ac_online": true,
+    "governor": "powersave",
+    "suspend_offset_ns": -436,
+    "load_1m": 1.66552734375,
+    "at_utc": "2026-11-13T18:30:39.688923+00:00"
+  },
+  "stop_reason": "time_limit",
+  "counters": {
+    "iteration_unit": "abc_cycle",
+    "evaluations_started": 36513,
+    "evaluations_completed": 36513,
+    "full_evaluations": 186,
+    "incremental_evaluations": 36327,
+    "cache_hits": 0,
+    "validations_started": 0,
+    "validations_completed": 0,
+    "iterations_completed": 908,
+    "partial_iteration": {
+      "phase": "abc_cycle",
+      "completed_items": 7,
+      "planned_items": 41
+    },
+    "restarts": 166,
+    "algorithm_counters": {
+      "greedy_jumps": 2019,
+      "greedy_routes_completed": 186,
+      "guided_inversions": 18174,
+      "employed_proposals": 18167,
+      "onlooker_proposals": 18160,
+      "scout_skips": 742,
+      "incremental_full_checks": 36,
+      "scout_abandonments": 166,
+      "scout_renewals": 166,
+      "onlooker_improvements": 4,
+      "employed_improvements": 4
+    }
+  },
+  "timing": {
+    "solver_ns": 10000021422,
+    "validation_ns": 0,
+    "overrun_ns": 21422,
+    "first_success": null
+  },
+  "independent_validation": {
+    "valid": false,
+    "reason": "missing_edge",
+    "position": 136,
+    "vertices": [
+      190,
+      277
+    ]
+  },
+  "recalculated_cost": 6
+}

@@ -1,0 +1,204 @@
+{
+  "attempted": 180,
+  "planned": 180,
+  "cells": [
+    {
+      "instance": "graph2",
+      "algorithm": "ga",
+      "attempted": 10,
+      "planned": 10,
+      "certified_successes": 2,
+      "errors": 0,
+      "best_cost": 0,
+      "median_cost": 1.0,
+      "mean_process_seconds": 8.165882875699799
+    },
+    {
+      "instance": "graph2",
+      "algorithm": "sa",
+      "attempted": 10,
+      "planned": 10,
+      "certified_successes": 0,
+      "errors": 0,
+      "best_cost": 1,
+      "median_cost": 2.0,
+      "mean_process_seconds": 10.154260830699922
+    },
+    {
+      "instance": "graph2",
+      "algorithm": "as",
+      "attempted": 10,
+      "planned": 10,
+      "certified_successes": 7,
+      "errors": 0,
+      "best_cost": 0,
+      "median_cost": 0.0,
+      "mean_process_seconds": 4.752268923700012
+    },
+    {
+      "instance": "graph2",
+      "algorithm": "abc",
+      "attempted": 10,
+      "planned": 10,
+      "certified_successes": 10,
+      "errors": 0,
+      "best_cost": 0,
+      "median_cost": 0.0,
+      "mean_process_seconds": 1.1587629741999534
+    },
+    {
+      "instance": "graph2",
+      "algorithm": "de",
+      "attempted": 10,
+      "planned": 10,
+      "certified_successes": 2,
+      "errors": 0,
+      "best_cost": 0,
+      "median_cost": 1.0,
+      "mean_process_seconds": 8.156571517800012
+    },
+    {
+      "instance": "graph2",
+      "algorithm": "pso",
+      "attempted": 10,
+      "planned": 10,
+      "certified_successes": 0,
+      "errors": 0,
+      "best_cost": 1,
+      "median_cost": 1.0,
+      "mean_process_seconds": 10.156452630200102
+    },
+    {
+      "instance": "graph48",
+      "algorithm": "ga",
+      "attempted": 10,
+      "planned": 10,
+      "certified_successes": 0,
+      "errors": 0,
+      "best_cost": 7,
+      "median_cost": 8.5,
+      "mean_process_seconds": 10.160019758499994
+    },
+    {
+      "instance": "graph48",
+      "algorithm": "sa",
+      "attempted": 10,
+      "planned": 10,
+      "certified_successes": 0,
+      "errors": 0,
+      "best_cost": 9,
+      "median_cost": 12.0,
+      "mean_process_seconds": 10.155307421699991
+    },
+    {
+      "instance": "graph48",
+      "algorithm": "as",
+      "attempted": 10,
+      "planned": 10,
+      "certified_successes": 0,
+      "errors": 0,
+      "best_cost": 8,
+      "median_cost": 10.0,
+      "mean_process_seconds": 10.161541466799964
+    },
+    {
+      "instance": "graph48",
+      "algorithm": "abc",
+      "attempted": 10,
+      "planned": 10,
+      "certified_successes": 0,
+      "errors": 0,
+      "best_cost": 6,
+      "median_cost": 7.0,
+      "mean_process_seconds": 10.15570833909992
+    },
+    {
+      "instance": "graph48",
+      "algorithm": "de",
+      "attempted": 10,
+      "planned": 10,
+      "certified_successes": 0,
+      "errors": 0,
+      "best_cost": 7,
+      "median_cost": 9.0,
+      "mean_process_seconds": 10.161233106400095
+    },
+    {
+      "instance": "graph48",
+      "algorithm": "pso",
+      "attempted": 10,
+      "planned": 10,
+      "certified_successes": 0,
+      "errors": 0,
+      "best_cost": 7,
+      "median_cost": 9.0,
+      "mean_process_seconds": 10.156894406900074
+    },
+    {
+      "instance": "graph74",
+      "algorithm": "ga",
+      "attempted": 10,
+      "planned": 10,
+      "certified_successes": 0,
+      "errors": 0,
+      "best_cost": 8,
+      "median_cost": 11.0,
+      "mean_process_seconds": 10.153739587399922
+    },
+    {
+      "instance": "graph74",
+      "algorithm": "sa",
+      "attempted": 10,
+      "planned": 10,
+      "certified_successes": 0,
+      "errors": 0,
+      "best_cost": 14,
+      "median_cost": 19.0,
+      "mean_process_seconds": 10.157850633600038
+    },
+    {
+      "instance": "graph74",
+      "algorithm": "as",
+      "attempted": 10,
+      "planned": 10,
+      "certified_successes": 0,
+      "errors": 0,
+      "best_cost": 9,
+      "median_cost": 10.5,
+      "mean_process_seconds": 10.150717314699886
+    },
+    {
+      "instance": "graph74",
+      "algorithm": "abc",
+      "attempted": 10,
+      "planned": 10,
+      "certified_successes": 0,
+      "errors": 0,
+      "best_cost": 7,
+      "median_cost": 9.0,
+      "mean_process_seconds": 10.15236169359996
+    },
+    {
+      "instance": "graph74",
+      "algorithm": "de",
+      "attempted": 10,
+      "planned": 10,
+      "certified_successes": 0,
+      "errors": 0,
+      "best_cost": 8,
+      "median_cost": 11.5,
+      "mean_process_seconds": 10.15801745090016
+    },
+    {
+      "instance": "graph74",
+      "algorithm": "pso",
+      "attempted": 10,
+      "planned": 10,
+      "certified_successes": 0,
+      "errors": 0,
+      "best_cost": 10,
+      "median_cost": 12.0,
+      "mean_process_seconds": 10.162289502300018
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "instance": "graph2",
+  "algorithm": "as",
+  "seed": 1008,
+  "status": "success",
+  "best_cost": 0,
+  "certified_success": true,
+  "resources_before": {
+    "available_ram_bytes": 14552363008,
+    "swap_pages": {
+      "pswpin": 105,
+      "pswpout": 679
+    },
+    "ac_online": true,
+    "governor": "powersave",
+    "suspend_offset_ns": -578,
+    "load_1m": 1.33203125,
+    "at_utc": "2026-11-13T18:35:15.716569+00:00"
+  },
+  "returncode": 0,
+  "process_seconds": 2.3724541020001197,
+  "resources_after": {
+    "available_ram_bytes": 14530039808,
+    "swap_pages": {
+      "pswpin": 105,
+      "pswpout": 679
+    },
+    "ac_online": true,
+    "governor": "powersave",
+    "suspend_offset_ns": -654,
+    "load_1m": 1.30517578125,
+    "at_utc": "2026-11-13T18:35:18.091077+00:00"
+  },
+  "stop_reason": "validated_cycle",
+  "counters": {
+    "iteration_unit": "round",
+    "evaluations_started": 1075,
+    "evaluations_completed": 1075,
+    "full_evaluations": 1075,
+    "incremental_evaluations": 0,
+    "cache_hits": 0,
+    "validations_started": 1,
+    "validations_completed": 1,
+    "iterations_completed": 53,
+    "partial_iteration": {
+      "phase": "round",
+      "completed_items": 15,
+      "planned_items": 21
+    },
+    "restarts": 0,
+    "algorithm_counters": {
+      "constructions_started": 1075,
+      "construction_steps": 74175,
+      "neighbor_guided_jumps": 4863,
+      "pheromone_updates_started": 53,
+      "pheromone_deposits": 68382,
+      "pheromone_missing_deposits_skipped": 5818,
+      "pheromone_updates_completed": 53
+    }
+  },
+  "timing": {
+    "solver_ns": 2193563590,
+    "validation_ns": 147335,
+    "overrun_ns": 0,
+    "first_success": {
+      "elapsed_ns": 2193563590,
+      "evaluations_started": 1075,
+      "evaluations_completed": 1075,
+      "iterations_completed": 53
+    }
+  },
+  "independent_validation": {
+    "valid": true,
+    "reason": null,
+    "position": null,
+    "vertices": []
+  },
+  "recalculated_cost": 0
+}

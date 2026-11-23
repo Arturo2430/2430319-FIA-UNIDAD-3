@@ -1,0 +1,38 @@
+{
+  "status": "closed_at_delivered_cut",
+  "resume_planned": false,
+  "user_instruction": "Evaluaci\u00f3n terminada hasta el corte alcanzado; no se retomar\u00e1.",
+  "snapshot_at_utc": "2026-11-18T04:29:00.486935+00:00",
+  "campaigns": {
+    "repair-v4": {
+      "plan_sha256": "aabcf4b7ceafe58d3ffacee695c4b44c774a8e610fd64a4cded7067795e626cb",
+      "planned": 3900,
+      "attempted": 2976,
+      "successes": 11,
+      "distinct_solved_graphs": 5,
+      "solved_graph_ids": [
+        "graph1",
+        "graph39",
+        "graph43",
+        "graph47",
+        "graph52"
+      ],
+      "global_goal_distinct_solved_graphs": 65,
+      "errors": 4
+    },
+    "prior-guided": {
+      "plan_sha256": "7b67490fb9d8c4cb09cadcd728ba6e90c9943e8eb8f835accb569ea7a758ce45",
+      "planned": 720,
+      "attempted": 118,
+      "successes": 2,
+      "distinct_solved_graphs": 2,
+      "solved_graph_ids": [
+        "graph4",
+        "graph35"
+      ],
+      "global_goal_distinct_solved_graphs": 12,
+      "errors": 4
+    }
+  },
+  "new_solver_runs": 0
+}

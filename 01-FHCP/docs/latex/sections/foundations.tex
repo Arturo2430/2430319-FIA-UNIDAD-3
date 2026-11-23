@@ -1,0 +1,30 @@
+\pagina{Fundamentos y representación del problema}
+\subsection{Grafo, camino y ciclo hamiltoniano}
+Se considera un grafo simple, no dirigido, $G=(V,E)$, con $n=|V|$ vértices y $m=|E|$ aristas. Una arista es un par no ordenado de vértices distintos. Un camino sigue aristas consecutivas; un ciclo cierra sobre su vértice inicial. Un ciclo hamiltoniano visita cada vértice exactamente una vez antes de regresar al origen, de modo que recorre $n$ aristas \citep{diestel2025GraphTheory6}.
+
+La versión de decisión pregunta si existe tal ciclo y es NP-completa \citep{karp1972Reducibility}. La búsqueda exhaustiva sobre órdenes de vértices crece factorialmente; en grafos no dirigidos, fijar inicio e identificar los dos sentidos de un ciclo reduce simetrías, pero no elimina ese crecimiento. Las metaheurísticas exploran un subconjunto de soluciones sin garantizar encontrar un ciclo dentro de un presupuesto finito.
+
+En FHCP se sabe que las instancias del conjunto admiten ciclos. Un agotamiento de nuestra implementación no contradice esa propiedad ni es un certificado de no hamiltonicidad. De igual modo, un camino hamiltoniano (HP) no cumple el cierre requerido por un ciclo hamiltoniano (HC).
+
+\subsection{Representación del grafo y del candidato}
+Las instancias HCP describen una lista de aristas y el número de vértices. La carga verifica encabezados y límites, conserva la identidad de cada instancia y mapea sus etiquetas a índices internos. El dominio usa una representación compacta de adyacencia de tipo CSR: los vecinos de cada vértice se almacenan en arreglos contiguos con sus desplazamientos. Esto separa el grafo inmutable de los estados de búsqueda.
+
+El candidato es una permutación $\pi=(\pi_0,\ldots,\pi_{n-1})$ de los vértices. Se almacena cada vértice una sola vez y se interpreta el cierre de forma implícita. Los operadores deben preservar longitud, rango e inexistencia de repetidos. Esta propiedad estructural se comprueba por separado de la existencia de aristas.
+
+Para DE y PSO se utiliza un vector de claves reales $x\in\mathbb{R}^n$. Al ordenar sus posiciones por el par $(x_i,i)$ se obtiene una permutación; el índice resuelve empates de forma determinista. Así, las operaciones continuas actúan sobre claves y no se redondean directamente etiquetas de vértices. La idea de decodificar claves para producir soluciones discretas tiene antecedentes en métodos de claves aleatorias \citep{goncalvesResende2009RandomKeys}; nuestra adaptación no implementa por ello todo ese método genético.
+
+\subsection{Costo, fitness y certificado independiente}
+Para una permutación legal, el costo es el número de aristas faltantes:
+\begin{equation}
+ c(\pi)=\sum_{i=0}^{n-1}\mathbf{1}\!\left[\{\pi_i,\pi_{(i+1)\bmod n}\}\notin E\right].
+\end{equation}
+Se minimiza $c\in\{0,\ldots,n\}$. La normalización $c/n$ permite describir la fracción de transiciones ausentes, aunque no hace equivalentes instancias de estructuras diferentes. En mecanismos que requieren una calidad positiva, como la selección de fuentes de ABC, puede usarse $f=1/(1+c)$. Una reducción de costo es una mejora del candidato, no necesariamente un ciclo.
+
+El validador independiente comprueba primero la permutación y después todas las aristas y el cierre. Un costo reportado igual a cero solo se admite como éxito si el validador confirma el ciclo y el registro acredita su hallazgo dentro del plazo. Esta separación permite detectar fallos de operadores, fitness o instrumentación.
+
+\subsection{Métricas y denominadores}
+La tasa de éxito por intento se define como $S/A$, donde $S$ son intentos con ciclo certificado y $A$ los intentos admitidos, incluidos errores. El número de grafos resueltos es la cardinalidad de la unión de IDs certificados; no se obtiene sumando éxitos de semillas o familias. Las combinaciones sin iniciar permanecen pendientes y no pertenecen a $A$.
+
+El tiempo de solver incluye inicialización, búsqueda y validación dentro de su presupuesto; el tiempo de proceso incluye además arranque y carga. Un plazo agotado produce una observación censurada del tiempo hasta solución. Promediar estos tiempos junto con éxitos describe consumo de proceso, no tiempo medio hasta resolver.
+
+Precisión, recall y F1 requieren una definición de etiquetas y predicciones. Sus fórmulas habituales son $P=TP/(TP+FP)$, $R=TP/(TP+FN)$ y $F_1=2PR/(P+R)$ \citep{sokolovaLapalme2009Classification}. No se usan como indicadores de calidad del solver: no existe aquí una clase negativa evaluada y no encontrar un ciclo no equivale a predecir correctamente que no existe. Se prefieren éxito, costo, cobertura, tiempo y recursos.

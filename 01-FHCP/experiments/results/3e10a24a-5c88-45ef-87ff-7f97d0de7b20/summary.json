@@ -1,0 +1,54 @@
+{
+  "completed": 180,
+  "planned": 180,
+  "algorithms": [
+    {
+      "algorithm": "ga",
+      "completed": 30,
+      "planned": 30,
+      "certified_successes": 0,
+      "errors": 0,
+      "best_cost": 25
+    },
+    {
+      "algorithm": "sa",
+      "completed": 30,
+      "planned": 30,
+      "certified_successes": 0,
+      "errors": 0,
+      "best_cost": 15
+    },
+    {
+      "algorithm": "as",
+      "completed": 30,
+      "planned": 30,
+      "certified_successes": 0,
+      "errors": 0,
+      "best_cost": 2
+    },
+    {
+      "algorithm": "abc",
+      "completed": 30,
+      "planned": 30,
+      "certified_successes": 0,
+      "errors": 0,
+      "best_cost": 33
+    },
+    {
+      "algorithm": "de",
+      "completed": 30,
+      "planned": 30,
+      "certified_successes": 0,
+      "errors": 0,
+      "best_cost": 53
+    },
+    {
+      "algorithm": "pso",
+      "completed": 30,
+      "planned": 30,
+      "certified_successes": 0,
+      "errors": 0,
+      "best_cost": 51
+    }
+  ]
+}

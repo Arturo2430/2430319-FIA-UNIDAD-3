@@ -1,0 +1,270 @@
+{
+  "schema": "fhcp-parallel-exploration/1",
+  "campaign_id": "8d8c7fdd-0754-4515-ab98-e14548c63ae6",
+  "created_utc": "2026-11-17T20:32:58.243650+00:00",
+  "purpose": "Exploratory reuse selected from peer-reported successes; not merged into the completed evaluation",
+  "member": "Arturo2430",
+  "catalog": {
+    "path": "experiments/configs/near-miss-12-catalog.json",
+    "sha256": "cfacad0cca451d4dd9a6fb2e4d6614591c1497089f96da1a2d0ca65002a99ce6"
+  },
+  "instances": [
+    {
+      "id": "graph1",
+      "archive_member": "graph1.hcp",
+      "sha256": "124c185cebd9782e037bf16c88cb26002352e10e3ab634bf51ff481296c2e0b2",
+      "size_bytes": 828,
+      "dimension": 66,
+      "edge_count": 99
+    },
+    {
+      "id": "graph4",
+      "archive_member": "graph4.hcp",
+      "sha256": "55006507e9852c90c2ab314c6cd9792602328eb5b8371826359749cce04c1acf",
+      "size_bytes": 1023,
+      "dimension": 84,
+      "edge_count": 127
+    },
+    {
+      "id": "graph8",
+      "archive_member": "graph8.hcp",
+      "sha256": "19759010839a76640d62f8933bc17dda295de09cca0ecaa638f17b292fa981f0",
+      "size_bytes": 1304,
+      "dimension": 108,
+      "edge_count": 163
+    },
+    {
+      "id": "graph35",
+      "archive_member": "graph35.hcp",
+      "sha256": "b5451faf8ab27f918bed972e7ae72a8e901f35fbaa2059319ed2e92574086aaa",
+      "size_bytes": 3386,
+      "dimension": 262,
+      "edge_count": 394
+    },
+    {
+      "id": "graph39",
+      "archive_member": "graph39.hcp",
+      "sha256": "eb0c515ed4aaf334a7256bac7277a63324b0a6f1addc54a24aace6601fda9458",
+      "size_bytes": 3710,
+      "dimension": 286,
+      "edge_count": 430
+    },
+    {
+      "id": "graph43",
+      "archive_member": "graph43.hcp",
+      "sha256": "dd1e7a257391f5eaacb64abd490ee1035791cc8a6441750abc6791db181f91cb",
+      "size_bytes": 4033,
+      "dimension": 310,
+      "edge_count": 466
+    },
+    {
+      "id": "graph47",
+      "archive_member": "graph47.hcp",
+      "sha256": "8c0a4c86cb30f030a15bf8b88dd5978cbc60d2cf28100afcd368a3bd4ddbc1d1",
+      "size_bytes": 4358,
+      "dimension": 334,
+      "edge_count": 502
+    },
+    {
+      "id": "graph52",
+      "archive_member": "graph52.hcp",
+      "sha256": "3e6734ff5ee4eaec1a6b77831c86d84496a003777c5769d70c630fc540f9c0c2",
+      "size_bytes": 4681,
+      "dimension": 358,
+      "edge_count": 538
+    },
+    {
+      "id": "graph67",
+      "archive_member": "graph67.hcp",
+      "sha256": "365b8a91643db65e3564e62020825b680e88578de4a55bca4af68a4e39cb7199",
+      "size_bytes": 5653,
+      "dimension": 430,
+      "edge_count": 646
+    },
+    {
+      "id": "graph78",
+      "archive_member": "graph78.hcp",
+      "sha256": "71a6352ed2ad18078d5edcfa33550b6d65c16c357df418a8b561cde8079d2a9e",
+      "size_bytes": 6302,
+      "dimension": 478,
+      "edge_count": 718
+    },
+    {
+      "id": "graph85",
+      "archive_member": "graph85.hcp",
+      "sha256": "61752b34f7ec62f75afd7532cb65bffc36ab0d7d7cab9d20f5661e62144b401a",
+      "size_bytes": 6626,
+      "dimension": 502,
+      "edge_count": 754
+    },
+    {
+      "id": "graph99",
+      "archive_member": "graph99.hcp",
+      "sha256": "248b9b3371c2a5b4da93e28a5b30588adf56751c0735d508a9bc516850cb9ebf",
+      "size_bytes": 7274,
+      "dimension": 550,
+      "edge_count": 826
+    }
+  ],
+  "assignments": {
+    "Arturo2430": [
+      "graph1",
+      "graph4",
+      "graph8",
+      "graph35",
+      "graph39",
+      "graph43",
+      "graph47",
+      "graph52",
+      "graph67",
+      "graph78",
+      "graph85",
+      "graph99"
+    ]
+  },
+  "solvers": [
+    {
+      "algorithm": "ga",
+      "parameters": {
+        "crossover_rate": 0.8,
+        "elite_count": 1,
+        "guided_move_rate": 0.5,
+        "initialization": "greedy",
+        "mutation_rate": 0.1,
+        "population_size": 20,
+        "tournament_size": 3
+      }
+    },
+    {
+      "algorithm": "sa",
+      "parameters": {
+        "cooling_factor": 0.95,
+        "cost_mode": "incremental",
+        "guided_move_rate": 0.5,
+        "incremental_check_interval": 1000,
+        "initial_temperature": 2.0,
+        "initialization": "greedy",
+        "minimum_temperature": 1e-06,
+        "moves_per_temperature": 50,
+        "reheat_after": 1000
+      }
+    },
+    {
+      "algorithm": "as",
+      "parameters": {
+        "alpha": 1.0,
+        "ant_count": 20,
+        "beta": 4.0,
+        "construction": "neighbor_guided",
+        "epsilon": 0.05,
+        "initial_pheromone": 1.0,
+        "pheromone_max": 10.0,
+        "pheromone_min": 0.1,
+        "pheromone_storage": "edges",
+        "q": 1.0,
+        "rho": 0.2
+      }
+    },
+    {
+      "algorithm": "abc",
+      "parameters": {
+        "cost_mode": "incremental",
+        "guided_move_rate": 0.5,
+        "incremental_check_interval": 1000,
+        "initialization": "greedy",
+        "limit": 200,
+        "source_count": 20
+      }
+    },
+    {
+      "algorithm": "de",
+      "parameters": {
+        "crossover_rate": 0.8,
+        "differential_weight": 0.8,
+        "initialization": "greedy",
+        "population_size": 20
+      }
+    },
+    {
+      "algorithm": "pso",
+      "parameters": {
+        "cognitive_coefficient": 1.0,
+        "inertia": 0.5,
+        "initialization": "greedy",
+        "social_coefficient": 1.0,
+        "swarm_size": 20,
+        "velocity_limit": 0.5
+      }
+    }
+  ],
+  "seeds": [
+    2001,
+    2002,
+    2003,
+    2004,
+    2005,
+    2006,
+    2007,
+    2008,
+    2009,
+    2010
+  ],
+  "budget": {
+    "max_elapsed_ns": 30000000000,
+    "max_evaluations": null,
+    "max_iterations": null
+  },
+  "process_timeout_seconds": 90,
+  "source_sha256": {
+    "src/algorithms/__init__.py": "2eccbae325a1f27f50e0c7da4b4afef91df3579fb19359e87fb8cab78fcecba8",
+    "src/algorithms/abc.py": "4b596576ebdd417f7fc6882264d6e1b878ba104093b82e5dbe62eca25286f4b2",
+    "src/algorithms/annealing.py": "8ef8bff5a67a84492c8a5da7a53047c2b7b20bc991692e1032cdd633cba7326a",
+    "src/algorithms/ant_system.py": "4d0ba0ba9bf3d85eac3da2475c19bd5960deca6dca95c7ae56cb888bfc7117ca",
+    "src/algorithms/differential.py": "963ac62b4b799ac2097a433b7619ed11b42f483e22d8ab9c1b7231871a0eb391",
+    "src/algorithms/execution.py": "cd12c149b5d4f51b011754350f91c91beee94005d4cfca8502761b18fc0a21e4",
+    "src/algorithms/genetic.py": "93532d93bdf428e20e79f4068ccdf42a21eab17d9197302916a6dcb896368028",
+    "src/algorithms/graph_guidance.py": "e366bef9fc71e10adbfb8e54dd071b0efb3a74eb9e75b08c49125e2c8c5723b0",
+    "src/algorithms/local_moves.py": "f5b0af1288fdb9ba7d37a53635dde0f7754add00fe8f666f94fd6c98eb441efd",
+    "src/algorithms/particle_swarm.py": "d7af4da496fd89ce3f737cee50c407a157d430813478242c63bbd5a1cc1d3472",
+    "src/algorithms/permutation.py": "37b0b89817035d84d71a027ef0493e27b3bfc08b54c5aa98985265d2f8ceb597",
+    "src/algorithms/real_keys.py": "f3706f22e70813a31b87b12bad558ba50c9e631f319d02048148f3513af64292",
+    "src/algorithms/sparse_pheromone.py": "7cdccf40034e86e9a3f2920691eb6d8202ddf111be4c7ff37303d58af90fa094",
+    "src/cli/__init__.py": "4f528a18ceffa4fab02e7228cd75cea8f2cbb4c994ddd2aab5dd139dccf09c18",
+    "src/cli/__main__.py": "59ecae1a5b7a6bb57533fce8941a1f213d1796898c40105261439b147e42a280",
+    "src/cli/batch.py": "448cd759430e40ee255e262090acebe9425e3597d55f495aad513ea6834cde3e",
+    "src/cli/benchmark_analysis.py": "bc02ba9b26f07d95a601db8652ee88047a77359f13f638f718a6aaa54ec1dc56",
+    "src/cli/benchmark_archive.py": "eb94df07c6a823c856dc7fccad92ee7599e55090f62866217152eb1494225031",
+    "src/cli/benchmark_campaign.py": "246bb42f9688c1ad97e91af89044379a54c80ec9d27060267d62db34176a70d9",
+    "src/cli/benchmark_plan.py": "5fb37aad00cba741956bb04efaf53f612407fa10dbad5426f4a1d4d8f2f2ca1a",
+    "src/cli/campaign_evidence.py": "bf9c0a4db9b65ed344ed9d9a84d3aebc649059d8dcb188621cf5dd09811cec91",
+    "src/cli/campaign_system.py": "3a7d9b4ab731cef0e3977027798a890d3133a8896fa5e0612369d083e4ca7166",
+    "src/cli/dataset_catalog.py": "80d1420745ae4ff8739af692665adc49a7f67406574da2ceed7640f9f5815b46",
+    "src/cli/distributed_campaign.py": "ff6f555c005df5a4068ce6b251fb902510a558ca9b3a408b820f490133a4a42d",
+    "src/cli/distributed_plan.py": "0852528a373a72346676a68aa4941de2482d36b938aa2617a68ba4b147730983",
+    "src/cli/run_record.py": "c337c288c84ad69c767f9b8f13c2b03aa72a59c52e966da081002a9f14533465",
+    "src/cli/variants.py": "795058617cf8046f9ab3e01c7db3c6b0acd1247ff3abb6de47b6e7436ef448e6",
+    "src/evaluation/__init__.py": "aed91c7b71a5ae05e69754f227de999ee5a9bb3a924d0733b639304163b163d8",
+    "src/evaluation/benchmark.py": "a5a214aee467279839f1b56b79fb6ff612cd698f4ace56e554ecc1748cf8b12d",
+    "src/evaluation/cost.py": "ac1523e5e152c36e53c77e240b98fbb8a7865124d43cb0826fa0bd8e0a0b21d2",
+    "src/evaluation/cycle.py": "c756f98722b8893541e112f64877054619b91ba81d09f0119080a7458a843ee0",
+    "src/graphs/__init__.py": "9d385bb4aa899aa2132627615ade20e36f2781462557c72710b39b7aa5c23024",
+    "src/graphs/fhcp.py": "0c66ee2b9c3c0d70dc34b98195b68582c46a35dd9bb9babddcc95d176601499b",
+    "src/graphs/graph.py": "b939877634acae562d31957eb9de7bf994264a252db0cae5f0654da3e98e48ab",
+    "src/graphs/readers.py": "a97ecfc183de2b666a1ea168e1f91d2677a025c77872e135826a838a367a7b9f",
+    "src/graphs/routes.py": "076e364f151a8012a1336d2035f1056f9d98b52dfb9c10b6d560912442a020e9"
+  },
+  "runtime": {
+    "python": "3.14.10",
+    "implementation": "CPython",
+    "numpy": "2.5.4",
+    "gil_enabled": true,
+    "bits": 64,
+    "architecture": "x86_64"
+  },
+  "workers_per_machine": 4,
+  "native_threads": 1,
+  "goal_distinct_solved_graphs": 12,
+  "stop_after_first_success": false,
+  "expected_attempts": 720,
+  "plan_sha256": "7b67490fb9d8c4cb09cadcd728ba6e90c9943e8eb8f835accb569ea7a758ce45"
+}

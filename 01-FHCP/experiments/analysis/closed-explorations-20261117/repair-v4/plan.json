@@ -1,0 +1,767 @@
+{
+  "schema": "fhcp-parallel-exploration/1",
+  "campaign_id": "ee2c634a-f402-486a-959c-44792cca616c",
+  "created_utc": "2026-11-17T22:00:35.540750+00:00",
+  "purpose": "Exploratory optimized v4 on previously used near misses and peer-reported successes",
+  "member": "Arturo2430",
+  "catalog": {
+    "path": "experiments/configs/near-miss-expanded-v4/catalog.json",
+    "sha256": "dcd46a8a7d961d2dcbcbfe0309410ec5e6589c47387de65380e40f8030e5f7d6"
+  },
+  "instances": [
+    {
+      "id": "graph1",
+      "archive_member": "graph1.hcp",
+      "sha256": "124c185cebd9782e037bf16c88cb26002352e10e3ab634bf51ff481296c2e0b2",
+      "size_bytes": 828,
+      "dimension": 66,
+      "edge_count": 99
+    },
+    {
+      "id": "graph8",
+      "archive_member": "graph8.hcp",
+      "sha256": "19759010839a76640d62f8933bc17dda295de09cca0ecaa638f17b292fa981f0",
+      "size_bytes": 1304,
+      "dimension": 108,
+      "edge_count": 163
+    },
+    {
+      "id": "graph39",
+      "archive_member": "graph39.hcp",
+      "sha256": "eb0c515ed4aaf334a7256bac7277a63324b0a6f1addc54a24aace6601fda9458",
+      "size_bytes": 3710,
+      "dimension": 286,
+      "edge_count": 430
+    },
+    {
+      "id": "graph43",
+      "archive_member": "graph43.hcp",
+      "sha256": "dd1e7a257391f5eaacb64abd490ee1035791cc8a6441750abc6791db181f91cb",
+      "size_bytes": 4033,
+      "dimension": 310,
+      "edge_count": 466
+    },
+    {
+      "id": "graph47",
+      "archive_member": "graph47.hcp",
+      "sha256": "8c0a4c86cb30f030a15bf8b88dd5978cbc60d2cf28100afcd368a3bd4ddbc1d1",
+      "size_bytes": 4358,
+      "dimension": 334,
+      "edge_count": 502
+    },
+    {
+      "id": "graph52",
+      "archive_member": "graph52.hcp",
+      "sha256": "3e6734ff5ee4eaec1a6b77831c86d84496a003777c5769d70c630fc540f9c0c2",
+      "size_bytes": 4681,
+      "dimension": 358,
+      "edge_count": 538
+    },
+    {
+      "id": "graph78",
+      "archive_member": "graph78.hcp",
+      "sha256": "71a6352ed2ad18078d5edcfa33550b6d65c16c357df418a8b561cde8079d2a9e",
+      "size_bytes": 6302,
+      "dimension": 478,
+      "edge_count": 718
+    },
+    {
+      "id": "graph67",
+      "archive_member": "graph67.hcp",
+      "sha256": "365b8a91643db65e3564e62020825b680e88578de4a55bca4af68a4e39cb7199",
+      "size_bytes": 5653,
+      "dimension": 430,
+      "edge_count": 646
+    },
+    {
+      "id": "graph99",
+      "archive_member": "graph99.hcp",
+      "sha256": "248b9b3371c2a5b4da93e28a5b30588adf56751c0735d508a9bc516850cb9ebf",
+      "size_bytes": 7274,
+      "dimension": 550,
+      "edge_count": 826
+    },
+    {
+      "id": "graph85",
+      "archive_member": "graph85.hcp",
+      "sha256": "61752b34f7ec62f75afd7532cb65bffc36ab0d7d7cab9d20f5661e62144b401a",
+      "size_bytes": 6626,
+      "dimension": 502,
+      "edge_count": 754
+    },
+    {
+      "id": "graph3",
+      "archive_member": "graph3.hcp",
+      "sha256": "5038af1c05d043772b9d9b924e6892d00bc158cc33605f0f9aed347f5f856cf4",
+      "size_bytes": 954,
+      "dimension": 78,
+      "edge_count": 117
+    },
+    {
+      "id": "graph5",
+      "archive_member": "graph5.hcp",
+      "sha256": "6467cf72907dce6a8fbc2f17e277ec3653af4a4fa75a39bfd8cf8100e96c263b",
+      "size_bytes": 1080,
+      "dimension": 90,
+      "edge_count": 135
+    },
+    {
+      "id": "graph7",
+      "archive_member": "graph7.hcp",
+      "sha256": "5fe8ef1eee25df8533c109095ad058bb71b3f6a9f31bc3aafe4fb05db377483d",
+      "size_bytes": 1216,
+      "dimension": 102,
+      "edge_count": 153
+    },
+    {
+      "id": "graph9",
+      "archive_member": "graph9.hcp",
+      "sha256": "7c16a0f1df5653a71c970767530f707aec74bea1afd10e12249413eeafe4afe4",
+      "size_bytes": 1378,
+      "dimension": 114,
+      "edge_count": 171
+    },
+    {
+      "id": "graph11",
+      "archive_member": "graph11.hcp",
+      "sha256": "161bec283b03b7030bf493a0f69cdbe2de7e4255ddc756de0971f77ebd2edc21",
+      "size_bytes": 1541,
+      "dimension": 126,
+      "edge_count": 189
+    },
+    {
+      "id": "graph12",
+      "archive_member": "graph12.hcp",
+      "sha256": "01823d5a6f15b34a8008992fe3a402b4dce3f05e769625745be4b932a95f7af7",
+      "size_bytes": 1629,
+      "dimension": 132,
+      "edge_count": 199
+    },
+    {
+      "id": "graph13",
+      "archive_member": "graph13.hcp",
+      "sha256": "19942652ef06df49a576af7c60a69013ad503076dd4b156abf21fffdee5c2454",
+      "size_bytes": 1703,
+      "dimension": 138,
+      "edge_count": 207
+    },
+    {
+      "id": "graph15",
+      "archive_member": "graph15.hcp",
+      "sha256": "6cfbd82faf1d535278c28ea65548087c4726f75b86f3a765bb6daa82514f1630",
+      "size_bytes": 1865,
+      "dimension": 150,
+      "edge_count": 225
+    },
+    {
+      "id": "graph17",
+      "archive_member": "graph17.hcp",
+      "sha256": "aa504ea9b2ec5868bd479eb8bfefd6742d22ccbcb3045eaa7cc267385162d7d7",
+      "size_bytes": 2027,
+      "dimension": 162,
+      "edge_count": 243
+    },
+    {
+      "id": "graph20",
+      "archive_member": "graph20.hcp",
+      "sha256": "2df1319c059194695301f3b6342113247d61d2d3389f453a82c803377d6069ec",
+      "size_bytes": 2189,
+      "dimension": 174,
+      "edge_count": 261
+    },
+    {
+      "id": "graph22",
+      "archive_member": "graph22.hcp",
+      "sha256": "6f1653a161828a0d59fe0602ac08c86695d2f1aae8c6242390c18a5fe4d7a95f",
+      "size_bytes": 2351,
+      "dimension": 186,
+      "edge_count": 279
+    },
+    {
+      "id": "graph24",
+      "archive_member": "graph24.hcp",
+      "sha256": "769c937e58bfb848f258c5a1cda3130b6b1ae19bb907619e3c14cecc884a2b0c",
+      "size_bytes": 2513,
+      "dimension": 198,
+      "edge_count": 297
+    },
+    {
+      "id": "graph26",
+      "archive_member": "graph26.hcp",
+      "sha256": "3bbaf0240ef6d48f0174bf72cdc7ff4f16e7e63a41c4a846f2b9eae2afb8bb9a",
+      "size_bytes": 2675,
+      "dimension": 210,
+      "edge_count": 315
+    },
+    {
+      "id": "graph28",
+      "archive_member": "graph28.hcp",
+      "sha256": "eaabdcbf5fb88d58fe865d9d242e91bb16950dbfec419c6f86839cc549813fff",
+      "size_bytes": 2837,
+      "dimension": 222,
+      "edge_count": 333
+    },
+    {
+      "id": "graph30",
+      "archive_member": "graph30.hcp",
+      "sha256": "de328aab12bf5b5d6e3635448b766b303dc9b8bb6a52e54c21acfb3b00c3e701",
+      "size_bytes": 2999,
+      "dimension": 234,
+      "edge_count": 351
+    },
+    {
+      "id": "graph32",
+      "archive_member": "graph32.hcp",
+      "sha256": "a9c608d206a026ae2ed3a1c6864c0808588999a3e638a1f021ac4c24457b2690",
+      "size_bytes": 3161,
+      "dimension": 246,
+      "edge_count": 369
+    },
+    {
+      "id": "graph34",
+      "archive_member": "graph34.hcp",
+      "sha256": "e0c582ec7ac6e99014a7e58337e667d0cd89c47e871e1dffb73cd765d27c73eb",
+      "size_bytes": 3323,
+      "dimension": 258,
+      "edge_count": 387
+    },
+    {
+      "id": "graph36",
+      "archive_member": "graph36.hcp",
+      "sha256": "b932462f595f88505f4cff424e5bbb2bf945b2b73812ec23c44bb8f119997c2c",
+      "size_bytes": 3485,
+      "dimension": 270,
+      "edge_count": 405
+    },
+    {
+      "id": "graph38",
+      "archive_member": "graph38.hcp",
+      "sha256": "cb5c38077bcb2c5f1ed867dc9587d86c1414bfa78e98ad0cf7ae74456baefcba",
+      "size_bytes": 3647,
+      "dimension": 282,
+      "edge_count": 423
+    },
+    {
+      "id": "graph40",
+      "archive_member": "graph40.hcp",
+      "sha256": "67f0967b12eb7580ae87d75801fc93ef0369c34b83f20599657313685af3378f",
+      "size_bytes": 3809,
+      "dimension": 294,
+      "edge_count": 441
+    },
+    {
+      "id": "graph42",
+      "archive_member": "graph42.hcp",
+      "sha256": "8d937451558d5ada234a1899fe47dcd8046b4d9c17cb861b1bac6a1c85518920",
+      "size_bytes": 3971,
+      "dimension": 306,
+      "edge_count": 459
+    },
+    {
+      "id": "graph44",
+      "archive_member": "graph44.hcp",
+      "sha256": "6f5da1704be010c14f862b5994943e64098ad74fc05f9d2cfde7b34bbc04839c",
+      "size_bytes": 4133,
+      "dimension": 318,
+      "edge_count": 477
+    },
+    {
+      "id": "graph46",
+      "archive_member": "graph46.hcp",
+      "sha256": "4f504b8d1d15d632df170aabae840debdf590525827ba4cc19c5a06293840b5e",
+      "size_bytes": 4295,
+      "dimension": 330,
+      "edge_count": 495
+    },
+    {
+      "id": "graph49",
+      "archive_member": "graph49.hcp",
+      "sha256": "3e0d7ef13bcb6cf3046556a81c54581e49192cec10832cfba767f9379e892aca",
+      "size_bytes": 4457,
+      "dimension": 342,
+      "edge_count": 513
+    },
+    {
+      "id": "graph53",
+      "archive_member": "graph53.hcp",
+      "sha256": "d799ff20f46f1918db456d05ec3e86704e82c8633ae7961229bd62b1866ed860",
+      "size_bytes": 4781,
+      "dimension": 366,
+      "edge_count": 549
+    },
+    {
+      "id": "graph55",
+      "archive_member": "graph55.hcp",
+      "sha256": "f0a50801d0f39a32dbf3bceb076a7fb55b1a359d29c62fa3d43c740bba70b943",
+      "size_bytes": 4943,
+      "dimension": 378,
+      "edge_count": 567
+    },
+    {
+      "id": "graph63",
+      "archive_member": "graph63.hcp",
+      "sha256": "6dabb40923e8a74844abd2ad712fa4660c94af029302314cb481d18dea82b968",
+      "size_bytes": 5429,
+      "dimension": 414,
+      "edge_count": 621
+    },
+    {
+      "id": "graph68",
+      "archive_member": "graph68.hcp",
+      "sha256": "57709987b04baeceb4776341c86e46f8ee6079047d27f5cf5a0cedae4a637175",
+      "size_bytes": 5753,
+      "dimension": 438,
+      "edge_count": 657
+    },
+    {
+      "id": "graph82",
+      "archive_member": "graph82.hcp",
+      "sha256": "58f793d0c33d248878e3aac65c83a329c11d83fe265f0e767f4746f1566d24fb",
+      "size_bytes": 6545,
+      "dimension": 496,
+      "edge_count": 745
+    },
+    {
+      "id": "graph104",
+      "archive_member": "graph104.hcp",
+      "sha256": "ec1294d3c77b6f0e07183cc3b0bb03fa637c1344932223fedb3e4db29359310a",
+      "size_bytes": 7626,
+      "dimension": 576,
+      "edge_count": 865
+    },
+    {
+      "id": "graph122",
+      "archive_member": "graph122.hcp",
+      "sha256": "9376627341b7776955388650b24c81bfd9b3430c2959a353bb7d8c81f0ed5f8f",
+      "size_bytes": 8706,
+      "dimension": 656,
+      "edge_count": 985
+    },
+    {
+      "id": "graph130",
+      "archive_member": "graph130.hcp",
+      "sha256": "923b888fa892e91d241a54277520d4c4c35780f93e316c26ff4bc33208e32835",
+      "size_bytes": 8682,
+      "dimension": 690,
+      "edge_count": 979
+    },
+    {
+      "id": "graph148",
+      "archive_member": "graph148.hcp",
+      "sha256": "95e47161c597dd801a7b3e3b70341e2c6b39f994a28a9840a0c8972a1df2f68d",
+      "size_bytes": 10866,
+      "dimension": 816,
+      "edge_count": 1225
+    },
+    {
+      "id": "graph160",
+      "archive_member": "graph160.hcp",
+      "sha256": "37c9a2eb61118b54e5fe3b2f95e21b21a0a2cb8520861a04f94920efae383982",
+      "size_bytes": 11946,
+      "dimension": 896,
+      "edge_count": 1345
+    },
+    {
+      "id": "graph219",
+      "archive_member": "graph219.hcp",
+      "sha256": "f9b67a3cf95821c8397e57a0f371dc5f7764c0293541b2b9933018f0dcfad2cc",
+      "size_bytes": 19558,
+      "dimension": 1376,
+      "edge_count": 2065
+    },
+    {
+      "id": "graph16",
+      "archive_member": "graph16.hcp",
+      "sha256": "636d8d49f980b4fadd07cb7cf42491a014577f49f36e82e03789f7952d6ff50b",
+      "size_bytes": 1952,
+      "dimension": 156,
+      "edge_count": 235
+    },
+    {
+      "id": "graph19",
+      "archive_member": "graph19.hcp",
+      "sha256": "c0cd38e0e0ea3b0ba292745b877424b7add78cd6aa23778b416564abf7217716",
+      "size_bytes": 3181,
+      "dimension": 170,
+      "edge_count": 390
+    },
+    {
+      "id": "graph51",
+      "archive_member": "graph51.hcp",
+      "sha256": "1e517583ed49ac8582259ad9aeb267c3faf4cd8cf5af50b7247c20ee3cedc4bf",
+      "size_bytes": 4619,
+      "dimension": 354,
+      "edge_count": 531
+    },
+    {
+      "id": "graph60",
+      "archive_member": "graph60.hcp",
+      "sha256": "e3150cd0adfab7897013404cc27df62e77a683ad1d565dd1314415ea1229f64c",
+      "size_bytes": 5267,
+      "dimension": 402,
+      "edge_count": 603
+    },
+    {
+      "id": "graph61",
+      "archive_member": "graph61.hcp",
+      "sha256": "d232d3274e068cb1b959398c4e74be59b192b6f21e2cbb02c325e678fb53fc60",
+      "size_bytes": 5330,
+      "dimension": 406,
+      "edge_count": 610
+    },
+    {
+      "id": "graph66",
+      "archive_member": "graph66.hcp",
+      "sha256": "a44145435fc207d74ca3e3cbdd4caecde101d4f92d181d37733ab7d525b146f3",
+      "size_bytes": 5591,
+      "dimension": 426,
+      "edge_count": 639
+    },
+    {
+      "id": "graph71",
+      "archive_member": "graph71.hcp",
+      "sha256": "64311a5b703874b1eb8946e50f298fa3a19a1ce124ca017c4fb6ca4e339fe16a",
+      "size_bytes": 5977,
+      "dimension": 454,
+      "edge_count": 682
+    },
+    {
+      "id": "graph77",
+      "archive_member": "graph77.hcp",
+      "sha256": "f4e775122ddcd915cab1c50db05033c945301f38c05de13a3a3886350012cd9c",
+      "size_bytes": 6239,
+      "dimension": 474,
+      "edge_count": 711
+    },
+    {
+      "id": "graph83",
+      "archive_member": "graph83.hcp",
+      "sha256": "ca8ac8d8f879fe81493868ee7a29784c82cf26d7676ea502bf00a5d3ac70b13e",
+      "size_bytes": 6563,
+      "dimension": 498,
+      "edge_count": 747
+    },
+    {
+      "id": "graph86",
+      "archive_member": "graph86.hcp",
+      "sha256": "65c870e6976e46d46ff1bc25408d62542b1812428b82b3bb5c2bf5169af687de",
+      "size_bytes": 10776,
+      "dimension": 503,
+      "edge_count": 1241
+    },
+    {
+      "id": "graph88",
+      "archive_member": "graph88.hcp",
+      "sha256": "d5eb782726a4995683b4a8bee88d548c2f049924a711fb151b50b7715733bbd9",
+      "size_bytes": 10907,
+      "dimension": 507,
+      "edge_count": 1251
+    },
+    {
+      "id": "graph89",
+      "archive_member": "graph89.hcp",
+      "sha256": "b4bbeccf7b673bed3a6c7724b4432b44072462b32d02b231e0a1f43be1eba572",
+      "size_bytes": 6725,
+      "dimension": 510,
+      "edge_count": 765
+    },
+    {
+      "id": "graph115",
+      "archive_member": "graph115.hcp",
+      "sha256": "00461c98865aeb3d41368ed169a906d51283bfae1322ca98b28c47894965f783",
+      "size_bytes": 13477,
+      "dimension": 623,
+      "edge_count": 1541
+    },
+    {
+      "id": "graph154",
+      "archive_member": "graph154.hcp",
+      "sha256": "df67a9e2160aae870dcaec0892f9fe1e0f9d019dceadebee0dae86e0f65d6b32",
+      "size_bytes": 18539,
+      "dimension": 851,
+      "edge_count": 2111
+    },
+    {
+      "id": "graph25",
+      "archive_member": "graph25.hcp",
+      "sha256": "f8861007f54e71e53ac81813cc7b4cb152685b454e44a529647f43b0d491c1b3",
+      "size_bytes": 2603,
+      "dimension": 204,
+      "edge_count": 307
+    },
+    {
+      "id": "graph73",
+      "archive_member": "graph73.hcp",
+      "sha256": "1ff7b1bbe1d1d89c0f2b80a2a2502d6748d57da8eb635ae09d004a81099cc88e",
+      "size_bytes": 6077,
+      "dimension": 462,
+      "edge_count": 693
+    },
+    {
+      "id": "graph76",
+      "archive_member": "graph76.hcp",
+      "sha256": "5abbee69f829fc95c1ea029c3eb6404d8d839e32a0e6205ee639bc8cc0339af6",
+      "size_bytes": 10070,
+      "dimension": 471,
+      "edge_count": 1161
+    },
+    {
+      "id": "graph117",
+      "archive_member": "graph117.hcp",
+      "sha256": "32c21af97a6f46e85970290712fcda8592ce363c68b87fe32d4f34f762a208cb",
+      "size_bytes": 13782,
+      "dimension": 631,
+      "edge_count": 1561
+    },
+    {
+      "id": "graph123",
+      "archive_member": "graph123.hcp",
+      "sha256": "4b5760608b2735292724ef59d9c0f8d45c3b40f49e2903ef77554c2199f1f8a0",
+      "size_bytes": 14411,
+      "dimension": 659,
+      "edge_count": 1631
+    },
+    {
+      "id": "graph126",
+      "archive_member": "graph126.hcp",
+      "sha256": "e1181526e4deb54e95a6308873588af5eb47e93507ead2dc78178854a3b58fd8",
+      "size_bytes": 14681,
+      "dimension": 671,
+      "edge_count": 1661
+    }
+  ],
+  "assignments": {
+    "Arturo2430": [
+      "graph1",
+      "graph8",
+      "graph39",
+      "graph43",
+      "graph47",
+      "graph52",
+      "graph78",
+      "graph67",
+      "graph99",
+      "graph85",
+      "graph3",
+      "graph5",
+      "graph7",
+      "graph9",
+      "graph11",
+      "graph12",
+      "graph13",
+      "graph15",
+      "graph17",
+      "graph20",
+      "graph22",
+      "graph24",
+      "graph26",
+      "graph28",
+      "graph30",
+      "graph32",
+      "graph34",
+      "graph36",
+      "graph38",
+      "graph40",
+      "graph42",
+      "graph44",
+      "graph46",
+      "graph49",
+      "graph53",
+      "graph55",
+      "graph63",
+      "graph68",
+      "graph82",
+      "graph104",
+      "graph122",
+      "graph130",
+      "graph148",
+      "graph160",
+      "graph219",
+      "graph16",
+      "graph19",
+      "graph51",
+      "graph60",
+      "graph61",
+      "graph66",
+      "graph71",
+      "graph77",
+      "graph83",
+      "graph86",
+      "graph88",
+      "graph89",
+      "graph115",
+      "graph154",
+      "graph25",
+      "graph73",
+      "graph76",
+      "graph117",
+      "graph123",
+      "graph126"
+    ]
+  },
+  "solvers": [
+    {
+      "algorithm": "ga",
+      "parameters": {
+        "crossover_rate": 0.8,
+        "elite_count": 1,
+        "mutation_rate": 0.1,
+        "population_size": 20,
+        "tournament_size": 3,
+        "initialization": "greedy",
+        "guided_move_rate": 0.5,
+        "repair_steps": 64,
+        "repair_threshold": 3
+      }
+    },
+    {
+      "algorithm": "sa",
+      "parameters": {
+        "cooling_factor": 0.95,
+        "initial_temperature": 2.0,
+        "minimum_temperature": 1e-06,
+        "moves_per_temperature": 50,
+        "initialization": "greedy",
+        "guided_move_rate": 0.5,
+        "cost_mode": "incremental",
+        "incremental_check_interval": 1000,
+        "reheat_after": 1000,
+        "repair_steps": 64,
+        "repair_threshold": 3
+      }
+    },
+    {
+      "algorithm": "as",
+      "parameters": {
+        "alpha": 1.0,
+        "ant_count": 20,
+        "beta": 4.0,
+        "epsilon": 0.05,
+        "initial_pheromone": 1.0,
+        "pheromone_max": 10.0,
+        "pheromone_min": 0.1,
+        "q": 1.0,
+        "rho": 0.2,
+        "construction": "neighbor_guided",
+        "pheromone_storage": "edges",
+        "repair_steps": 64,
+        "repair_threshold": 3
+      }
+    },
+    {
+      "algorithm": "abc",
+      "parameters": {
+        "limit": 200,
+        "source_count": 20,
+        "initialization": "greedy",
+        "guided_move_rate": 0.5,
+        "cost_mode": "incremental",
+        "incremental_check_interval": 1000,
+        "repair_steps": 64,
+        "repair_threshold": 3,
+        "neutral_limit": 20
+      }
+    },
+    {
+      "algorithm": "de",
+      "parameters": {
+        "crossover_rate": 0.8,
+        "differential_weight": 0.8,
+        "population_size": 20,
+        "initialization": "greedy",
+        "repair_steps": 64,
+        "repair_threshold": 3,
+        "neutral_limit": 20
+      }
+    },
+    {
+      "algorithm": "pso",
+      "parameters": {
+        "cognitive_coefficient": 1.0,
+        "inertia": 0.5,
+        "social_coefficient": 1.0,
+        "swarm_size": 20,
+        "velocity_limit": 0.5,
+        "initialization": "greedy",
+        "repair_steps": 64,
+        "repair_threshold": 3
+      }
+    }
+  ],
+  "seeds": [
+    2001,
+    2002,
+    2003,
+    2004,
+    2005,
+    2006,
+    2007,
+    2008,
+    2009,
+    2010
+  ],
+  "budget": {
+    "max_elapsed_ns": 30000000000,
+    "max_evaluations": null,
+    "max_iterations": null
+  },
+  "process_timeout_seconds": 90,
+  "source_sha256": {
+    "src/algorithms/__init__.py": "2eccbae325a1f27f50e0c7da4b4afef91df3579fb19359e87fb8cab78fcecba8",
+    "src/algorithms/abc.py": "8586aac5d69b01b8b1d4b259d6f62346a151fc6a84c8fc04b422cb024365cf6c",
+    "src/algorithms/annealing.py": "cf50a2181b9228ef46c7ca4bfd15c45023caa9fe721c935ed81540b1f1a189d4",
+    "src/algorithms/ant_system.py": "7faaf6404bb94e6ed8043b87836316cf54e2266b7098098fe3fd6f58d4bd2452",
+    "src/algorithms/cycle_repair.py": "e3296e35012b2fba131b12ae26fafa3fa30b86ef93817aa6522f323d3bb387e5",
+    "src/algorithms/differential.py": "725e785ab3d24ccfb7df4d3f2b1b844086a409fd63cde6791d00e67e23930ccf",
+    "src/algorithms/execution.py": "cd12c149b5d4f51b011754350f91c91beee94005d4cfca8502761b18fc0a21e4",
+    "src/algorithms/genetic.py": "5228070909f69eb9db052ce5c93cc813f2c080566a047733de82f38ffbd37c9e",
+    "src/algorithms/graph_guidance.py": "e366bef9fc71e10adbfb8e54dd071b0efb3a74eb9e75b08c49125e2c8c5723b0",
+    "src/algorithms/local_moves.py": "f5b0af1288fdb9ba7d37a53635dde0f7754add00fe8f666f94fd6c98eb441efd",
+    "src/algorithms/particle_swarm.py": "539dfe27c25b5dc40df0989c112a828b4559df0d8e155657cc62a1dbb5f99d07",
+    "src/algorithms/permutation.py": "37b0b89817035d84d71a027ef0493e27b3bfc08b54c5aa98985265d2f8ceb597",
+    "src/algorithms/real_keys.py": "f3706f22e70813a31b87b12bad558ba50c9e631f319d02048148f3513af64292",
+    "src/algorithms/sparse_pheromone.py": "7cdccf40034e86e9a3f2920691eb6d8202ddf111be4c7ff37303d58af90fa094",
+    "src/cli/__init__.py": "4f528a18ceffa4fab02e7228cd75cea8f2cbb4c994ddd2aab5dd139dccf09c18",
+    "src/cli/__main__.py": "3f94ecca2f13ed00be571a30ec1b5c9e9669a2073de6f554aea7d6bd21ee8aa5",
+    "src/cli/batch.py": "448cd759430e40ee255e262090acebe9425e3597d55f495aad513ea6834cde3e",
+    "src/cli/benchmark_analysis.py": "bc02ba9b26f07d95a601db8652ee88047a77359f13f638f718a6aaa54ec1dc56",
+    "src/cli/benchmark_archive.py": "eb94df07c6a823c856dc7fccad92ee7599e55090f62866217152eb1494225031",
+    "src/cli/benchmark_campaign.py": "246bb42f9688c1ad97e91af89044379a54c80ec9d27060267d62db34176a70d9",
+    "src/cli/benchmark_plan.py": "5fb37aad00cba741956bb04efaf53f612407fa10dbad5426f4a1d4d8f2f2ca1a",
+    "src/cli/campaign_evidence.py": "797384e5d136a4a969ad8fa21311a0436f1c8b05074fd166c600eb756845a32c",
+    "src/cli/campaign_system.py": "3a7d9b4ab731cef0e3977027798a890d3133a8896fa5e0612369d083e4ca7166",
+    "src/cli/dataset_catalog.py": "80d1420745ae4ff8739af692665adc49a7f67406574da2ceed7640f9f5815b46",
+    "src/cli/distributed_campaign.py": "ff6f555c005df5a4068ce6b251fb902510a558ca9b3a408b820f490133a4a42d",
+    "src/cli/distributed_plan.py": "0852528a373a72346676a68aa4941de2482d36b938aa2617a68ba4b147730983",
+    "src/cli/run_record.py": "958a2b14783ea0142f2f1415113bd2b3379b7629ce452ea5ad757522fb62c2e2",
+    "src/cli/variants.py": "8edd5245055426bc59655f766f451537ee592188ee7917ba7f793141daafcc41",
+    "src/evaluation/__init__.py": "aed91c7b71a5ae05e69754f227de999ee5a9bb3a924d0733b639304163b163d8",
+    "src/evaluation/benchmark.py": "a5a214aee467279839f1b56b79fb6ff612cd698f4ace56e554ecc1748cf8b12d",
+    "src/evaluation/cost.py": "ac1523e5e152c36e53c77e240b98fbb8a7865124d43cb0826fa0bd8e0a0b21d2",
+    "src/evaluation/cycle.py": "c756f98722b8893541e112f64877054619b91ba81d09f0119080a7458a843ee0",
+    "src/graphs/__init__.py": "9d385bb4aa899aa2132627615ade20e36f2781462557c72710b39b7aa5c23024",
+    "src/graphs/fhcp.py": "0c66ee2b9c3c0d70dc34b98195b68582c46a35dd9bb9babddcc95d176601499b",
+    "src/graphs/graph.py": "b939877634acae562d31957eb9de7bf994264a252db0cae5f0654da3e98e48ab",
+    "src/graphs/readers.py": "a97ecfc183de2b666a1ea168e1f91d2677a025c77872e135826a838a367a7b9f",
+    "src/graphs/routes.py": "076e364f151a8012a1336d2035f1056f9d98b52dfb9c10b6d560912442a020e9"
+  },
+  "runtime": {
+    "python": "3.14.10",
+    "implementation": "CPython",
+    "numpy": "2.5.4",
+    "gil_enabled": true,
+    "bits": 64,
+    "architecture": "x86_64"
+  },
+  "workers_per_machine": 4,
+  "native_threads": 1,
+  "goal_distinct_solved_graphs": 65,
+  "stop_after_first_success": false,
+  "expected_attempts": 3900,
+  "output_prefix": "near-miss-expanded-v4",
+  "selection_provenance": {
+    "path": "experiments/configs/near-miss-expanded-v4/selection-provenance.json",
+    "sha256": "252758ce89b7a55592237bf88fb7a5774bb89815c15b2b494f1b518a680300bf"
+  },
+  "plan_sha256": "aabcf4b7ceafe58d3ffacee695c4b44c774a8e610fd64a4cded7067795e626cb"
+}

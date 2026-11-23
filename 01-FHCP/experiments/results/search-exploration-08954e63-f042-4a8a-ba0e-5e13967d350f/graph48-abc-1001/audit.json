@@ -1,0 +1,81 @@
+{
+  "instance": "graph48",
+  "algorithm": "abc",
+  "seed": 1001,
+  "status": "exhausted",
+  "best_cost": 7,
+  "certified_success": false,
+  "resources_before": {
+    "available_ram_bytes": 14458159104,
+    "swap_pages": {
+      "pswpin": 92,
+      "pswpout": 679
+    },
+    "ac_online": true,
+    "governor": "powersave",
+    "suspend_offset_ns": -444,
+    "load_1m": 1.0791015625,
+    "at_utc": "2026-11-13T18:16:52.695920+00:00"
+  },
+  "returncode": 0,
+  "process_seconds": 10.14645634999988,
+  "resources_after": {
+    "available_ram_bytes": 14342213632,
+    "swap_pages": {
+      "pswpin": 92,
+      "pswpout": 679
+    },
+    "ac_online": true,
+    "governor": "powersave",
+    "suspend_offset_ns": -612,
+    "load_1m": 1.140625,
+    "at_utc": "2026-11-13T18:17:02.844064+00:00"
+  },
+  "stop_reason": "time_limit",
+  "counters": {
+    "iteration_unit": "abc_cycle",
+    "evaluations_started": 37251,
+    "evaluations_completed": 37251,
+    "full_evaluations": 191,
+    "incremental_evaluations": 37060,
+    "cache_hits": 0,
+    "validations_started": 0,
+    "validations_completed": 0,
+    "iterations_completed": 926,
+    "partial_iteration": {
+      "phase": "abc_cycle",
+      "completed_items": 20,
+      "planned_items": 41
+    },
+    "restarts": 171,
+    "algorithm_counters": {
+      "greedy_jumps": 2053,
+      "greedy_routes_completed": 191,
+      "employed_proposals": 18540,
+      "guided_inversions": 18635,
+      "onlooker_proposals": 18520,
+      "scout_skips": 755,
+      "incremental_full_checks": 37,
+      "employed_improvements": 3,
+      "scout_abandonments": 171,
+      "scout_renewals": 171,
+      "onlooker_improvements": 5
+    }
+  },
+  "timing": {
+    "solver_ns": 10000122556,
+    "validation_ns": 0,
+    "overrun_ns": 122556,
+    "first_success": null
+  },
+  "independent_validation": {
+    "valid": false,
+    "reason": "missing_edge",
+    "position": 68,
+    "vertices": [
+      112,
+      92
+    ]
+  },
+  "recalculated_cost": 7
+}

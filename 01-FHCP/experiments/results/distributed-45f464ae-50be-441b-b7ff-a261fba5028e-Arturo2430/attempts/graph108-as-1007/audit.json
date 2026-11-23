@@ -1,0 +1,20 @@
+{
+  "instance": "graph108",
+  "algorithm": "as",
+  "seed": 1007,
+  "status": "exhausted",
+  "stop_reason": "time_limit",
+  "certified_success": false,
+  "best_cost": 29,
+  "process_seconds": 60.13718268999946,
+  "solver_ns": 60000008741,
+  "returncode": 0,
+  "artifact_sha256": {
+    "intent.json": "8b1dce39a2737fa08fd3b80816d6b759aef9c93098237a0fe7e915720eaf63a5",
+    "stdout.json": "11aa977f3970b696f58aae32d07693d0dc463453ddb762dfac649ea948e94857",
+    "stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "exit.json": "86765110eadc5878866a046ed0679c28a51dbe3f60c7aa4eb2c239f672c50243",
+    "worker.json": "d5593dc1f71fd56e62e30df01fa63a55c67d257606b8097be46653a7729cc2dc"
+  },
+  "independent_valid": false
+}

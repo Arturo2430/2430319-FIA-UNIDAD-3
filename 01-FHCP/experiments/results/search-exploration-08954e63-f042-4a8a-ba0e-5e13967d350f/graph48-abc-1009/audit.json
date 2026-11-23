@@ -1,0 +1,81 @@
+{
+  "instance": "graph48",
+  "algorithm": "abc",
+  "seed": 1009,
+  "status": "exhausted",
+  "best_cost": 7,
+  "certified_success": false,
+  "resources_before": {
+    "available_ram_bytes": 14620348416,
+    "swap_pages": {
+      "pswpin": 105,
+      "pswpout": 679
+    },
+    "ac_online": true,
+    "governor": "powersave",
+    "suspend_offset_ns": -306,
+    "load_1m": 1.662109375,
+    "at_utc": "2026-11-13T18:38:38.916065+00:00"
+  },
+  "returncode": 0,
+  "process_seconds": 10.155776263000007,
+  "resources_after": {
+    "available_ram_bytes": 14637600768,
+    "swap_pages": {
+      "pswpin": 105,
+      "pswpout": 679
+    },
+    "ac_online": true,
+    "governor": "powersave",
+    "suspend_offset_ns": -575,
+    "load_1m": 1.56005859375,
+    "at_utc": "2026-11-13T18:38:49.073665+00:00"
+  },
+  "stop_reason": "time_limit",
+  "counters": {
+    "iteration_unit": "abc_cycle",
+    "evaluations_started": 38313,
+    "evaluations_completed": 38313,
+    "full_evaluations": 196,
+    "incremental_evaluations": 38117,
+    "cache_hits": 0,
+    "validations_started": 0,
+    "validations_completed": 0,
+    "iterations_completed": 952,
+    "partial_iteration": {
+      "phase": "abc_cycle",
+      "completed_items": 37,
+      "planned_items": 41
+    },
+    "restarts": 176,
+    "algorithm_counters": {
+      "greedy_jumps": 2108,
+      "greedy_routes_completed": 196,
+      "guided_inversions": 19074,
+      "employed_proposals": 19060,
+      "onlooker_proposals": 19057,
+      "scout_skips": 776,
+      "employed_improvements": 6,
+      "incremental_full_checks": 38,
+      "scout_abandonments": 176,
+      "scout_renewals": 176,
+      "onlooker_improvements": 2
+    }
+  },
+  "timing": {
+    "solver_ns": 10000043295,
+    "validation_ns": 0,
+    "overrun_ns": 43295,
+    "first_success": null
+  },
+  "independent_validation": {
+    "valid": false,
+    "reason": "missing_edge",
+    "position": 148,
+    "vertices": [
+      225,
+      316
+    ]
+  },
+  "recalculated_cost": 7
+}

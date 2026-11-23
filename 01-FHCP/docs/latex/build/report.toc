@@ -1,0 +1,52 @@
+\babel@toc {spanish}{}\relax 
+\contentsline {section}{Resumen}{1}{Doc-Start}%
+\contentsline {section}{\numberline {1}Introducción y objetivos}{3}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Objetivo general y alcance}{3}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Entregables y organización}{3}{subsection.1.2}%
+\contentsline {section}{\numberline {2}Fundamentos y representación del problema}{4}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Grafo, camino y ciclo hamiltoniano}{4}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Representación del grafo y del candidato}{4}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Costo, fitness y certificado independiente}{4}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}Métricas y denominadores}{5}{subsection.2.4}%
+\contentsline {section}{\numberline {3}Diseño e implementación de los algoritmos}{6}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Contrato común y separación de responsabilidades}{6}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Algoritmo genético: GA}{6}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Recocido simulado: SA}{6}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}Ant System: AS}{7}{subsection.3.4}%
+\contentsline {subsection}{\numberline {3.5}Colonia artificial de abejas: ABC}{7}{subsection.3.5}%
+\contentsline {subsection}{\numberline {3.6}Evolución diferencial: DE}{7}{subsection.3.6}%
+\contentsline {subsection}{\numberline {3.7}Enjambre de partículas: PSO}{7}{subsection.3.7}%
+\contentsline {subsection}{\numberline {3.8}Mejoras posteriores a la campaña inicial}{8}{subsection.3.8}%
+\contentsline {subsection}{\numberline {3.9}Reparación dirigida y exploración v4}{8}{subsection.3.9}%
+\contentsline {section}{\numberline {4}Metodología experimental y reproducibilidad}{9}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Etapas y control de versiones}{9}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Entorno y comparabilidad}{9}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Admisión, registros y auditoría}{10}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}Cierre parcial y criterios de análisis}{10}{subsection.4.4}%
+\contentsline {section}{\numberline {5}Resultados experimentales}{11}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Balance acumulado de todas las entregas}{11}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Campaña inicial: límites observados}{11}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}Cobertura y resultados de la evaluación final}{12}{subsection.5.3}%
+\contentsline {subsection}{\numberline {5.4}Comparación entre las seis familias}{12}{subsection.5.4}%
+\contentsline {subsection}{\numberline {5.5}Distribución de tiempos y costos}{13}{subsection.5.5}%
+\contentsline {subsection}{\numberline {5.6}Los 22 grafos certificados y variación entre semillas}{15}{subsection.5.6}%
+\contentsline {subsection}{\numberline {5.7}Calidad de candidatos y escala}{17}{subsection.5.7}%
+\contentsline {subsection}{\numberline {5.8}Incidencias preservadas}{18}{subsection.5.8}%
+\contentsline {section}{\numberline {6}Cierre de las evaluaciones exploratorias}{19}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Selección dirigida y cierre de la entrega}{19}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}Éxitos y cobertura de los algoritmos}{19}{subsection.6.2}%
+\contentsline {subsection}{\numberline {6.3}Balance de la entrega y límites de interpretación}{21}{subsection.6.3}%
+\contentsline {section}{\numberline {7}Contraste con resultados publicados del FHCP}{23}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Cobertura del concurso y dificultad estructural}{23}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.2}Contraste por instancia y tipo de salida}{23}{subsection.7.2}%
+\contentsline {section}{\numberline {8}Discusión, cuellos de botella y limitaciones}{24}{section.8}%
+\contentsline {subsection}{\numberline {8.1}Interpretación de los cambios}{24}{subsection.8.1}%
+\contentsline {subsection}{\numberline {8.2}Familia mejor adaptada al corte}{24}{subsection.8.2}%
+\contentsline {subsection}{\numberline {8.3}Validez y trabajo futuro}{24}{subsection.8.3}%
+\contentsline {section}{\numberline {9}Conclusiones}{25}{section.9}%
+\contentsline {section}{Referencias}{26}{section*.18}%
+\contentsline {section}{\numberline {A}Parámetros y trazabilidad}{27}{appendix.Alph1}%
+\contentsline {subsection}{\numberline {A.1}Identificadores de ejecución}{27}{subsection.Alph1.1}%
+\contentsline {subsection}{\numberline {A.2}Reproducción del informe}{27}{subsection.Alph1.2}%
+\contentsline {section}{\numberline {B}Detalle por grafo evaluado}{28}{appendix.Alph2}%
+\contentsline {section}{\numberline {C}Detalle de la selección exploratoria cerrada}{32}{appendix.Alph3}%

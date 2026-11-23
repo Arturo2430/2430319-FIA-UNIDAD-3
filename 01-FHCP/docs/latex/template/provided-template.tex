@@ -1,0 +1,404 @@
+% Compilar aquí: latexmk -pdf reporte_metodologico_jaguaryou.tex
+% Nombre del proyecto centralizado en NombreProyecto.
+% Recursos: tablas/, figuras/reporte_jaguaryou/ y referencias.bib.
+% La ruta alternativa conserva la pestaña abierta antes de la reorganización.
+\IfFileExists{referencias.bib}{\def\RutaReporte{}}{\def\RutaReporte{../}}
+\documentclass[12pt,a4paper]{article}
+\usepackage[spanish,es-nodecimaldot]{babel}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[utf8]{inputenc}
+  \usepackage[T1]{fontenc}
+  \usepackage{lmodern}
+\else
+  \usepackage{fontspec}
+  \setmainfont[
+    Path=fonts/,
+    Extension=.ttf,
+    UprightFont=PosteramaTextW05-Regular,
+    AutoFakeBold=1.8
+  ]{PosteramaTextW05-Regular}
+\fi
+\usepackage{amsmath,amssymb,graphicx,geometry,booktabs,tabularx,array}
+\usepackage{fancyhdr,caption,setspace,microtype,xcolor,colortbl,enumitem,titlesec}
+\usepackage{tikz}
+\usetikzlibrary{calc}
+\usepackage[authoryear,round]{natbib}
+\usepackage[hidelinks]{hyperref}
+\definecolor{NCPrimary}{HTML}{123D3B}
+\definecolor{NCAction}{HTML}{164F46}
+\definecolor{NCMint}{HTML}{BEE0D3}
+\definecolor{NCAccent}{HTML}{E4B85A}
+\definecolor{NCBackground}{HTML}{F4F6F5}
+\definecolor{NCSurface}{HTML}{FFFFFF}
+\definecolor{NCSurfaceMuted}{HTML}{E8EFEB}
+\definecolor{NCText}{HTML}{25343B}
+\definecolor{NCTextSecondary}{HTML}{52655D}
+\definecolor{NCBorder}{HTML}{DCE4E0}
+\definecolor{NCLow}{HTML}{367B70}
+\definecolor{NCMid}{HTML}{D8AD48}
+\definecolor{NCHigh}{HTML}{A74B61}
+\AddToHook{shipout/background}{%
+  \ifnum\value{page}>1
+    \begin{tikzpicture}[remember picture,overlay]
+      \fill[NCAction]
+        (current page.south west)
+        rectangle ([xshift=0.45cm]current page.north west);
+    \end{tikzpicture}%
+  \fi
+}
+\geometry{margin=2.35cm}
+\setstretch{1.15}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{3pt}
+\setlength{\headheight}{25pt}
+\setlength{\emergencystretch}{2em}
+\color{NCText}
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{\color{NCPrimary}\small Jaguaryou · Reto 2}
+\rhead{\color{NCTextSecondary}\small Reporte metodológico y preventivo}
+\cfoot{\color{NCPrimary}\thepage}
+\renewcommand{\headrulewidth}{0.8pt}
+\renewcommand{\footrulewidth}{0pt}
+\renewcommand{\headrule}{\hbox to\headwidth{\color{NCAccent}\leaders\hrule height \headrulewidth\hfill}}
+\titleformat{\section}{\Large\bfseries\color{NCPrimary}}{\thesection}{0.65em}{}
+\titleformat{\subsection}{\large\bfseries\color{NCAction}}{\thesubsection}{0.65em}{}
+\titlespacing*{\section}{0pt}{1.2em}{0.55em}
+\titlespacing*{\subsection}{0pt}{0.8em}{0.35em}
+\captionsetup{font=small,labelfont=bf,skip=5pt}
+\setlist{nosep,leftmargin=1.4em,topsep=4pt}
+\arrayrulecolor{NCBorder}
+\setcounter{tocdepth}{1}
+\addto\captionsspanish{\renewcommand{\contentsname}{Índice}}
+\makeatletter
+\renewcommand*\l@section{\@dottedtocline{1}{0em}{2.2em}}
+\renewcommand*\l@subsection{\@dottedtocline{2}{2.2em}{3em}}
+\makeatother
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+\newcommand{\NombreProyecto}{Nexo Cívico}
+\newcommand{\primerparrafo}{\par\noindent\hspace*{1.1em}}
+\newcommand{\iniciartabla}{\rowcolors{2}{NCSurfaceMuted}{white}}
+\newcommand{\terminartabla}{\rowcolors{1}{}{}}
+\newcommand{\pagina}[1]{\clearpage\section{#1}}
+\hypersetup{pdftitle={\NombreProyecto{} - Reporte metodológico y preventivo},pdfauthor={Equipo Jaguaryou},pdfsubject={Hackathon INE 2026, Reto 2, horizonte exploratorio 2027}}
+\begin{document}
+\pagecolor{NCBackground}
+\begin{titlepage}
+\thispagestyle{empty}
+\begin{tikzpicture}[overlay,remember picture]
+\fill[NCBackground] (current page.south west) rectangle (current page.north east);
+
+\begin{scope}[transform canvas={rotate around={45:($(current page.north west)+(-.5,-5.7)$)}}]
+\shade[rounded corners=18pt,left color=NCAccent,right color=NCMint]
+  ($(current page.north west)+(-.5,-5.7)$) rectangle ++(10,1.35);
+\end{scope}
+
+\begin{scope}[transform canvas={rotate around={45:($(current page.north west)+(.2,-9.6)$)}}]
+\shade[rounded corners=18pt,left color=NCBorder,right color=NCSurfaceMuted]
+  ($(current page.north west)+(.2,-9.6)$) rectangle ++(14,1.25);
+\end{scope}
+
+\begin{scope}[transform canvas={rotate around={45:($(current page.north)+(-1.5,-2.8)$)}}]
+\shade[rounded corners=12pt,left color=NCAction,right color=NCMint]
+  ($(current page.north)+(-1.5,-2.8)$) rectangle ++(9,.75);
+\end{scope}
+
+\begin{scope}[transform canvas={rotate around={45:($(current page.north)+(-3,-7.2)$)}}]
+\shade[rounded corners=24pt,left color=NCHigh,right color=NCHigh]
+  ($(current page.north)+(-3,-7.2)$) rectangle ++(15,1.55);
+\end{scope}
+
+\begin{scope}[transform canvas={rotate around={45:($(current page.north west)+(4,-14.8)$)}}]
+\shade[rounded corners=24pt,left color=NCAccent,right color=NCMid]
+  ($(current page.north west)+(4,-14.8)$) rectangle ++(27,1.55);
+\end{scope}
+
+\begin{scope}[transform canvas={rotate around={45:($(current page.north west)+(13,-9.3)$)}}]
+\shade[rounded corners=20pt,left color=NCLow,right color=NCAction]
+  ($(current page.north west)+(13,-9.3)$) rectangle ++(14,1.3);
+\end{scope}
+
+\begin{scope}[transform canvas={rotate around={45:($(current page.north west)+(19,-7.5)$)}}]
+\shade[rounded corners=20pt,left color=NCPrimary,right color=NCLow]
+  ($(current page.north west)+(19,-7.5)$) rectangle ++(13,1.05);
+\end{scope}
+
+\draw[ultra thick,NCPrimary]
+  ($(current page.center)+(6,2)$) -- ++(0,-3cm);
+\node[anchor=east,align=right,NCText]
+  at ($(current page.center)+(4.7,.5)$)
+  {\fontsize{18}{22}\selectfont\bfseries REPORTE\\[6pt] METODOLÓGICO};
+\node[anchor=west,align=left,NCAction]
+  at ($(current page.center)+(6.45,.5)$)
+  {\fontsize{42}{50}\selectfont\bfseries 2026};
+
+\node[align=center,text width=15cm] at ($(current page.center)+(0,-4.15)$)
+  {\color{NCPrimary}\fontsize{34}{40}\selectfont\bfseries \NombreProyecto};
+
+\node[align=center,text width=13cm] at ($(current page.center)+(0,-5.45)$)
+  {\color{NCAction}\fontsize{15}{18}\selectfont
+   Exploración municipal de abstención\\[-1pt]
+   y escenarios de educación cívica};
+
+\node[align=center,text width=8cm] at ($(current page.center)+(0,-8.55)$)
+  {\color{NCPrimary}\fontsize{13}{16}\selectfont\bfseries Equipo Jaguaryou\\[5pt]
+   \color{NCTextSecondary}\fontsize{9}{11}\selectfont
+   Hackathon INE 2026 · Reto 2\\[3pt]
+   Junior Arturo Vázquez Leonel · Diego Eduardo Zapata Aguilar\\
+   César Euresti · Diego Ramírez Ibarra\\[8pt]
+   Datos agregados y cartografía proporcionados por la CCPC\\
+   31 de octubre de 2026};
+\end{tikzpicture}
+\end{titlepage}
+\nopagecolor
+\setcounter{page}{2}
+\section*{Resumen ejecutivo}
+\primerparrafo
+Nexo Cívico analiza la abstención municipal para orientar la preparación de acciones de educación cívica hacia 2027. El estudio comprende 2,468 municipios de referencia 2021 y utiliza exclusivamente conteos agregados y cartografía CCPC. La pregunta operativa es dónde conviene revisar la información y preparar atención preventiva antes de comprometer recursos.
+
+La referencia del modelo clasifica 820 municipios en nivel alto, 819 en medio y 819 en bajo; diez carecen de tasa. El nivel alto reúne 65,582,883 registros de LN 2021, equivalentes al 70.12\% del universo. Esta concentración señala una escala relevante de revisión, pero la calidad modifica la decisión: 417 de esos municipios deben revisar NS y sólo 387 superan los controles para explorar un piloto.
+
+El modelo ridge alcanza un error retrospectivo medio de 10.18 pp, sin acreditar precisión 2027 ni aporte robusto de edad y sexo. La hipótesis central de reducción uniforme de 2 pp produce 313 cambios de nivel, sin estimar eficacia. Se propone una estrategia con revisión técnica, diagnóstico local e información cívica accesible, con asignación de recursos condicionada a capacidad y seguimiento de acceso, comprensión y costo observado.
+
+\vspace{0.15cm}
+\begingroup
+\singlespacing
+\tableofcontents
+\endgroup
+
+\pagina{Introducción y arquitectura de datos}
+\subsection{Problema público y propósito del estudio}
+\primerparrafo
+La planeación de educación cívica enfrenta una decisión territorial: atender necesidades diversas con información y recursos limitados. Un municipio con mayor abstención puede requerir atención, pero la tasa, por sí sola, no permite saber si existen problemas de información, accesibilidad o condiciones institucionales. La intervención necesita una señal territorial y una etapa que contraste su interpretación con el contexto local.
+
+Nexo Cívico propone esa articulación: una referencia cuantitativa de abstención, un semáforo comparable entre escenarios y una ruta para decidir qué revisar antes de organizar actividades. Su objetivo es apoyar la preparación de diagnósticos y pilotos preventivos para 2027, dentro del Reto 2 del Hackathon INE 2026 \citep{convocatoria}. El municipio se eligió como unidad porque permite vincular resultados agregados con una escala factible de coordinación territorial, sin identificar personas.
+
+La experiencia histórica del propio conjunto muestra que no basta con repetir una tasa. En las mismas 2,407 transiciones evaluadas, la media municipal de abstención pasa de 47.03\% en 2015 a 39.39\% en 2021. La diferencia de 7.64 pp describe ese conjunto condicionado; no es una tasa nacional obtenida de todos los conteos. Este desplazamiento motiva comparar modelos y referencias antes de extrapolar a otra intermedia.
+
+\subsection{Fuentes, escala y alcance}
+\primerparrafo
+La plataforma CCPC reúne información de participación de 2009, 2012, 2015, 2018, 2021 y 2024, con desagregaciones territoriales y sociodemográficas \citep{fuentes,manual_ccpc}. Se conservan los recursos suministrados y sus referencias originales. El protocolo usa las intermedias de 2009, 2015 y 2021; separa elecciones presidenciales y modalidades especiales para no mezclar universos con distinta naturaleza.
+
+El trabajo comenzó con un piloto de procesamiento en Aguascalientes y amplió la consulta a las 32 entidades. La extensión es tabular y condicionada a comparabilidad; no acredita un panel nacional homologado. Los predictores de la proyección proceden de 2021 y la cartografía de presentación tiene referencia CCPC 2024. Usar ese mapa no actualiza los datos ni demuestra continuidad municipal hasta 2027.
+
+\clearpage
+\subsection{Preparación de conteos y control de calidad}
+\primerparrafo
+El procesamiento mantiene una fila municipal por año y suma los conteos antes de calcular tasas. LN representa lista nominal; SV y NV, participación y no participación especificadas; NS, situación no especificada. Se exige la identidad $LN=SV+NV+NS$. Se distinguen dos indicadores con funciones diferentes:
+\[
+ A=\frac{NV}{SV+NV},\qquad Q=\frac{NS}{LN}.
+\]
+$A$ mide abstención entre registros especificados; $Q$ mide no especificación. NS no se suma a NV para construir el objetivo. Cuando $SV+NV=0$, la tasa queda ausente con motivo explícito. Los conteos, las proporciones y las incidencias se conservan; no se imputan datos, no se inventan ceros ni se eliminan municipios por presentar una observación difícil de interpretar.
+
+La integración aplica cuatro controles: lectura completa de fuentes y consistencia de campos; validación de claves textuales, categorías y conteos; agregación municipal con conservación de sumas; y revisión de correspondencias entre años. Los duplicados o inconsistencias bloqueantes se investigan como incidencias, sin corregir silenciosamente la fuente. La base para modelar requiere ambos extremos calculables, demografía completa y una identidad territorial revisada.
+
+\subsection{Universo analítico y enlace cartográfico}
+\primerparrafo
+La consulta conserva 2,468 municipios de 2021: 2,458 con tasa y diez sin denominador especificado. Entre las tasas, 2,079 tienen enlace visual sustentado y 379 permanecen sólo tabulares. Estas últimas reúnen 34,823,096 de los 93,532,133 registros de LN 2021, es decir, 37.23\%. Su exclusión del mapa no elimina su información ni su posible atención.
+
+La comparación tabular distingue conjuntos seccionales idénticos de altas y bajas sin transferencias observadas; en ambos casos la continuidad física municipal permanece como supuesto. La unión al mapa exige un enlace certificado y no se resuelve por semejanza de nombres. El GeoJSON conserva 2,477 geometrías: 2,079 con tasa, 379 sin enlace sustentado, diez sin tasa y nueve sin origen 2021. Esa diferencia de universos debe permanecer visible al interpretar cualquier patrón territorial.
+
+\pagina{Variables y fundamento analítico}
+\subsection{Definición de las dimensiones}
+\primerparrafo
+El modelo organiza la información en tres dimensiones: historia electoral, composición sociodemográfica y condiciones de medición. La abstención previa resume comportamiento agregado de una intermedia; edad y sexo describen quiénes integran la LN; tamaño y no especificación ayudan a representar diferencias de escala y de observación entre municipios. Ninguna dimensión identifica por sí sola una causa de abstención.
+
+\iniciartabla
+\input{\RutaReporte tablas/variables.tex}
+\terminartabla
+
+Las proporciones demográficas se calculan sobre LN, mientras que la abstención usa $SV+NV$. La distinción evita confundir composición del electorado con comportamiento entre registros especificados. Los grupos de 18--29, 30--44 y 45--59 años se incluyen juntos; 60 o más se omite como complemento para evitar una dependencia exacta con el intercepto. El mismo criterio evita añadir el complemento de hombres.
+
+No se incorporan escolaridad, marginación, inseguridad, movilidad o distancia a casillas: no forman parte de los predictores CCPC empleados. Tampoco se infieren barreras digitales o rurales a partir de edad, sexo o del polígono. La decisión de usar esos factores en un diagnóstico futuro exigiría evidencia y un protocolo propio, sin atribuirlos al modelo actual.
+
+\clearpage
+\subsection{Justificación y lectura de las asociaciones}
+\primerparrafo
+La historia electoral permite preguntar si parte de la diferencia entre municipios persiste seis años después. Se utiliza la misma familia electoral para reducir la mezcla de contextos; aun así, el cambio de la media observada entre 2015 y 2021 muestra que la persistencia puede sobreestimar. LN distingue escalas municipales sin dar mayor peso automático a los municipios grandes durante el ajuste.
+
+La composición por edad y sexo se incluye para examinar si aporta información adicional a la historia, al tamaño y a NS/LN. Su pertinencia es una hipótesis que se contrasta mediante modelos con y sin esos grupos. Un coeficiente no representa una propensión individual a votar ni una respuesta a educación cívica. Los resultados de la comparación, y no una expectativa sobre determinado grupo, determinan la conclusión sobre el aporte observado.
+
+\begin{table}[ht]
+\centering
+\caption{Asociaciones del ridge completo en la escala estandarizada.}
+\label{tab:coeficientes}
+\small
+\setlength{\tabcolsep}{4pt}
+\iniciartabla
+\input{\RutaReporte tablas/coeficientes_modelo.tex}
+\terminartabla
+\end{table}
+
+El coeficiente de abstención previa es positivo y mayor en magnitud que los restantes. La proporción de 18--29 años presenta asociación negativa, mientras las de 30--44 y 45--59 son positivas, respecto al complemento etario omitido. La proporción de hombres tiene asociación negativa. Esos signos pertenecen a esta especificación y no justifican etiquetar grupos como desinteresados o atribuirles necesidades concretas.
+
+NS/LN tiene un doble papel: participa como predictor y activa una revisión de calidad. Su coeficiente positivo no transforma registros no especificados en abstención. La política operativa exige revisar cualquier NS positivo antes de priorizar, porque todavía no existe una tolerancia institucional validada. La comprobación de que edad y sexo se usan efectivamente tampoco acredita una mejora robusta del modelo.
+
+\pagina{Metodología de estimación y validación}
+\subsection{Separación temporal y modelo}
+\primerparrafo
+El objetivo es estimar $A$ de la siguiente intermedia con variables del año de origen. El diseño conserva tres usos: ajuste 2009--2015, evaluación retrospectiva 2015--2021 y proyección exploratoria 2021--2027. La base empleada reúne 7,286 filas, separadas por uso; las entradas para 2027 no contienen un objetivo futuro.
+
+\iniciartabla
+\input{\RutaReporte tablas/protocolo_temporal.tex}
+\terminartabla
+
+Se eligió una regresión ridge por su formulación sencilla y porque penaliza coeficientes en presencia de predictores relacionados \citep{ridge}. Primero se transforma LN con $\log(1+LN)$ y se estandariza cada predictor mediante $z_{ij}=(x_{ij}-\mu_j)/s_j$. La media y la desviación poblacional se aprenden sólo en entrenamiento; una columna constante usa escala uno y se registra.
+\[
+ (\hat b,\hat\beta)=\arg\min_{b,\beta}
+ \left[\frac{1}{n}\sum_i(y_i-b-z_i^\mathsf{T}\beta)^2
+ +\alpha\sum_j\beta_j^2\right].
+\]
+El intercepto estimado es $\hat b=0.470492909$ y no se penaliza. El ajuste empleado usa $\alpha=0.1$; la salida operativa es $\hat A_i=\min(1,\max(0,\hat b+z_i^\mathsf{T}\hat\beta))$. Se conserva la predicción bruta y se comprueba la magnitud de cualquier recorte. No se observan recortes en los escenarios de esta entrega.
+
+La validación interna distribuye entidades completas en cinco particiones deterministas. En cada iteración, transformaciones y parámetros se aprenden con las otras cuatro. Se comparan catorce candidatos: constante, persistencia y cuatro variantes ridge, con tres intensidades de penalización cada una. Agrupar entidades controla esa separación interna, pero no añade otro periodo temporal ni elimina por sí solo dependencia espacial.
+
+\clearpage
+\subsection{Desempeño y decisión de uso}
+\primerparrafo
+La constante repite la media del objetivo de entrenamiento; persistencia repite la abstención del origen. Las variantes ridge usan la base histórica con LN y NS/LN y añaden edad, sexo o ambos. Todos los candidatos se contrastan en las mismas 2,407 claves. El criterio principal es el error absoluto medio municipal: $MAE=100\,\mathrm{media}(|\hat A-A|)$, expresado en pp.
+
+\begin{table}[ht]
+\centering
+\iniciartabla
+\caption{Comparación del error absoluto medio municipal.}
+\label{tab:metricas}
+\input{\RutaReporte tablas/metricas.tex}
+\terminartabla
+\end{table}
+
+Persistencia obtiene el menor MAE interno: 9.50 pp, frente a 10.91 del ridge completo. En el corte retrospectivo conocido, el ridge completo obtiene 10.18 pp frente a 12.34 de persistencia. La discrepancia indica que el orden de desempeño cambia entre contextos; no permite sustituir retroactivamente la selección interna por un supuesto ganador prospectivo.
+
+El aporte incremental de edad y sexo es reducido: el ridge sin demografía alcanza 10.20 pp retrospectivos, y el completo lo mejora sólo en 0.0174 pp. Además, empeora internamente de 10.44 a 10.91 pp; el MAE ponderado por $SV+NV$ de destino pasa de 6.46 a 6.70 pp. Por tanto, el menor error frente a persistencia no puede atribuirse íntegramente a demografía. La conclusión es que su aporte robusto no está acreditado bajo esta receta.
+
+El ridge completo sobreestima en promedio 2.63 pp y presenta un error absoluto máximo de 56.46 pp. La cobertura evaluada representa 98.51\% de LN 2021, sin trasladar esas métricas a unidades sin antecedente. Los errores se conservan y se desglosan por territorio, tamaño, calidad y continuidad; no se excluyen observaciones por su resultado.
+
+La referencia de entrega reutiliza el ridge ajustado con 2009--2015, sin reentrenar con 2021. Se declara la exposición previa a las etiquetas retrospectivas y el carácter exploratorio de esta elección. No existe una prueba independiente de precisión 2027 ni una evaluación de la utilidad de una lista territorial con capacidad institucional acordada.
+
+\pagina{Semáforo territorial y escenarios preventivos}
+\subsection{Clasificación y magnitud del electorado}
+\primerparrafo
+El semáforo convierte la tasa S0 en tres niveles relativos de abstención estimada. Se eligieron terciles porque no existen umbrales institucionales ni capacidad de atención validados; cada municipio calculable pesa uno. Los cortes son las posiciones $\lceil n/3\rceil$ y $\lceil2n/3\rceil$ de las 2,458 tasas ordenadas. Se calculan una vez y permanecen fijos al filtrar o cambiar escenario.
+
+Bajo corresponde a menos de 32.6599728691\%; medio, desde ese valor y por debajo de 42.6038471015\%; alto, desde el segundo corte. Los valores se muestran con diez decimales y la clasificación conserva su precisión de cálculo. Las tasas iguales reciben el mismo nivel; si no hubiera separación de cortes, se indicaría sin forzar tres grupos. La ausencia de tasa se representa aparte.
+
+\begin{table}[ht]
+\centering
+\iniciartabla
+\caption{Distribución municipal y peso de la LN por nivel S0.}
+\label{tab:semaforo}
+\small
+\setlength{\tabcolsep}{4pt}
+\input{\RutaReporte tablas/resumen_semaforo.tex}
+\terminartabla
+\end{table}
+
+Los 820 municipios de nivel alto representan 33.23\% de las unidades, pero reúnen 70.12\% de LN 2021. El contraste muestra por qué contar municipios y considerar tamaño poblacional producen lecturas diferentes de la atención necesaria. No expresa porcentaje de superficie, volumen de abstencionistas futuros ni una tasa nacional obtenida mediante conteos proyectados.
+
+Alto significa mayor valor relativo de S0 dentro de esta versión. No prueba abstención crónica, acumulación de barreras o una probabilidad individual. Bajo tampoco equivale a ausencia de necesidades. Esta lectura permite utilizar el mapa como señal de revisión y evita convertir un color en diagnóstico causal o en una decisión automática de gasto.
+
+\clearpage
+\subsection{Comparación de escenarios con cortes fijos}
+\primerparrafo
+La intervención explorada es información cívica neutral y accesible. Se calcula $S1=\min(1,\max(0,S0-d/100))$, donde $d$ es una reducción supuesta en pp. S1 central usa $d=2$; se añaden reducciones de 1 y 5 pp y un aumento adverso de 2 pp. Son hipótesis uniformes de sensibilidad, no estimaciones de respuesta o de eficacia.
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=\textwidth]{\RutaReporte figuras/reporte_jaguaryou/mapa_comparativo_v8.png}
+\caption{S0 y reducción hipotética S1 con la misma escala y los mismos cortes. Datos CCPC 2021, mapa CCPC 2024 y horizonte exploratorio 2027.}
+\label{fig:mapa}
+\end{figure}
+
+\begin{table}[ht]
+\centering
+\iniciartabla
+\caption{Municipios por nivel y cambios respecto a S0.}
+\label{tab:escenarios}
+\small
+\setlength{\tabcolsep}{4pt}
+\input{\RutaReporte tablas/escenarios.tex}
+\terminartabla
+\end{table}
+
+S1 produce 313 cambios: 145 de alto a medio y 168 de medio a bajo. No hay recortes de rango; el desplazamiento uniforme conserva el orden de las tasas. Sin S0, el escenario sigue nulo. Restar 2 pp no acredita votos recuperados, reducción de barreras ni recursos ahorrados.
+
+\clearpage
+\subsection{Interpretación territorial y condiciones de atención}
+\primerparrafo
+La concentración de LN en nivel alto no equivale a disponibilidad inmediata para focalizar. De sus 820 municipios, 417 se derivan a calidad, cinco a soporte y once a diagnóstico sin antecedente; los 387 restantes quedan en la ruta de explorar piloto. La revisión de NS, por tanto, cambia sustancialmente la lectura operativa del semáforo.
+
+\iniciartabla
+\input{\RutaReporte tablas/rutas_revision.tex}
+\terminartabla
+
+La revisión de calidad comprende 1,175 municipios y 88.68\% de LN 2021. Los 387 candidatos para explorar piloto reúnen 3,169,038 registros, 3.39\% de la LN total. La diferencia justifica separar un frente técnico de datos y otro de preparación de atención, en lugar de concentrar toda la operación donde el mapa exhibe valores altos.
+
+Cherán ilustra el primer frente: NS alcanza 89.11\% de su LN; su tasa entre registros especificados y su S0 no permiten omitir esa advertencia. Corregidora ilustra el segundo: pertenece a explorar piloto, con S0 de 46.89\% y LN 2021 de 156,115, aunque sólo tiene consulta tabular. Hay 19 candidatos de esta ruta sin enlace visual: exigir un polígono los excluiría sin fundamento analítico.
+
+Los cortes alternativos 25/75 y 40/60 modifican 85 y 71 rutas de orientación, respectivamente. Esta sensibilidad muestra dependencia del criterio de clasificación; no es un intervalo de incertidumbre. La orientación se basa en S0 y calidad, de modo que consultar una reducción hipotética no borra alertas ni modifica por sí mismo la acción propuesta.
+
+\pagina{Estrategia preventiva y priorización de recursos}
+\subsection{Objetivo operativo y líneas de acción}
+\primerparrafo
+Se propone mejorar el acceso y la comprensión de información cívica verificable en territorios con necesidades corroboradas. La estrategia tiene tres líneas: revisar las condiciones de los datos, contrastar necesidades con actores territoriales y ensayar información neutral por canales accesibles. El resultado inmediato esperado es una mejor capacidad de consulta y comprensión; el eventual cambio electoral requiere una evaluación distinta.
+
+La relación propuesta entre medios y resultados es la siguiente: revisión y diagnóstico permiten elegir contenido y canal; materiales accesibles y orientación facilitan exposición y comprensión; un mejor acceso puede contribuir a ejercer derechos. El último vínculo es una hipótesis, no un efecto demostrado por el modelo. Edad y sexo orientan preguntas sobre composición, sin prescribir mensajes a grupos ni explicar sus motivos de participación.
+
+\iniciartabla
+\input{\RutaReporte tablas/acciones_preventivas.tex}
+\terminartabla
+
+El contenido propuesto cubre derechos, fechas, procedimientos y canales oficiales. No incluye preferencias políticas ni persuasión partidista. La modalidad presencial o digital se decide por acceso observado, no por el color o una supuesta ruralidad. La mesa de datos documentaría primero si un caso puede interpretarse; el enlace territorial contrastaría necesidades y factibilidad antes de programar una actividad.
+
+\clearpage
+\subsection{Regla propuesta para asignar el esfuerzo}
+\primerparrafo
+La planeación debe distinguir tres componentes: disponibilidad general de información, revisión de datos y piloto focalizado. No se propone retirar atención general a niveles bajo y medio ni distribuir un porcentaje fijo de presupuesto sin conocer costos. La LN mide escala potencial; no mide necesidad individual, accesibilidad o beneficio esperado de una intervención.
+
+Como regla operativa a acordar, el conjunto inicial $C$ comprende los 387 municipios de explorar piloto, sujeto a confirmar continuidad y necesidades. Dentro de $C$, se propone ordenar por LN 2021 descendente para comparar escala de alcance, con S0 descendente y clave como desempates. Es una decisión de planeación orientada a cobertura, adicional a las rutas del visor; no una asignación ya implementada ni una regla de eficacia validada.
+
+Con presupuesto de piloto $B_p$ y costo de una actividad mínima $c_i$ estimado tras el diagnóstico, se considerarían sucesivamente los primeros $K$ municipios factibles que satisfagan:
+\[
+ \sum_{i\in C_K}c_i\leq B_p.
+\]
+El costo debe incluir facilitación, adaptación, materiales, sede, traslado y seguimiento que correspondan. Una condición de acceso no resuelta obliga a adaptar la actividad o mantener el caso en diagnóstico, dejando constancia de la decisión; no equivale a eliminar la unidad de la base.
+
+Corregidora, Zinacantepec y Colima encabezan el orden por LN dentro de los candidatos, con 156,115, 140,290 y 128,147 registros de 2021. Son ejemplos de la regla propuesta y no municipios con recursos autorizados. La información nominal debe actualizarse y validarse para operar en 2027; no se interpreta como población convocada ni como votos recuperables.
+
+El frente de calidad requiere su propio tiempo de análisis, pues 1,175 casos no pueden presupuestarse como visitas de promoción equivalentes. Antes de fijar $B_p$, la institución debería costear la revisión y la oferta general, y acordar capacidad y criterios de equidad. La regla no garantiza una asignación óptima ni justifica concentrar todo el esfuerzo en los municipios más poblados.
+
+\clearpage
+\subsection{Piloto, seguimiento y decisiones de continuidad}
+\primerparrafo
+Se plantea un piloto de seis semanas como supuesto de organización. En las dos primeras, la coordinación responsable revisaría comparabilidad, calidad, necesidades y acceso, y fijaría contenidos, costos, metas e instrumento de medición. En las semanas tres y cuatro se realizarían actividades acotadas y se registrarían alcance e incidencias. En las semanas cinco y seis se analizarían resultados y ajustes antes de decidir una ampliación.
+
+\iniciartabla
+\input{\RutaReporte tablas/seguimiento_piloto.tex}
+\terminartabla
+
+El diagnóstico debe confirmar disponibilidad de personal, canales y sedes; esos recursos no están aprobados. La recolección propuesta usa registros agregados e instrumentos anónimos, sin incorporar identificadores personales a Nexo Cívico. La comparación inicial y final debe informar tamaño, participación voluntaria, faltantes y posibles cambios en la composición de quienes responden.
+
+Si la capacidad permite un grupo comparable o un despliegue escalonado, el protocolo debe fijarse antes de observar resultados y justificar su comparabilidad. Sin ello, los cambios se reportarían como descriptivos. Mejorar comprensión no demuestra un efecto sobre abstención y no valida retrospectivamente la hipótesis de 2 pp.
+
+La continuidad del piloto dependería de cumplir las actividades de acceso acordadas, observar comprensión con medición interpretable y contar con costos y capacidad sostenibles. Metas numéricas y umbrales de aceptación deben acordarse antes de iniciar. Un problema de datos, acceso o medición exige revisar el diseño; no se declara éxito por cambiar de color en el escenario simulado.
+
+\pagina{Alcances, limitaciones y conclusiones}
+\primerparrafo
+La evidencia permite una referencia exploratoria municipal y una propuesta de revisión preventiva. Sólo hay dos pares históricos comparables; las entradas de 2021 tienen seis años al horizonte 2027 y las etiquetas retrospectivas ya habían sido exploradas. No se acredita precisión futura, aporte demográfico robusto o utilidad institucional medida.
+
+Las tasas describen registros especificados. NS positivo exige revisión, NS=0 no garantiza suficiencia y las correspondencias territoriales siguen condicionadas. El semáforo expresa posición relativa, sin identificar causas, conductas individuales o necesidades de grupos; atribuirlas a personas a partir del municipio incurriría en una inferencia ecológica injustificada.
+
+El aporte de Nexo Cívico es vincular estimación, magnitud del electorado y calidad con una secuencia de decisión: revisar, diagnosticar y, cuando proceda, ensayar atención y evaluarla. La prioridad operativa surge de esas condiciones conjuntas. Los escenarios permiten discutir sensibilidad; la eficacia, el presupuesto y la ampliación requieren evidencia de campo y acuerdos institucionales.
+
+\vspace{0.15cm}
+\phantomsection
+\addcontentsline{toc}{section}{Referencias}
+\renewcommand{\refname}{Referencias}
+\begingroup
+\small
+\singlespacing
+\raggedright
+\bibliographystyle{apalike}
+\bibliography{\RutaReporte referencias}
+\endgroup
+\end{document}

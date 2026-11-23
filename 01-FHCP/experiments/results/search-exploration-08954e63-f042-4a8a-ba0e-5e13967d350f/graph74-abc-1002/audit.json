@@ -1,0 +1,82 @@
+{
+  "instance": "graph74",
+  "algorithm": "abc",
+  "seed": 1002,
+  "status": "exhausted",
+  "best_cost": 8,
+  "certified_success": false,
+  "resources_before": {
+    "available_ram_bytes": 14637481984,
+    "swap_pages": {
+      "pswpin": 92,
+      "pswpout": 679
+    },
+    "ac_online": true,
+    "governor": "powersave",
+    "suspend_offset_ns": -294,
+    "load_1m": 1.08740234375,
+    "at_utc": "2026-11-13T18:20:39.231672+00:00"
+  },
+  "returncode": 0,
+  "process_seconds": 10.158063287000004,
+  "resources_after": {
+    "available_ram_bytes": 14665781248,
+    "swap_pages": {
+      "pswpin": 92,
+      "pswpout": 679
+    },
+    "ac_online": true,
+    "governor": "powersave",
+    "suspend_offset_ns": -815,
+    "load_1m": 1.0732421875,
+    "at_utc": "2026-11-13T18:20:49.391690+00:00"
+  },
+  "stop_reason": "time_limit",
+  "counters": {
+    "iteration_unit": "abc_cycle",
+    "evaluations_started": 29352,
+    "evaluations_completed": 29352,
+    "full_evaluations": 146,
+    "incremental_evaluations": 29206,
+    "cache_hits": 0,
+    "validations_started": 0,
+    "validations_completed": 0,
+    "iterations_completed": 730,
+    "partial_iteration": {
+      "phase": "abc_cycle",
+      "completed_items": 6,
+      "planned_items": 41
+    },
+    "restarts": 126,
+    "algorithm_counters": {
+      "greedy_jumps": 2316,
+      "greedy_routes_completed": 146,
+      "employed_proposals": 14606,
+      "guided_noops": 4586,
+      "guided_inversions": 10097,
+      "onlooker_proposals": 14600,
+      "scout_skips": 604,
+      "incremental_full_checks": 29,
+      "employed_improvements": 13,
+      "scout_abandonments": 126,
+      "scout_renewals": 126,
+      "onlooker_improvements": 7
+    }
+  },
+  "timing": {
+    "solver_ns": 10000091961,
+    "validation_ns": 0,
+    "overrun_ns": 91961,
+    "first_success": null
+  },
+  "independent_validation": {
+    "valid": false,
+    "reason": "missing_edge",
+    "position": 56,
+    "vertices": [
+      421,
+      6
+    ]
+  },
+  "recalculated_cost": 8
+}

@@ -1,0 +1,19 @@
+\pagina{Discusión, cuellos de botella y limitaciones}
+\subsection{Interpretación de los cambios}
+La campaña inicial evidenció que preservar permutaciones no basta para encontrar ciclos. Introducir información de adyacencia reduce parte del trabajo ciego, pero decisiones localmente favorables pueden ser incompatibles con el cierre global.
+
+La etapa posterior cambió políticas, tiempo por intento y reparto de hardware. La diferencia entre cero éxitos históricos y 15 grafos finales no estima el efecto causal de un componente. Para atribuir efectos a inicialización, guía, recalentamiento o costo incremental se necesita una ablación con iguales instancias, semillas, equipos y presupuestos.
+
+\subsection{Familia mejor adaptada al corte}
+ABC presentó la mayor cobertura observada: alcanzó los 15 grafos resueltos y 116 éxitos en 1\,440 intentos sobre cobertura completa. La explotación de fuentes, renovación por abandono y vecindades guiadas son compatibles con ese comportamiento, pero el experimento no aísla el aporte de cada mecanismo. La conclusión es descriptiva y corresponde a la configuración evaluada.
+
+GA, DE y PSO también produjeron ciclos; la menor cobertura de SA no descarta otros esquemas de temperatura o vecindad. En AS persiste el costo de construir rutas y actualizar feromonas, sin perfilado suficiente para cuantificar cada operación. No se supone equivalencia de trabajo entre una evaluación incremental, la construcción de una ruta y la decodificación de claves de una población.
+
+\subsection{Validez y trabajo futuro}
+La selección final contiene prefijos de colas asignadas, con instancias reutilizadas durante el desarrollo y máquinas diferentes. No es representativa de los 1001 grafos. Los éxitos entre semillas del mismo grafo no se tratan como observaciones independientes para sostener una superioridad estadística general.
+
+Los parciales quedan fuera de la tabla balanceada pero dentro de los totales. La censura por plazo, los tiempos faltantes y los historiales incompletos impiden estimar un tiempo calendario o medio hasta solución fiable. Certificados, hashes y reproducción reducen errores de medición; no eliminan sesgos de selección ni garantizan resultados futuros.
+
+Las exploraciones cerradas añaden siete grafos certificados a los 15 de la evaluación distribuida: dos con la variante guiada y cinco con reparación v4. La cobertura acumulada de \UnionCertifiedGraphs{} grafos supera la referencia aproximada de 20, pero no la meta original de 60. Cada etapa conserva su propio denominador y las combinaciones no ejecutadas quedan fuera de la entrega, sin continuación prevista.
+
+En v4 solo ABC, GA y AS aportaron éxitos. La selección dirigida y los cambios simultáneos impiden generalizar ese orden al challenge o aislar efectos causales; no se realizaron ablaciones.

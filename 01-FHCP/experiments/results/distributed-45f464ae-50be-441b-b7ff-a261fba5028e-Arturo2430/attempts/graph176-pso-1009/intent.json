@@ -1,0 +1,57 @@
+{
+  "plan_sha256": "348df5525871354ff25a60b22ccb8da8d6aba9884de9a3a9b4026feafc0db250",
+  "key": [
+    "graph176",
+    "pso",
+    1009
+  ],
+  "started_utc": "2026-11-16T14:58:18.843149+00:00",
+  "command": [
+    "/home/arturo/projects/FHCP-Challenge/.venv/bin/python",
+    "-m",
+    "src.cli",
+    "--catalog",
+    "/home/arturo/projects/FHCP-Challenge/docs/decisions/fhcp-catalog.json",
+    "--instance",
+    "graph176",
+    "--algorithm",
+    "pso",
+    "--seed",
+    "1009",
+    "--max-elapsed-ns",
+    "60000000000",
+    "--cognitive-coefficient",
+    "1.0",
+    "--inertia",
+    "0.5",
+    "--initialization",
+    "greedy",
+    "--social-coefficient",
+    "1.0",
+    "--swarm-size",
+    "20",
+    "--velocity-limit",
+    "0.5"
+  ],
+  "before": {
+    "at_utc": "2026-11-16T14:58:18.843931+00:00",
+    "host": "victus",
+    "os": "Linux-7.2.9-2-cachyos-x86_64-with-glibc2.44",
+    "available_ram_bytes": 27744116736,
+    "ac_online": true,
+    "affinity": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ]
+  }
+}

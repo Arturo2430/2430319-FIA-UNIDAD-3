@@ -1,0 +1,40 @@
+\begin{titlepage}\thispagestyle{empty}
+\begin{tikzpicture}[remember picture,overlay]
+\fill[NCBackground] (current page.south west) rectangle (current page.north east);
+\begin{scope}[transform canvas={rotate around={35:($(current page.north west)+(-1,-2)$)}}]
+\shade[rounded corners=18pt,left color=NCAccent,right color=NCMint] ($(current page.north west)+(-1,-2)$) rectangle ++(13,1.3);
+\end{scope}
+\begin{scope}[transform canvas={rotate around={35:($(current page.north east)+(-9,-1)$)}}]
+\shade[rounded corners=15pt,left color=NCAction,right color=NCMint] ($(current page.north east)+(-9,-1)$) rectangle ++(13,.8);
+\end{scope}
+\fill[NCPrimary] (current page.south west) rectangle ([yshift=1.1cm]current page.south east);
+\end{tikzpicture}
+\vspace*{3.1cm}
+{\color{NCPrimary}\Large\bfseries Universidad Politécnica de Victoria\par}
+\vspace{.3cm}
+{\color{NCTextSecondary}\normalsize Ingeniería en Tecnologías de la Información\\e Innovación Digital\par}
+\vspace{1.0cm}
+{\color{NCAction}\small\bfseries FUNDAMENTOS DE INTELIGENCIA ARTIFICIAL\par}
+\vspace{.35cm}
+{\color{NCPrimary}\fontsize{29}{35}\selectfont\bfseries Metaheurísticas para\\ciclos hamiltonianos\par}
+\vspace{.35cm}
+{\color{NCAction}\Large Evaluación técnica y comparativa\\sobre el FHCP Challenge Set\par}
+\vspace{.5cm}
+{\color{NCAccent}\rule{5cm}{2pt}\par}
+\vspace{.45cm}
+{\bfseries Profesor:} Dr. Said Polanco Martagón
+\vspace{.7cm}
+
+{\color{NCPrimary}\bfseries Integrantes}\par
+\vspace{.15cm}
+\begin{tabularx}{\linewidth}{@{}Yr@{}}
+Diego Eduardo Zapata Aguilar & 2430053\\[4pt]
+Cesar Euresti & 2430233\\[4pt]
+Eder Omar Zúñiga Zavala & 2430206\\[4pt]
+Elías de Jesús Zúñiga de León & 2430085\\[4pt]
+Junior Arturo Vazquez Leonel & 2430319
+\end{tabularx}
+\vfill
+{\color{NCTextSecondary}\small Fecha de entrega: 17 de noviembre de 2026\par}
+\vspace{.5cm}
+\end{titlepage}

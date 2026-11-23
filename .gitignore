@@ -1,0 +1,19 @@
+# Archivos locales de la práctica de recopilación
+/02-anime-crawler/.venv/
+/02-anime-crawler/__pycache__/
+/02-anime-crawler/*.py[cod]
+/02-anime-crawler/modelos/
+/02-anime-crawler/*.part
+
+# Entorno y archivos temporales de los notebooks
+/03-algoritmos-ML-SL/.venv/
+/03-algoritmos-ML-SL/**/__pycache__/
+/03-algoritmos-ML-SL/**/.ipynb_checkpoints/
+
+# Exclusiones locales de FHCP autorizadas para la entrega
+/01-FHCP/**/__pycache__/
+/01-FHCP/**/*.py[cod]
+/01-FHCP/**/.pytest_cache/
+/01-FHCP/**/.mypy_cache/
+/01-FHCP/**/.ruff_cache/
+/01-FHCP/experiments/results/e390b61f-aae4-4248-ba71-4467920d7bac/archives/67191556-cc8d-4612-9517-e9b4cd0a2340-94cc6784-b55d-43af-a668-6fac9dc5213f.tar.gz

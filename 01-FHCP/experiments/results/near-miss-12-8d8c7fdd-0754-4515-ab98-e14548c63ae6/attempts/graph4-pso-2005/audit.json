@@ -1,0 +1,19 @@
+{
+  "instance": "graph4",
+  "algorithm": "pso",
+  "seed": 2005,
+  "status": "error",
+  "stop_reason": "external_termination",
+  "certified_success": false,
+  "best_cost": null,
+  "process_seconds": 17.100675854000656,
+  "solver_ns": null,
+  "returncode": 130,
+  "artifact_sha256": {
+    "intent.json": "8a589061f8e0a0cfe248882e42cf6a2e76ad78d7961bbec3754582e34b3080a3",
+    "stdout.json": "d1b348bf431d59dcd4a74c508553fa15a7e38f62af227c6bc6928b136db29836",
+    "stderr.log": "392c579366dd955acdd2dce1873dd3d811e3dd77cca53a986a770db34b777ac6",
+    "exit.json": "213ae53f58c5646174d4abbb5b881bffb2c4bb636b682e9389a13017f2879de8",
+    "worker.json": "01a376565fad9d561c82c4861f084729307066e0d8975e77f3e47c789e16484a"
+  }
+}

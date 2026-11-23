@@ -1,0 +1,40 @@
+\pagina{Metodología experimental y reproducibilidad}
+\subsection{Etapas y control de versiones}
+Se separan campaña inicial, evaluación distribuida y exploraciones cerradas (sección~\ref{sec:exploration}). M6 incluyó comprobación, ajuste, evaluación, escala y verificación: 12, 120, 720, 180 y 12 procesos, respectivamente; 1\,044 en total. Su análisis principal utiliza los 900 primarios de evaluación y escala, sin ampliar el denominador con verificaciones.
+
+La evaluación inicial usó hasta 10\,000 evaluaciones o 30 segundos por solver en sus fases principales, con 30 semillas por grafo y familia. Evaluación cubrió graph48, graph175, graph74 y graph479; escala añadió graph1001. Las instancias de comprobación y ajuste quedaron diferenciadas para evitar atribuir sus mediciones a evaluación final.
+
+El plan distribuido congeló las mejoras descritas con diez semillas, 1001--1010, y hasta 60 segundos por intento, sin límite de evaluaciones ni iteraciones. Termina antes al certificar un ciclo; el límite externo de 120 segundos incluye arranque y carga y controla bloqueos. El plazo cooperativo puede tener una pequeña sobrepasada de instrumentación.
+
+Las 1001 instancias se asignaron sin solapamientos a cinco integrantes: 220 a Arturo, 196 a Zapata y 195 a cada uno de los demás. Cada grafo completo representa seis familias por diez semillas, es decir, 60 combinaciones. La cola completa era una reserva de 60\,060 intentos; no equivale al número efectivamente ejecutado.
+
+\subsection{Entorno y comparabilidad}
+Cada integrante conservó el mismo equipo. Los hilos nativos se fijaron a uno por proceso. La evaluación distribuida contiene 7\,563 intentos secuenciales y 1\,243 intentos bajo un coordinador de hasta cuatro procesos en núcleos distintos. El plan fijaba ejecución serial: la concurrencia se registra como desviación de recursos, con código de solver y presupuesto individual conservados. Los perfiles registran CPython 3.14.10 estándar con GIL, arquitectura de 64 bits y NumPy 2.5.4. El entorno y la revisión del código se identificaron antes de los lotes; se preservaron pruebas de preparación y hashes de los componentes.
+
+\begin{table}[H]\centering\small
+\caption{Equipos de la evaluación distribuida. CPU y RAM proceden de la preparación declarada y conservada de cada entrega.}
+\begin{tabularx}{\linewidth}{lYrY}\toprule
+Equipo & Procesador & RAM (GiB) & Sistema \\ \midrule
+Arturo & Intel Core i5-12450H & 31.01 & CachyOS, Linux 7.2.9\\
+Zapata & Intel Core i5-1334U & 15.30 & CachyOS, Linux 7.3.1\\
+César & AMD Ryzen 7 7730U & 14.96 & CachyOS, Linux 7.3.3\\
+Eder & AMD Ryzen 5 4600G & 21.31 & Debian 13, Linux 6.12.113\\
+Elías & AMD Ryzen 5 7535HS & 15.21 & Windows 11, compilación 26300\\
+\bottomrule\end{tabularx}
+\end{table}
+
+Las seis familias comparten hardware por grafo; entre equipos cambian las instancias, confundiendo el efecto de máquina y subconjunto. No se normalizan tiempos por frecuencia, núcleos o RAM. Las tablas separan equipo, algoritmo y modo por intento; las medias conjuntas no acreditan aceleración. La campaña histórica utilizó la laptop de Arturo, afinidad a la CPU lógica 2 y un trabajador.
+
+\subsection{Admisión, registros y auditoría}
+Cada intento conserva intención de ejecución, parámetros, semilla, stdout y stderr, estado de salida, mejor candidato y auditoría. El coordinador guarda progreso por intento y no reintenta automáticamente interrupciones. La recuperación distingue un primario interrumpido de uno terminado; no convierte una ruta parcial de stdout en éxito.
+
+Para consolidar se comprobaron SHA-256, CRC e inventarios de cinco paquetes; se extrajeron en directorios separados y se ejecutó el agregador oficial. Este volvió a comprobar identidades, presupuesto, snapshot de fuentes, hashes de artefactos, costo y certificado. Las celdas recalculadas de cada integrante coincidieron exactamente con sus resúmenes originales. La agregación no contiene miembros ausentes ni combinaciones duplicadas.
+
+En la evaluación final hay 8\,804 duraciones de proceso disponibles; dos interrupciones no tienen ese dato. Se conservan sin imputación. La suma de 510\,361.334 segundos entre equipos corresponde a 141.767 horas de procesos, no a duración calendario. Los huecos de los historiales de sesión de Elías y Zapata impiden sustituir esa medida por una suma de sesiones supuestamente completa.
+
+\subsection{Cierre parcial y criterios de análisis}
+La meta inicial del plan compartido era alcanzar 60 grafos distintos certificados. El responsable indicó una expectativa aproximada de 20 para la entrega; el consolidado certifica 15 y no alcanza ninguna de esas referencias. Se conserva la procedencia de la expectativa de 20 al cierre y no se presenta como objetivo preregistrado.
+
+El corte contiene 149 grafos iniciados, 144 con 60 combinaciones conciliadas y cinco parciales. Para evitar comparar familias con distinto número de semillas en un mismo resumen, la tabla principal entre algoritmos utiliza solo los 144 grafos completos: 1\,440 intentos por familia. Las incidencias de esos grafos siguen en el denominador. Los totales generales incorporan también los 166 intentos de los cinco grafos parciales.
+
+Las 51\,254 combinaciones no ejecutadas quedan fuera del alcance aceptado. Se excluyó graph57--GA--1001 de Elías por no pertenecer a su paquete de 600 resultados auditados.

@@ -1,0 +1,83 @@
+{
+  "instance": "graph2",
+  "algorithm": "abc",
+  "seed": 1007,
+  "status": "success",
+  "best_cost": 0,
+  "certified_success": true,
+  "resources_before": {
+    "available_ram_bytes": 14500130816,
+    "swap_pages": {
+      "pswpin": 102,
+      "pswpout": 679
+    },
+    "ac_online": true,
+    "governor": "powersave",
+    "suspend_offset_ns": -461,
+    "load_1m": 1.7744140625,
+    "at_utc": "2026-11-13T18:32:31.614044+00:00"
+  },
+  "returncode": 0,
+  "process_seconds": 1.5707072060004066,
+  "resources_after": {
+    "available_ram_bytes": 14522155008,
+    "swap_pages": {
+      "pswpin": 102,
+      "pswpout": 679
+    },
+    "ac_online": true,
+    "governor": "powersave",
+    "suspend_offset_ns": -468,
+    "load_1m": 1.7744140625,
+    "at_utc": "2026-11-13T18:32:33.186684+00:00"
+  },
+  "stop_reason": "validated_cycle",
+  "counters": {
+    "iteration_unit": "abc_cycle",
+    "evaluations_started": 16528,
+    "evaluations_completed": 16528,
+    "full_evaluations": 88,
+    "incremental_evaluations": 16440,
+    "cache_hits": 0,
+    "validations_started": 1,
+    "validations_completed": 1,
+    "iterations_completed": 410,
+    "partial_iteration": {
+      "phase": "abc_cycle",
+      "completed_items": 41,
+      "planned_items": 41
+    },
+    "restarts": 68,
+    "algorithm_counters": {
+      "greedy_jumps": 140,
+      "greedy_routes_completed": 88,
+      "employed_proposals": 8220,
+      "guided_inversions": 8263,
+      "onlooker_proposals": 8220,
+      "scout_skips": 343,
+      "onlooker_improvements": 5,
+      "incremental_full_checks": 16,
+      "employed_improvements": 10,
+      "scout_abandonments": 68,
+      "scout_renewals": 68
+    }
+  },
+  "timing": {
+    "solver_ns": 1391446618,
+    "validation_ns": 145879,
+    "overrun_ns": 0,
+    "first_success": {
+      "elapsed_ns": 1391446618,
+      "evaluations_started": 16528,
+      "evaluations_completed": 16528,
+      "iterations_completed": 410
+    }
+  },
+  "independent_validation": {
+    "valid": true,
+    "reason": null,
+    "position": null,
+    "vertices": []
+  },
+  "recalculated_cost": 0
+}

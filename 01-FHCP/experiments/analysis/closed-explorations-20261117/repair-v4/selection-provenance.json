@@ -1,0 +1,30 @@
+{
+  "rule": "unsolved AND (team best cost in 1..3 OR peer reported success)",
+  "order": "peer successes first, then cost, then numeric graph ID",
+  "inputs": [
+    {
+      "snapshot": "inputs/team.csv",
+      "original_path": "/home/arturo/projects/FHCP-Challenge/experiments/results/team-evaluation-consolidated-20261117/by-graph.csv",
+      "sha256": "62ef2244672c72cfee6a4b21f82d1e5372bb45eb913e87377bc78b1b9e6641a0"
+    },
+    {
+      "snapshot": "inputs/peer-1.csv",
+      "original_path": "/home/arturo/Downloads/exito_por_instancia.csv",
+      "sha256": "8cde41c0d67e2ea58a36094fe9e75dabe22d83df761accf6410cda58e1507977"
+    },
+    {
+      "snapshot": "inputs/peer-2.csv",
+      "original_path": "/home/arturo/Downloads/exito_por_instancia (1).csv",
+      "sha256": "e3301ff622cf7f726ee024ca4af899169aed02e28197868c623da3b7b02f829d"
+    }
+  ],
+  "prior_plan_sha256": "7b67490fb9d8c4cb09cadcd728ba6e90c9943e8eb8f835accb569ea7a758ce45",
+  "prior_results": "/home/arturo/projects/FHCP-Challenge/experiments/results/near-miss-12-8d8c7fdd-0754-4515-ab98-e14548c63ae6",
+  "prior_certification_snapshot_sha256": "588a881423abc23343cc75856447c9a62bb12acddb2d62f7da89de860529d80d",
+  "excluded_prior_certified_graphs": [
+    "graph35",
+    "graph4"
+  ],
+  "peer_successes_are_reported_not_independently_certified": true,
+  "selection_sha256": "84967676af66e10cf835f711c31fd5a27b112591ceda94e1fb16ad3144673ec5"
+}

@@ -1,0 +1,23 @@
+{
+  "source_url": "https://drive.google.com/drive/folders/1GO8g4-chyUJnl6u7ah-2Bjfq6mdfAd3A",
+  "package_manifest": "packages.json",
+  "mode_counts": {
+    "serial": 7563,
+    "parallel_up_to_4": 1243
+  },
+  "eder_parallel_continuation": {
+    "created_utc": "2026-11-17T14:33:30.098789+00:00",
+    "mode": "parallel-continuation",
+    "sequential_attempts_at_transition": 1368,
+    "last_sequential_session": {
+      "at_utc": "2026-11-17T14:33:26.145353+00:00",
+      "stop_reason": "session_limit",
+      "new_attempts": 60,
+      "total_attempted": 1368,
+      "session_seconds": 3623.459907197999
+    },
+    "note": "The frozen plan specifies serial execution. Subsequent sessions run up to four graph-distinct attempts on separate physical cores. Report their timings as parallel measurements."
+  },
+  "graph134": "45 cycles independently checked against original graph edges and closure",
+  "temporal_comparison": "Pooled process means are descriptive mixed-mode measurements; no serial-parallel speedup is claimed"
+}

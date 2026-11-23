@@ -1,0 +1,52 @@
+{
+  "plan_sha256": "aabcf4b7ceafe58d3ffacee695c4b44c774a8e610fd64a4cded7067795e626cb",
+  "key": [
+    "graph47",
+    "ga",
+    2009
+  ],
+  "started_utc": "2026-11-17T22:57:49.802440+00:00",
+  "command": [
+    "/home/arturo/projects/FHCP-Challenge/.venv/bin/python",
+    "-m",
+    "src.cli",
+    "--catalog",
+    "/home/arturo/projects/FHCP-Challenge/.tools/solver-repair-v4/experiments/configs/near-miss-expanded-v4/catalog.json",
+    "--instance",
+    "graph47",
+    "--algorithm",
+    "ga",
+    "--seed",
+    "2009",
+    "--max-elapsed-ns",
+    "30000000000",
+    "--crossover-rate",
+    "0.8",
+    "--elite-count",
+    "1",
+    "--mutation-rate",
+    "0.1",
+    "--population-size",
+    "20",
+    "--tournament-size",
+    "3",
+    "--initialization",
+    "greedy",
+    "--guided-move-rate",
+    "0.5",
+    "--repair-steps",
+    "64",
+    "--repair-threshold",
+    "3"
+  ],
+  "before": {
+    "at_utc": "2026-11-17T22:57:49.803824+00:00",
+    "host": "victus",
+    "os": "Linux-7.2.9-2-cachyos-x86_64-with-glibc2.44",
+    "available_ram_bytes": 18917142528,
+    "ac_online": true,
+    "affinity": [
+      0
+    ]
+  }
+}

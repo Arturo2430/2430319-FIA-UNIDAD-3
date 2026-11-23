@@ -1,0 +1,46 @@
+{
+  "algorithm": "as",
+  "seed": 1004,
+  "returncode": 0,
+  "external_timeout": false,
+  "wall_ns": 30216151452,
+  "resources_before": {
+    "available_ram_bytes": 23378706432,
+    "swap_pages": {
+      "pswpin": 1,
+      "pswpout": 67
+    },
+    "ac_online": true,
+    "governor": "powersave",
+    "suspend_offset_ns": -240,
+    "load_1m": 1.5341796875,
+    "at_utc": "2026-11-13T14:27:38.503677+00:00"
+  },
+  "resources_after": {
+    "available_ram_bytes": 23278088192,
+    "swap_pages": {
+      "pswpin": 1,
+      "pswpout": 67
+    },
+    "ac_online": true,
+    "governor": "powersave",
+    "suspend_offset_ns": -464,
+    "load_1m": 1.83984375,
+    "at_utc": "2026-11-13T14:28:08.721036+00:00"
+  },
+  "status": "exhausted",
+  "best_cost": 3,
+  "certified_success": false,
+  "stop_reason": "time_limit",
+  "recalculated_cost": 3,
+  "validation": {
+    "valid": false,
+    "reason": "missing_edge",
+    "position": 55,
+    "vertices": [
+      23,
+      46
+    ]
+  },
+  "stdout_sha256": "4868afa8bf73b5b14bbd7c9680982c007f1bf99da8184381090e251295998e6b"
+}

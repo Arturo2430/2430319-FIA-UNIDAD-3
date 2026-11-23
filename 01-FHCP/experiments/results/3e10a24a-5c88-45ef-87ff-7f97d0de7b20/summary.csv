@@ -1,0 +1,7 @@
+algorithm,completed,planned,certified_successes,errors,best_cost
+ga,30,30,0,0,25
+sa,30,30,0,0,15
+as,30,30,0,0,2
+abc,30,30,0,0,33
+de,30,30,0,0,53
+pso,30,30,0,0,51

@@ -1,0 +1,133 @@
+instance,protocol,algorithm,successes,attempted
+graph1,Reparación v4 30 s,ga,0,10
+graph1,Reparación v4 30 s,sa,0,10
+graph1,Reparación v4 30 s,as,2,10
+graph1,Reparación v4 30 s,abc,1,10
+graph1,Reparación v4 30 s,de,0,10
+graph1,Reparación v4 30 s,pso,0,10
+graph2,Distribuida 60 s,ga,3,10
+graph2,Distribuida 60 s,sa,1,10
+graph2,Distribuida 60 s,as,10,10
+graph2,Distribuida 60 s,abc,10,10
+graph2,Distribuida 60 s,de,2,10
+graph2,Distribuida 60 s,pso,0,10
+graph4,Guiada 30 s,ga,0,5
+graph4,Guiada 30 s,sa,0,5
+graph4,Guiada 30 s,as,0,5
+graph4,Guiada 30 s,abc,1,5
+graph4,Guiada 30 s,de,0,5
+graph4,Guiada 30 s,pso,0,5
+graph6,Distribuida 60 s,ga,4,10
+graph6,Distribuida 60 s,sa,0,10
+graph6,Distribuida 60 s,as,4,10
+graph6,Distribuida 60 s,abc,10,10
+graph6,Distribuida 60 s,de,2,10
+graph6,Distribuida 60 s,pso,0,10
+graph10,Distribuida 60 s,ga,2,10
+graph10,Distribuida 60 s,sa,0,10
+graph10,Distribuida 60 s,as,0,10
+graph10,Distribuida 60 s,abc,10,10
+graph10,Distribuida 60 s,de,0,10
+graph10,Distribuida 60 s,pso,1,10
+graph14,Distribuida 60 s,ga,0,10
+graph14,Distribuida 60 s,sa,0,10
+graph14,Distribuida 60 s,as,0,10
+graph14,Distribuida 60 s,abc,9,10
+graph14,Distribuida 60 s,de,0,10
+graph14,Distribuida 60 s,pso,0,10
+graph18,Distribuida 60 s,ga,0,10
+graph18,Distribuida 60 s,sa,0,10
+graph18,Distribuida 60 s,as,0,10
+graph18,Distribuida 60 s,abc,6,10
+graph18,Distribuida 60 s,de,0,10
+graph18,Distribuida 60 s,pso,0,10
+graph23,Distribuida 60 s,ga,0,10
+graph23,Distribuida 60 s,sa,0,10
+graph23,Distribuida 60 s,as,0,10
+graph23,Distribuida 60 s,abc,4,10
+graph23,Distribuida 60 s,de,0,10
+graph23,Distribuida 60 s,pso,1,10
+graph27,Distribuida 60 s,ga,1,10
+graph27,Distribuida 60 s,sa,0,10
+graph27,Distribuida 60 s,as,0,10
+graph27,Distribuida 60 s,abc,4,10
+graph27,Distribuida 60 s,de,1,10
+graph27,Distribuida 60 s,pso,0,10
+graph31,Distribuida 60 s,ga,0,10
+graph31,Distribuida 60 s,sa,0,10
+graph31,Distribuida 60 s,as,0,10
+graph31,Distribuida 60 s,abc,2,10
+graph31,Distribuida 60 s,de,0,10
+graph31,Distribuida 60 s,pso,0,10
+graph35,Guiada 30 s,ga,0,5
+graph35,Guiada 30 s,sa,0,5
+graph35,Guiada 30 s,as,0,5
+graph35,Guiada 30 s,abc,1,5
+graph35,Guiada 30 s,de,0,5
+graph35,Guiada 30 s,pso,0,5
+graph39,Reparación v4 30 s,ga,1,10
+graph39,Reparación v4 30 s,sa,0,10
+graph39,Reparación v4 30 s,as,0,10
+graph39,Reparación v4 30 s,abc,0,10
+graph39,Reparación v4 30 s,de,0,10
+graph39,Reparación v4 30 s,pso,0,10
+graph43,Reparación v4 30 s,ga,0,10
+graph43,Reparación v4 30 s,sa,0,10
+graph43,Reparación v4 30 s,as,0,10
+graph43,Reparación v4 30 s,abc,2,10
+graph43,Reparación v4 30 s,de,0,10
+graph43,Reparación v4 30 s,pso,0,10
+graph47,Reparación v4 30 s,ga,1,10
+graph47,Reparación v4 30 s,sa,0,10
+graph47,Reparación v4 30 s,as,0,10
+graph47,Reparación v4 30 s,abc,1,10
+graph47,Reparación v4 30 s,de,0,10
+graph47,Reparación v4 30 s,pso,0,10
+graph52,Reparación v4 30 s,ga,2,10
+graph52,Reparación v4 30 s,sa,0,10
+graph52,Reparación v4 30 s,as,0,10
+graph52,Reparación v4 30 s,abc,1,10
+graph52,Reparación v4 30 s,de,0,10
+graph52,Reparación v4 30 s,pso,0,10
+graph56,Distribuida 60 s,ga,0,10
+graph56,Distribuida 60 s,sa,0,10
+graph56,Distribuida 60 s,as,0,10
+graph56,Distribuida 60 s,abc,1,10
+graph56,Distribuida 60 s,de,0,10
+graph56,Distribuida 60 s,pso,0,10
+graph72,Distribuida 60 s,ga,10,10
+graph72,Distribuida 60 s,sa,4,10
+graph72,Distribuida 60 s,as,0,10
+graph72,Distribuida 60 s,abc,10,10
+graph72,Distribuida 60 s,de,10,10
+graph72,Distribuida 60 s,pso,10,10
+graph79,Distribuida 60 s,ga,10,10
+graph79,Distribuida 60 s,sa,3,10
+graph79,Distribuida 60 s,as,0,10
+graph79,Distribuida 60 s,abc,10,10
+graph79,Distribuida 60 s,de,10,10
+graph79,Distribuida 60 s,pso,10,10
+graph90,Distribuida 60 s,ga,10,10
+graph90,Distribuida 60 s,sa,1,10
+graph90,Distribuida 60 s,as,0,10
+graph90,Distribuida 60 s,abc,10,10
+graph90,Distribuida 60 s,de,10,10
+graph90,Distribuida 60 s,pso,10,10
+graph96,Distribuida 60 s,ga,10,10
+graph96,Distribuida 60 s,sa,4,10
+graph96,Distribuida 60 s,as,0,10
+graph96,Distribuida 60 s,abc,10,10
+graph96,Distribuida 60 s,de,10,10
+graph96,Distribuida 60 s,pso,10,10
+graph134,Distribuida 60 s,ga,10,10
+graph134,Distribuida 60 s,sa,5,10
+graph134,Distribuida 60 s,as,0,10
+graph134,Distribuida 60 s,abc,10,10
+graph134,Distribuida 60 s,de,10,10
+graph134,Distribuida 60 s,pso,10,10
+graph150,Distribuida 60 s,ga,10,10
+graph150,Distribuida 60 s,sa,0,10
+graph150,Distribuida 60 s,as,0,10
+graph150,Distribuida 60 s,abc,10,10
+graph150,Distribuida 60 s,de,10,10
+graph150,Distribuida 60 s,pso,10,10

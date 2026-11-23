@@ -1,0 +1,1 @@
+{"capture_write_ns": 30036912, "diagnostic": null, "exit_code": 0, "observed": {"available_ram_bytes": 25363611648, "before_load_1m": 1.0029296875, "peak_load_1m": 1.0029296875, "peak_rss_bytes": 79077376, "peak_threads": 1}, "outcome": null, "process_elapsed_ns": 30170030631, "signal": null}

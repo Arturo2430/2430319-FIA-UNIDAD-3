@@ -1,0 +1,79 @@
+{
+  "instance": "graph2",
+  "algorithm": "as",
+  "seed": 1003,
+  "status": "success",
+  "best_cost": 0,
+  "certified_success": true,
+  "resources_before": {
+    "available_ram_bytes": 14602563584,
+    "swap_pages": {
+      "pswpin": 95,
+      "pswpout": 679
+    },
+    "ac_online": true,
+    "governor": "powersave",
+    "suspend_offset_ns": -510,
+    "load_1m": 1.10986328125,
+    "at_utc": "2026-11-13T18:21:30.033308+00:00"
+  },
+  "returncode": 0,
+  "process_seconds": 0.7163962439999523,
+  "resources_after": {
+    "available_ram_bytes": 14568853504,
+    "swap_pages": {
+      "pswpin": 95,
+      "pswpout": 679
+    },
+    "ac_online": true,
+    "governor": "powersave",
+    "suspend_offset_ns": -630,
+    "load_1m": 1.10986328125,
+    "at_utc": "2026-11-13T18:21:30.751443+00:00"
+  },
+  "stop_reason": "validated_cycle",
+  "counters": {
+    "iteration_unit": "round",
+    "evaluations_started": 258,
+    "evaluations_completed": 258,
+    "full_evaluations": 258,
+    "incremental_evaluations": 0,
+    "cache_hits": 0,
+    "validations_started": 1,
+    "validations_completed": 1,
+    "iterations_completed": 12,
+    "partial_iteration": {
+      "phase": "round",
+      "completed_items": 18,
+      "planned_items": 21
+    },
+    "restarts": 0,
+    "algorithm_counters": {
+      "constructions_started": 258,
+      "construction_steps": 17802,
+      "neighbor_guided_jumps": 1154,
+      "pheromone_updates_started": 12,
+      "pheromone_deposits": 15499,
+      "pheromone_missing_deposits_skipped": 1301,
+      "pheromone_updates_completed": 12
+    }
+  },
+  "timing": {
+    "solver_ns": 568166338,
+    "validation_ns": 156546,
+    "overrun_ns": 0,
+    "first_success": {
+      "elapsed_ns": 568166338,
+      "evaluations_started": 258,
+      "evaluations_completed": 258,
+      "iterations_completed": 12
+    }
+  },
+  "independent_validation": {
+    "valid": true,
+    "reason": null,
+    "position": null,
+    "vertices": []
+  },
+  "recalculated_cost": 0
+}

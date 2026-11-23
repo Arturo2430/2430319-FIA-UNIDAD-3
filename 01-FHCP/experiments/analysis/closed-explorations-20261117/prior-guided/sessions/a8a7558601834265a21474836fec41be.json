@@ -1,0 +1,16 @@
+{
+  "at_utc": "2026-11-17T20:51:16.761759+00:00",
+  "stop_reason": "interrupted",
+  "new_attempts": 118,
+  "total_attempted": 118,
+  "session_seconds": 875.9905704489993,
+  "execution_mode": "parallel_exploratory",
+  "workers": 4,
+  "affinity_cpus": [
+    0,
+    2,
+    4,
+    6
+  ],
+  "runner_sha256": "367d024d6a21522155dac395f461da3b0b8ec5fc301c96cb9f211d386df96f7d"
+}
